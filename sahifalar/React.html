@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJS</title>
+  <link rel="icon" href="../rasm/react-logo-1.png">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+  <div>
+    <h3>2-dars. Kerakli dasturlar</h3>
+    <p>
+      <b>React App</b> yaratish <b>yarn</b> orqali <br>
+      1. <b>yarn create react-app .</b> - <b>.</b> o'rniga nom yozilsa shun nom bilan fayl yaratilib react app ichiga yaratiladi <br>
+      2. <b>yarn add create-react-app</b><br><br>
+    </p>
+    <p><b>Distruptizatsiya - {}</b></p>
+    <p>
+      <b>npx create-react-app <i>name</i></b> - react app yaratadi. <b><i>name</i></b> fayl yaratilib ichiga joylanadi.
+      agar <b><i>name</i></b> o'rniga <b>.</b> (nuqta) yozilsa turgan fayliga yuklaydi
+    </p><br>
+    <p>
+      <b>npx create-react-app my-app <br>
+        cd my-app <br>
+        npm start <br></b>
+    </p>
+  </div>
+
+  <div>
+    <h3>3-dars. NPM Haqida batafsil</h3>
+    <p>NPM paketinlarini yangilash <b>npm install npm@latest -g</b></p>
+    <p>
+      <b>npm init</b> <br>
+      <b>npm init -y</b> - qisqa <b>init</b> qilish <br>
+      <b>npm i <i>npm paket nomi</i></b> - npm paket yuklab beradi <br>
+      Ohiriga <b>-D</b> qo'yilsa faqat loyihaga yuklanadi <b>node_modules</b>ga yuklanmaydi <br>
+      Ohiriga <b>-g</b> qo'yilsa global yuklanadi va istagan joyda (istagan faylga o'tib) ishlatsa bo'ladi
+    </p>
+  </div>
+
+  <div>
+    <h3>5-dars. Sof ReactJS</h3>
+    <p>
+      CDN link ko'dini olish: <a target="_blank" href="https://reactjs.org/docs/cdn-links.html">LINK</a>
+      <hr><br>
+      <a href="../rasm/r1.jpg"><img src="../rasm/r1.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    Sof Reactga misol <br>
+    <a href="../rasm/r2.jpg"><img src="../rasm/r2.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>6-dars. Mini loyiha</h3>
+    <p>
+      <a href="../rasm/r3.jpg"><img src="../rasm/r3.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>8-dars. Amaliyot</h3><br>
+    <p><b>JSX</b>da <b>ternay</b> operatori ishlaydi lekin<b>while</b>, <b>for</b>, <b>if else</b> ishlamaydi</p><br>
+    Quyida sof React va JSX, ikkalasini ham natijasi bir xil
+    <a href="../rasm/r4.jpg"><img src="../rasm/r4.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>9-dars. JSX hususiyatlari</h3><br>
+    <a href="../rasm/r5.jpg"><img src="../rasm/r5.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>10-dars. illovani modullarga bo'lish</h3>
+    <p>
+      1-usul: <b>import App from "./App" <br>
+        export default App;</b> <br><br>
+      2-usul: <b>import { App } from "./App" <br>
+        export { App };</b>
+    </p><br>
+    <a href="../rasm/r6.jpg"><img src="../rasm/r6.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>15-dars. Class Komponent holati va boshqaruv</h3>
+    <p>
+      hodisa qo'shish, setState <br><br>
+      <a href="../rasm/r7.jpg"><img src="../rasm/r7.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    this kontenti bilan muommo paydo bo'lganda <br>
+    <a href="../rasm/r8.jpg"><img src="../rasm/r8.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>17-dars. Amaliyot</h3>
+    <p><a href="../rasm/r9.jpg"><img src="../rasm/r9.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>19-dars. Amaliyot</h3>
+    <p><b>
+        componentDidMount, componentDidUpdate, componentWillUnmount, localStorage
+      </b></p><br>
+    <p>
+      <b>localStorage.setItem(<i>key</i>, <i>item</i>)</b> - sahifani ma'lumotlar bazasidan foydalanish <br><br>
+      <b>componentDidMount</b> - faqat sahifa ochilganda ishga tushadi <br><br>
+      <b>componentDidUpdate</b> - sahifa yangilanganda ishga tushadi. Har qanday o'zgarish bo'lganda <br><br>
+      <b>componentWillUnmount</b> - sahifadan uzilganda ishga tushadi <br><br>
+      Rasmda <b>this.counterId</b> funksiya ichiga yozilga. Buni funksiyadan tashqarida ham ishlatsa bo'ladi
+    </p><br>
+    <p>Ko'd manbai: <a target="_blank" href="https://github.com/Nozim99/React-19-dars-Amaliyot">Link</a></p>
+    <a href="../rasm/r10.jpg"><img src="../rasm/r10.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>20-dars. To’plamlar va kalit attribut bilan ishlash</h3>
+    <p>
+      Quyidagi usul key berish tavsiya qilinadi br
+      <a href="../rasm/r11.jpg"><img src="../rasm/r11.jpg" alt=""></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>21-dars. Props zanjir qilib ulash</h3>
+    <p>
+      Ko'd manbai: <a href="https://github.com/Nozim99/21-dars.-Props-zanjir-qilib-ulash"><b>Link</b></a><br><br>
+      <a href="../rasm/r12.jpg"><img src="../rasm/r12.jpg" alt=""></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>22-dars. Amaliyot</h3>
+    <p>
+      Ko'd manbai: <a target="_blank" href="https://github.com/Nozim99/React-22-amaliyot"><b>Link</b></a> <br><br>
+      <b>Delete</b>ni bossa o'zini qatori o'chib ketadi <br>
+      <a href="../rasm/r13.jpg"><img src="../rasm/r13.jpg" alt=""></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>23-dars. Formalar bilan ishlash va validation</h3>
+    <p>
+    <p>Ko'd manbai: <a href="https://github.com/Nozim99/React-23-dars.-Formalar-bilan-ishlash-va-validation"
+        target="_blank"><b>Link</b></a></p> <br>
+    <b>onBlur</b> - focus ketganda ishga tushadi <br>
+    <b>onChange</b> - biror o'zgarish kiritilganda ya'ni biror ma'lumot kiritilganda ishga tushadi <br><br>
+    <a href="../rasm/r14.jpg"><img src="../rasm/r14.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>24-dars. Checkbox, radio va TextArea bilan ishlash</h3>
+    <p>
+      <a href="../rasm/r15.jpg"><img src="../rasm/r15.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>25-dars. Amaliyot</h3>
+    <p>
+      Ko'd manbai: <a href="https://github.com/Nozim99/React-25-dars.-Amaliyot"><b>Link</b></a> <br><br>
+      <a href="../rasm/r16.jpg"><img src="../rasm/r16.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>26-dars. CreateRef haqida batafsil</h3>
+    <p>Ko'd manbai: <a href="https://github.com/Nozim99/React-26-dars.-CreateRef-haqida-batafsil"><b>Link</b></a></p>
+    <p>
+      Inputga belgilangan miqdorda belgi kiritilganda focus keyingisiga o'tadi
+      <a href="../rasm/r17.jpg"><img src="../rasm/r17.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h2>27-dars. Boshqarib bo'lmaydigon forma</h2>
+    <p>Ko'd manbai: <a href="https://github.com/Nozim99/React-27-dars.-Boshqarib-bo-lmaydigon-forma"
+        target="_blank"><b>Link</b></a></p>
+    <p>Formni submit qilgandagi hodisani boshqarish ya'ni hodisani yo'q qilib o'zimiz hodisa qo'shish</p>
+    <p><a href="../rasm/r18.jpg"><img src="../rasm/r18.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h2>componentDidMount bir marta ishlaydiga qilish</h2>
+    <p>ReactJS ni 18 versiyasida ayrim xatolarni oldini olish uchun kompnentlarni o'rnatib o'chirib va yana o'rnatadi,
+      shuning uchun 2 marta ishlaydi. Buni oldini olish uchun quyidagi ko'ddan foydalaning</p><br>
+    <p>Bunda ma'lumot o'zgaruvchiga olinadi. Ikkinchi marta ishlaganda o'zgaruvchi true qiymat qaytarib ikkinchi marta
+      ishlashini oldini oladi</p>
+    <a href="../images/react/1.jpg"><img src="../images/react/1.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>32-dars. Qidiruv tugmasini yasash</h2>
+    <p><b>onKeyDown={}</b> - klaviatura tugmalariga hodisa qo'shish uchun ishlatilinadi</p><br>
+    <a href="../images/react/2.jpg"><img src="../images/react/2.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>Api bilan bog'lanishdagi hatoni to'g'irlash</h2>
+    <p><b>HTML</b> tagiga yoziladi</p>
+    <textarea name="" id="" cols="30"
+      rows="3"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></textarea>
+  </div>
+
+  <div>
+    <h2>43-dars Funksional komponentlar</h2>
+    <h4>Ko'd manbai: <a href="https://github.com/Nozim99/React-43-dars.-Funktsional-komponentlar"><b>Link</b></a></h4>
+    <br>
+    <h4>useState, setCount, ma'lumotni o'zgartirish</h4>
+    <a href="../images/react/3.jpg"><img src="../images/react/3.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>44-dars. Fuktsional komponent yordamida hayot tsikili tushunchasi</h2>
+    <p>
+      componentDidMount, componentDidUpdate, componentWillUnmount funksional komponentda <b>UseEffect</b>
+    </p><br>
+    <a href="../images/react/4.jpg"><img src="../images/react/4.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>45-dars. Funktsional komponentda reflardan fotdalanish</h2>
+    <p><b>Button</b>ga bosganda <b>input</b>ga focus bo'ladi, current, focus</p><br>
+    <a href="../images/react/5.jpg"><img src="../images/react/5.jpg" alt="Error"></a>
+    <hr><br><br>
+    <p>Sahifa yuklanganda <b>input</b>ga focus bo'ladi</p><br>
+    <a href="../images/react/6.jpg"><img src="../images/react/6.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>46-dars. Amaliyot. Komponentlar</h2>
+    <h4>useState, useRef, useEffect, localStorage, getItem, setItem, didMount, didUpdate, willUnmount</h4>
+    <p>Ko'd manbai: <a target="_blank" href="https://github.com/Nozim99/React-46-Amaliyot-Komponentlar"><b>Link</b></a>
+    </p><br>
+    <a href="../images/react/7.jpg"><img src="../images/react/7.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>49-dars. Hooks. useState, useEffect, useRef va useMemo</h2>
+    <p>Ko'd manbai: <a href="https://github.com/Nozim99/React-2-50-Hook" target="_blank"><b>Link</b></a></p> <br>
+    <p>
+      <b>useState()</b> - ma'lumotni boshidan yozdasi. Obyektlar bilan ishlaganda ma'lumotni oldingisidan nusxa olib
+      ishlanadi <br>
+      <b>useEffect(()=>{...})</b> - ga ikkinchi argument berilmasa sahifadagi barcha o'zgarishlarda ishga tushadi.
+      <b>componentDidUpdate</b>ni vasifasini bajaradi <br>
+      <b>useEffect(()=>{...}, [])</b> - ikkinchi argument bo'sh massiv bo'lsa faqat sahifa yuklanganda ishga tushadi.
+      <b>componentDidMount</b>ni vazifasini bajaradi <br>
+      <b>useEffect(()=>{...}, [<i>o'zgaruvchi</i>])</b> - <b>[<i>o'zgaruvchi</i>]</b>- har o'zgarganda ishga tushadigan
+      funksiya <br>
+      <b>useMemo</b> - kerakli ma'lumot o'zgarganda kerakli ma'lumot o'zgaradi. <b>useEffekt</b> esa barchasini ko'rib
+      chiqadi
+    </p><br>
+    <a href="../images/react/8.jpg"><img src="../images/react/8.jpg" alt="Error"></a><br><br>
+    <p>
+      <b>useCallback</b> - <b>useMemo</b> bilan deyarli bir-xil farqi <b>useCallback</b>da propslar bilan ishlasa
+      bo'ladi <br><br>
+      <hr><br>
+    <h4>Inline style berish</h4>
+    <a href="../images/react/9.jpg"><img src="../images/react/9.jpg" alt="Error"></a>
+    </p> <hr><br><br>
+    <h3>useRef</h3>
+    <p>
+      <b>useRef</b> - <b>useState</b>ga o'xshash. <br>
+      <b>const box = useRef(1)</b> - <b>box</b>ni boshlang'ich qiymati <b>1</b> ga teng bo'ladi. <br>
+      <b>useRef</b> obyekt qaytaradi. qiymatini olish uchun <b>current</b> ishlatilinadi. <br>
+      <b>box.current 1</b>ga teng
+    </p><br><br>
+    <a href="../images/react/15.jpg"><img src="../images/react/15.jpg" alt="Error"></a> <hr><br><br>
+    <p><b>input</b>ga focus berish</p><br>
+    <a href="../images/react/16.jpg"><img src="../images/react/16.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>54-dars. Maxsus hooklar</h2>
+    <p>
+      Ko'd manbai: <a target="_blank" href="https://github.com/Nozim99/React-2-54-Maxsus-Hooklar"><b>Link</b></a><br>
+      Hook yaratish va foydalanish. qo'lbola hook
+    </p>
+    <a href="../images/react/10.jpg"><img src="../images/react/10.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>2-75 Murakkab boshqaruv dastur holati: Context & Provider yasash</h2>
+    <p><b>Context</b> - <b>props</b>lar bilan ishlashni osonlashtiradi. ma'lumotlarni zanjir qilmasdan to'g'ridan to'g'ri uzatish imkonini beradi
+    </p><br>
+    <a target="_blank" href="../images/react/11.jpg"><img src="../images/react/11.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>2-72 Routing asoslari va Link komponentlari</h2>
+    <p>
+      O'rnatish <b>npm install react-router-dom</b> <br><br>
+      <b>
+        BrowserRouter, Routes, Route, exact
+      </b> <br>
+      <b>exact</b> - asosiy sahifaga qo'shiladi aks holda boshqa sahifalar bilan qo'shilib ketishi mumkin
+      Vebsayt yuklanmasdan boshqa sahifani yuklaydi
+    </p><br><br>
+    <a href="../images/react/12.jpg"><img src="../images/react/12.jpg" alt="Error"></a>
+    <hr><br><br>
+    <h4>Sahifalarni ulash</h4>
+    <p>Agar sahifa topilmasa <b>path="*"</b> bo'lgan sahifa ishga tushadi</p>
+    <p><b>useNavigate()</b></p><br>
+    <a href="../images/react/13.jpg"><img src="../images/react/13.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h2>2-83 73-dars. Hooks useHistory, useParams, useLocation va useRouteMatch</h2>
+    <p>
+      <b>useParams</b> - ma'lumotlar bilan ishlaydi
+    </p><br>
+    <a href="../images/react/14.jpg"><img src="../images/react/14.jpg" alt="Error"></a><hr><br><br>
+    <p>
+      <b>useLocation</b> - Link qismida <b>?</b> dan boshlangan belgilarni o'zida saqlaydi
+    </p>
+  </div>
+
+
+
+  <!-- ==================================== -->
+</body>

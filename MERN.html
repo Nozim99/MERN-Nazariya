@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="https://yt3.ggpht.com/k9Ad8r-Ezv27bqqVx4yuNjS52bjBR8JvWkzOh-ILBF8tTYrfpJqNhHaQUVr4JXL1piPtG80E=s88-c-k-c0x00ffffff-no-rj-mo">
+  <title>MEZES</title>
+</head>
+<body>
+  <style>
+    body {
+      text-align: center;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      align-items: center;
+    }
+    i {
+      margin-right: 15px;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+
+  <h1>Nazariya</h1><br><br><hr>
+  <h1 style="cursor: pointer;" class="mern_btn"><span style="color: #449534">M</span><span style="color: #FD9226">E</span><span style="color: #01D4F7">R</span><span style="color: #70DD15">N</span></h1>
+  <div class="mern_skins">
+    <i class="fa-brands fa-js"></i><a href="./sahifalar/JavaScript.html" target="_blank"><b>JavaScript</b></a> <br>
+    <i style="color: #00C2F2" class="fa-brands fa-react"></i><a style="color: #00C2F2;" href="./sahifalar/React.html" target="_blank"><b>ReactJS</b></a><br>
+    <img style="width: 25px; position: relative; bottom: -0.4rem; margin-right: 0.4rem" src="./images/react/redux-logo.png" alt="">
+    <a href="./sahifalar/ReduxToolKit.html" target="_blank"><b style="color: #6237AE">Redux ToolKit</b></a><br>
+    <img style="width: 25px; position: relative; bottom: -0.4rem; margin-right: 0.4rem" src="./images/node/node logo.png" alt="">
+    <a href="./sahifalar/NodeExpressMongo.html" target="_blank"><b style="color: #5FB047">Node MongoDB</b></a>
+
+  </div>
+  <hr>
+  <div class="div">
+    
+    <h1>Frontend bo'limi</h1>
+    <h3>HTML</h3>
+    <h3><a href="./sahifalar/CSS.html" target="_blank"><i style="color: #2862E9;" class="fa-brands fa-css3-alt"></i>CSS</a></h3>
+    <h3><a href="./sahifalar/Bootstrap.html" target="_blank"><i style="color: #6B11E9" class="fa-brands fa-bootstrap"></i>Bootstrap</a></h3>
+    <h3>SASS</h3>
+    <h3>JavaScript</h3>
+    <h3>React</h3>
+  </div>
+  <hr>
+  <div class="div">
+    <h1>Backend bo'limi</h1>
+    <h3>NodeJs</h3>
+    <h3>ExpressJS</h3>
+    <h3>MongoDB</h3>
+  </div>
+  <hr>
+  <script>
+    const mernSkins = document.querySelector('.mern_skins');
+    const mernBtn = document.querySelector('.mern_btn');
+    mernSkins.style.display = 'none';
+    let btn = false;
+    mernBtn.addEventListener('click', ()=>{ 
+      if(!btn) mernSkins.style.display = 'block';
+      else mernSkins.style.display = 'none';
+      btn ? btn = false : btn = true;
+    })
+  </script>
+</body>
+</html>

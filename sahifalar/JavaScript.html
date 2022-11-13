@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="icon" href="../rasm/javascript-logo.png">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+  <div>
+    <h3>VSCode Extensions</h3>
+    <p>
+      1) All Autocomplete <br>
+      2) Auto Close Tag <br>
+      3) Auto Complete Tag <br>
+      4) Auto Rename Tag <br>
+      5) Bracket Pair Colorizer 2 <br>
+      6) Code Runner <br>
+      7) CSS Peek <br>
+      8) Import Cost <br>
+      9) indent-rainbow <br>
+      10) IntelliSense for CSS class names in HTML <br>
+      11) JavaScript (ES6) code snippets <br>
+      12) Live Sass Compiler <br>
+      13) sass <br>
+      14) Live Server <br>
+      15) Path Autocomplete <br>
+      16) Path Intellisense <br>
+      17) Prettier - Code formatter <br>
+      17) Reactjs code snippets <br>
+      18) Theme - Oceanic Next
+    </p>
+  </div>
+  <div>
+    <h3>"use strict"</h3>
+    <p>
+      Funksiya ko'rinishidagi: <b>(function () {'use strict';}());</b> <br><br>
+      "use strict"; (tarjima: "qat'iy foydalaning") - bu kodni qattiq rejimda ishlashga majbur qiladigan parametr. Ushbu
+      sozlamasiz kod cheklanmagan rejimda qayta ishlanadi. ECMAScript 5 da qattiq rejim joriy qilingan va undan oldingi
+      brauzerlar (IE9 va undan oldingi versiyalar) uni qo'llab-quvvatlamaydi
+    </p>
+  </div>
+
+  <div>
+    <h3>JavaScript-dagi ma'lumotlar turlarini tasnifi</h3>
+    <p>
+      <a
+        href="https://whatsappss.ru/uz/instrumenty/javascript-tipy-dannyh-i-operatory-tipy-dannyh-javascript-zadat-tip.html">Foydali
+        Link</a><br><br>
+      1. string * number = NaN <br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>Foydalanuvchi bilan oddiy muloqot</h3>
+    <p>
+      <b>alert</b> - ma'lumot ko'rsatadi. Ogohlantirish uchun ishlatilinadi <br>
+      <b>confirm</b> - foydalanuvchidan true yoki false qiymatidan birini olish uchun ishlatilinadi <br>
+      <b>prompt</b> - foydalanuvcidan ma'lumot olish uchun <br>
+      <b>prompt("Where are you from?", "Uzbekistan");</b> - ikkinchi qiymat <b>default</b> qiymat hisoblanadi. Ma'lumot
+      turi doim <b>String</b> bo'ladi <br><br> <b>console</b>ga foydalanuvchi kiritgan kanalga silka chiqadi
+      <a
+        href="https://lh3.googleusercontent.com/jhDC3Akh6c-ngNVuYq5qKQ1MaXQkLLZkc3wX2uAIXZxnGakqL6HXONWTpBPCPtNJWxtDbratFhYXSKP_cxZTM_vnBmJZpDLJwR-GNoYxbtTYpdkG6gUZm4VlgqeZ29Bmapeg1iai7-UhRZV4tEIV09_zYk1SqWNu9a6Ag91TsKis8Ma9a0C7Al7PASQ9kgRVQHImTKpQNJa9TPb6Tgmo4ygH_v2FPihTUEd3GzY027LIMHE78ZndGk9eQcCWDILlzP_x4pxMu-u-JwNREL-4TeT-9wjh4I21GyWQfDf2DQOSjs0fwEdQwlzhrKii8-AJwC0cN-ksA4LMZ7xoQEowA29JilqvxwwVndMdy_qXfAW0DrLXeUUgK0bjmo4q4dl7kI_IDlhK97gcRsWbPLRXSypl0iyeZ43uTeUtyTi1TLroZ_-heEszp6htXj4h9R1-S1e8yvf9z0w5aEyK5JM_h1WrlZx4M4ILHHO7A3wKQTN_zw73oZCFnzl2G89GWOCKQjzyyF6F4Q4aDmrxPPC81gxd9cv3JiJZVkpnVawXtu-GHzh1LBIsHUvtNOa6hn60c56etWglvf-vccN0IeAIU0fCLzcJRdO7Gq9NZYQcjdBPtGicdwcuJ6fU30dV_CV_aGKC5_SnXiwEhUJAgQFFdvwPgTzTokquyQOMtM1nep9l8-8s05Ih8oNWuKS1J3qMKDDF3KpuM2Sym-FHjaVlGRoOziGMJ71JMfFu8gRLVUg6_OKDfggOnKsFKVVE3A=w466-h132-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/jhDC3Akh6c-ngNVuYq5qKQ1MaXQkLLZkc3wX2uAIXZxnGakqL6HXONWTpBPCPtNJWxtDbratFhYXSKP_cxZTM_vnBmJZpDLJwR-GNoYxbtTYpdkG6gUZm4VlgqeZ29Bmapeg1iai7-UhRZV4tEIV09_zYk1SqWNu9a6Ag91TsKis8Ma9a0C7Al7PASQ9kgRVQHImTKpQNJa9TPb6Tgmo4ygH_v2FPihTUEd3GzY027LIMHE78ZndGk9eQcCWDILlzP_x4pxMu-u-JwNREL-4TeT-9wjh4I21GyWQfDf2DQOSjs0fwEdQwlzhrKii8-AJwC0cN-ksA4LMZ7xoQEowA29JilqvxwwVndMdy_qXfAW0DrLXeUUgK0bjmo4q4dl7kI_IDlhK97gcRsWbPLRXSypl0iyeZ43uTeUtyTi1TLroZ_-heEszp6htXj4h9R1-S1e8yvf9z0w5aEyK5JM_h1WrlZx4M4ILHHO7A3wKQTN_zw73oZCFnzl2G89GWOCKQjzyyF6F4Q4aDmrxPPC81gxd9cv3JiJZVkpnVawXtu-GHzh1LBIsHUvtNOa6hn60c56etWglvf-vccN0IeAIU0fCLzcJRdO7Gq9NZYQcjdBPtGicdwcuJ6fU30dV_CV_aGKC5_SnXiwEhUJAgQFFdvwPgTzTokquyQOMtM1nep9l8-8s05Ih8oNWuKS1J3qMKDDF3KpuM2Sym-FHjaVlGRoOziGMJ71JMfFu8gRLVUg6_OKDfggOnKsFKVVE3A=w466-h132-no?authuser=0"
+          alt=""></a>
+      <hr>
+    </p>
+    <p>
+      <b>typeof</b> - ma'lumot turini ko'rsatadi <br>
+      console.log(typeof value)
+    </p>
+  </div>
+
+  <div>
+    <h3>Ma'lumot turini o'zgartirish</h3>
+    <p>Number = +String</p>
+  </div>
+
+  <div>
+    <h3>Interpolatsiya</h3>
+    <div style="text-align: start;">
+      <p>Foydali qollanma o'qib chiqing:</p>
+      <p>JavaScript-da interpolatsiya shunga o'xshash tarzda ishlaydi. Satrda $ {...} konstruktsiyasi yaratilgan bo'lib,
+        uning ichiga istalgan o'zgaruvchini yoki ifodani joylashtirish mumkin:</p>
+      <p>var age = 25;<br>console.log (`Men $ {age} yoshdaman '); // Men 25 yoshdaman</p>
+      <p>// Ekvivalent<br>console.log ('Men' + yosh + 'yoshdaman'); // Men 25 yoshdaman<br>Muhim: oddiy tirnoq ('va ")
+        bilan yaratilgan satrlar interpolyatsiyani qo'llab-quvvatlamaydi. Interpolatsiyani qo'llab-quvvatlash uchun"
+        ("klaviaturadagi" tugmasi):</p>
+      <p>var age = 25;<br>// Interpolatsiya oddiy tirnoq bilan qo'llab-quvvatlanmaydi<br>console.log ('Men $ {age}
+        yoshdaman'); // Men $ {age} yoshdaman<br>console.log ("Men $ {age} yoshdaman"); // Men $ {age} yoshdaman<br>//
+        Faqat teskari bilan qo'llab-quvvatlanadi<br>console.log (`Men $ {age} yoshdaman '); // Men 25
+        yoshdaman<br>So'zlarni interpolatsiya qilish<br>Interpolatsiyadan foydalanib, har qanday ifodaning natijasini
+        qatorga qo'yishingiz mumkin, masalan, funktsiya chaqiruvi:</p>
+      <p>const up = (str) =&gt; str.toUpperCase ();<br>str = "bu katta harf bilan $ {up ('sting')}";<br>console.log
+        (str); // bu katta harf bilan STRING<br>yoki undan murakkab iboralar:</p>
+      <p>const sum = (... args) =&gt; `Sum $ $ {args.reduce ((start, arg) =&gt; start + arg, 0)} ga teng; '</p>
+      <p>console.log (sum (12, 23, 32)); // Sum 67 ga teng<br>Ichki interpolatsiya<br>Ehtimol, bir darajadagi
+        interpolatsiya etarli bo'lmagan holatlar bo'ladi. Bunday hollarda uyalash (interpolatsiya ichidagi
+        interpolatsiya) dan foydalanish qulay. Shuni esda tutish kerakki, $ {...} ichidagi barcha kodlar alohida
+        iboralar sifatida talqin qilinadi, ya'ni qatorning oxiri sifatida qabul qilinmaydigan teskari tirnoqlarni o'z
+        ichiga olishi mumkin:</p>
+      <p>const up = (str) =&gt; str.toUpperCase ();<br>foydalanuvchi = 'foydalanuvchi' bo'lsin;<br>str = bu $ {up ( $
+        {user} s`)} ajoyib ';<br>console.log (str); // bu FOYDALANuvchilar zo'r<br>Str o'zgaruvchisi ichki
+        interpolatsiyadan foydalanadi. Eski standartdan foydalanib, kodni quyidagicha yozish mumkin:</p>
+      <p>var user = 'foydalanuvchi';<br>var str = 'these' + up (user + 's') + 'great';<br>console.log (str); // bu
+        FOYDALANuvchilar zo'r</p>
+    </div>
+    <div>
+      <h4>interpolatsiya ichidagi interpolatsiya</h4><br>
+      <a
+        href="https://lh3.googleusercontent.com/c9Y-NTVtind9RnmdmCPMl-1AreWsHw71BYKbr0ZBHwvaA0MmFRQ3JJNDXxidvel_MxIXUFMTy_C0Ze0QJf4sN794s-8LkDFgg8yD2rJGUTORzYLb723nv8_SfpiZtElHhqiS4ZO9vX49chExkwlGVHidUvGfiXaXw7M75BTlM1qjinHCjiGzgAm3-1pg5nrw459fnq-DKYW-lbKXpwRTwW-b5RO_Mr1eV8PxjVxC1utXJ22IhmZEtwF0tKzKYNbm3rpOKYOHfVY-Jg5qcDlBOTw4tT94uOmHq9ON1z6hNFd-7mq-ingQxa2uogn2Fgnl0sDBrM92rkiijAaa_3rqCb4vrk2KlUopw3w_7_pEkm9qwP8W6cLSu_RD6gscdptUsT_7UMZF4hsHRy-WD8dbs4VGwNbyJnCOddbqdE_oU8S0AttjYTYZbOBbf4zCDfio0Wwb3EfFEztX0wKitHaJwnmz8__t4Adk-N0tHIazUqf9-zjnRodJ-i1mS75vFSvohgd0FnlmKm2TkgHy3g8iWtUuVMdnzdoyb-yf9jMCUkEWl08EL3hEm8n1wC6QjG6lDM6TjDwa0ZvRsYKehZ0V2oTAG3krGxjaYL4zAC4i2ActuFK50DOMoVyLE1OpRHLplrwSM2bTxufFvKWmc71MhpAVg4pN0F44VCQC_qj3NyB4GbC8SmSeDxvfz7_nONPRtwUOCoDWd8Ayy_bYtt4ISrUYZIYoDpQS-qMU5nmU1VM_xvJ_O0fwqQhtNpIyKw=w434-h430-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/c9Y-NTVtind9RnmdmCPMl-1AreWsHw71BYKbr0ZBHwvaA0MmFRQ3JJNDXxidvel_MxIXUFMTy_C0Ze0QJf4sN794s-8LkDFgg8yD2rJGUTORzYLb723nv8_SfpiZtElHhqiS4ZO9vX49chExkwlGVHidUvGfiXaXw7M75BTlM1qjinHCjiGzgAm3-1pg5nrw459fnq-DKYW-lbKXpwRTwW-b5RO_Mr1eV8PxjVxC1utXJ22IhmZEtwF0tKzKYNbm3rpOKYOHfVY-Jg5qcDlBOTw4tT94uOmHq9ON1z6hNFd-7mq-ingQxa2uogn2Fgnl0sDBrM92rkiijAaa_3rqCb4vrk2KlUopw3w_7_pEkm9qwP8W6cLSu_RD6gscdptUsT_7UMZF4hsHRy-WD8dbs4VGwNbyJnCOddbqdE_oU8S0AttjYTYZbOBbf4zCDfio0Wwb3EfFEztX0wKitHaJwnmz8__t4Adk-N0tHIazUqf9-zjnRodJ-i1mS75vFSvohgd0FnlmKm2TkgHy3g8iWtUuVMdnzdoyb-yf9jMCUkEWl08EL3hEm8n1wC6QjG6lDM6TjDwa0ZvRsYKehZ0V2oTAG3krGxjaYL4zAC4i2ActuFK50DOMoVyLE1OpRHLplrwSM2bTxufFvKWmc71MhpAVg4pN0F44VCQC_qj3NyB4GbC8SmSeDxvfz7_nONPRtwUOCoDWd8Ayy_bYtt4ISrUYZIYoDpQS-qMU5nmU1VM_xvJ_O0fwqQhtNpIyKw=w434-h430-no?authuser=0"
+          alt=""></a>
+    </div>
+  </div>
+
+  <div>
+    <h3>Operatorlar</h3>
+    <p>
+      <b>%</b> - qoldiqni chiqaradi. 5 % 2 = 1
+    </p>
+    <p>
+      <b>incr++;</b> = <b>incr = incr + 1</b> = <b>incr += 1</b> increment ma'nosi oshirish <br>
+      <b>decr--</b> = <b>decr = decr - 1</b> = <b>decr -= 1</b> decrement ma'nosi kamaytirish
+    </p>
+  </div>
+
+  <div>
+    <h3>11-dars. Git & GitHub</h3>
+    <p><a href="https://community.uzbekcoders.uz/post/git-va-github-haqida-5f2303f983e9d2033426f352">Github Xaqida
+        o'zbekcha malumot</a></p>
+    <p>
+      1. git status
+      2. git add -A
+      3. git commit -m "first commit"
+      ... Github dagi proyektga ulanadi
+      4. git push
+    </p>
+    <p>
+      <b>git log</b> - qachon o'zgartirish kiritilgani va kim tomonidanligini ko'rsatadi <br>
+      <b>git clone https://github.com/...</b> - klonlaydi. GitHubdan yuklash uchun
+    </p>
+    <p>
+      1. cd github-tutorial <br>
+      2. git pull
+    </p>
+
+  </div>
+
+  <div>
+    <h3>12-dars. Amaliyot. Ilova yaratishni boshlaymiz</h3>
+    <p><a
+        href="https://lh3.googleusercontent.com/aVm23KxijEQtoLOo8m8Kj7peEzx0olCyGXYgggXdKKiib5Xc2wOn9yJ_8QfG1CL1QtwqjnfWsygLTDdcr8iarvR4PLjuXSily0n82LFuykarCZv-mQVaQcOP0u1ARA41TdDp2Hw3ME0jX4EGK3xm7Ympjj_7GiwmZh4_My7t17_pfKsKiVCkhWteUxo7TNHlN7lhcwerjl_kGUciga70BxPt4ouLqT8htbgWu0f4qYyzgNVfpYGJbo5u3TNPP-ZZVVM6zqmlt70YGstIGEcZVLMX2p3LGLCQVq-7arM0ImAhtSPAOY6Jb6l8GIaTVnI3v_yzLJt5h_kNDHFlyzyiAo7oGcDEx6p7dIGVcpMEZGH95DwoWhem-5H9Yh56XA1qNgOptiwFMfNPnJZyJjWk2lRU-PbA-sFoEcJ0nhVrWleamuPNDHKk-y5PEmLwtAYWMWd3zI4AjpM12faDhv0kEbjl9YTo5nAwRzudic3hy3Zf9em0H0RKMnPq_9OGvaH3AuqLfek1pCgeSvr6-mhm4x8sG1hxIfDLdIh9wvxFilhQlmvznun2d6tpHRp6BUEOPkK9W9ZB-Es1F9TFk2X6Yb3fz5mSb5IKADicTjjKJD-O9g1GF459Fe-Bx_gUF5YTDpk204jXwIMfb6ihZ6kdW7OYOSsnhHrff-CPG0LGjG-lk-IzzzmNwUW5BMme7dnjCl8941bJ6jm1BMagwxBR0UbXO6birANK51jRqffdROW0mf5z8eVePwHmgBu6xw=w1311-h641-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/aVm23KxijEQtoLOo8m8Kj7peEzx0olCyGXYgggXdKKiib5Xc2wOn9yJ_8QfG1CL1QtwqjnfWsygLTDdcr8iarvR4PLjuXSily0n82LFuykarCZv-mQVaQcOP0u1ARA41TdDp2Hw3ME0jX4EGK3xm7Ympjj_7GiwmZh4_My7t17_pfKsKiVCkhWteUxo7TNHlN7lhcwerjl_kGUciga70BxPt4ouLqT8htbgWu0f4qYyzgNVfpYGJbo5u3TNPP-ZZVVM6zqmlt70YGstIGEcZVLMX2p3LGLCQVq-7arM0ImAhtSPAOY6Jb6l8GIaTVnI3v_yzLJt5h_kNDHFlyzyiAo7oGcDEx6p7dIGVcpMEZGH95DwoWhem-5H9Yh56XA1qNgOptiwFMfNPnJZyJjWk2lRU-PbA-sFoEcJ0nhVrWleamuPNDHKk-y5PEmLwtAYWMWd3zI4AjpM12faDhv0kEbjl9YTo5nAwRzudic3hy3Zf9em0H0RKMnPq_9OGvaH3AuqLfek1pCgeSvr6-mhm4x8sG1hxIfDLdIh9wvxFilhQlmvznun2d6tpHRp6BUEOPkK9W9ZB-Es1F9TFk2X6Yb3fz5mSb5IKADicTjjKJD-O9g1GF459Fe-Bx_gUF5YTDpk204jXwIMfb6ihZ6kdW7OYOSsnhHrff-CPG0LGjG-lk-IzzzmNwUW5BMme7dnjCl8941bJ6jm1BMagwxBR0UbXO6birANK51jRqffdROW0mf5z8eVePwHmgBu6xw=w1311-h641-no?authuser=0"
+          alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>Shartli operatorlar</h3>
+    <p><a
+        href="https://sukachoff.ru/uz/remont/funkcii-i-usloviya-if-else-v-javascript-uslovnye-operatory-javascript-sintaksis-if/">Foydali
+        link</a></p>
+  </div>
+
+  <div>
+    <h3>Ternay operator</h3>
+    <p>Uchtalik operator</p>
+    <p>ifoda to'g'ri bo'lsa <b>?</b> dan keyingi amal bajariladi, noto'g'ri bo'lsa <b>:</b> dan keyingi amal bajariladi
+    </p>
+    <p><a
+        href="https://lh3.googleusercontent.com/JH1__maN_ogMZ6n6BgLlyghJF91BKV06kmbRvFwH7z7R2-3tPIJcMfjWoN41YCpJ1JbDjEErgf7c8HCcNdC3ZVngyVckgGK49JhZSo6iFAFDZpoVc9XfnWlOXSgJbvnJvLzXRj1zXJDsaAZu1j6WnLnDKzBB2KolPq3VRARG0di4_rP8Mal_KyVrNiOZvk9Wk1YIigEFVe-PAWqU3C7PVnIr08Xhs3njGFah1VoLPihmJtxYoUc-KgCIawmNZzXHX6BaBBofmty-jA8mNZVPjS2-m8gHsCkaxV3__xGETEyf-sQadNgb-e18P4ZmKgj5XAbibijoLKnXWjpaPJvGnifvhJSc1yn2Vpeeci_e65sy8R_hLve5k7UbWaouksal2RW03QmxEnZ0hON49gdul0t1FZbqqtbRz6DGhFlnXxPZzg5jRBgMV7FTOaX4eLn9UAoPboSR0wsnADoYzptxNrc8f1eQbR4kb8-xCnYBOXkbkgIi0mTWaMA8j71Jaksf1wldnXUv0vJzJrJKXrd6FvUO5hOZRDejpLjYpf43Y3XwiWwlSL3hnxrdfCnCmaZu8AC5YUinPFmcu13RS5TF4PLzvDYId8WykjgY7oxwGjoAIujPbkMDbkGVDq9QqtJc31XqQq3286ppQ0D9srikKRYtcutQ4xSTMquab8GsPz_kl1-RwvKXG45XAYcgt4WI82odsUrjUtGaeToSgMip92Xa7TFeWoZirQkWXIfwEIO6S7Y9LO1Mcwa7IXOzeg=w552-h142-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/JH1__maN_ogMZ6n6BgLlyghJF91BKV06kmbRvFwH7z7R2-3tPIJcMfjWoN41YCpJ1JbDjEErgf7c8HCcNdC3ZVngyVckgGK49JhZSo6iFAFDZpoVc9XfnWlOXSgJbvnJvLzXRj1zXJDsaAZu1j6WnLnDKzBB2KolPq3VRARG0di4_rP8Mal_KyVrNiOZvk9Wk1YIigEFVe-PAWqU3C7PVnIr08Xhs3njGFah1VoLPihmJtxYoUc-KgCIawmNZzXHX6BaBBofmty-jA8mNZVPjS2-m8gHsCkaxV3__xGETEyf-sQadNgb-e18P4ZmKgj5XAbibijoLKnXWjpaPJvGnifvhJSc1yn2Vpeeci_e65sy8R_hLve5k7UbWaouksal2RW03QmxEnZ0hON49gdul0t1FZbqqtbRz6DGhFlnXxPZzg5jRBgMV7FTOaX4eLn9UAoPboSR0wsnADoYzptxNrc8f1eQbR4kb8-xCnYBOXkbkgIi0mTWaMA8j71Jaksf1wldnXUv0vJzJrJKXrd6FvUO5hOZRDejpLjYpf43Y3XwiWwlSL3hnxrdfCnCmaZu8AC5YUinPFmcu13RS5TF4PLzvDYId8WykjgY7oxwGjoAIujPbkMDbkGVDq9QqtJc31XqQq3286ppQ0D9srikKRYtcutQ4xSTMquab8GsPz_kl1-RwvKXG45XAYcgt4WI82odsUrjUtGaeToSgMip92Xa7TFeWoZirQkWXIfwEIO6S7Y9LO1Mcwa7IXOzeg=w552-h142-no?authuser=0"
+          alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>Switch case</h3>
+    <p>Doim qattiq rejimda ishlidi ya'ni ma'lumotlarni turini ham hisobga oladi. Ma'lumotlarni <b>==</b> emas <b>===</b>
+      kabi tenglashtiradi</p><br>
+    <p>Hech bir shart bajarilmasa <b>default</b>dagi amal bajariladi</p>
+    <p><a
+        href="https://lh3.googleusercontent.com/YPpjkevbyv5HdWNKmva5FU-Lv75wYWJ6_ORnC4foUZBxH1xX04SoZ8q9sU5S7vCMqKHMmfPTTj_8tk8We-3BhrFBSNs8UyZQokXww92aM6RquZlf1YH7NkKBzMsY0HHVWf_F0g1_qD2mh4kbbwZeaT2iQN_vrNo1jd3diwoPtT4FwB4zr4yPWxx5449C_2HozS2tC2hd19tWn1awKBMAB3alrYkdP2TlEUGJheIljg17_1oJ4ZHW8IvcBVIhBiwhtL_jis8zqopEswb-r2pz46U8k9s6DsRE3p-rSgNu9w1lbc3ppTTl_1hB4Cs6BLRm1ERsiz_ooAqq4YehfzQI1FtxlVnKSvWySSyvQG9gCuW3HMPQeeM65zBWOef-v0qrDRS0sMF9R-_GqHfZku57XPp39ejJKt5abrtHrUCCLMT3wNvGpkcBzQQhA6crYIlNtxhyUSTuXq6uxXIh76G0ZesEBSz2__VKzYf1wrd6cKAi7wgQ6ZKd5wT9ocbgA5nB_b9iDTr09GsntbnHHcqlSGT7O0vr24kV6MEtzzrAx2pYVjDDjvv_6tHXwAXkOnpz-2ZMSuBVgMpWR1dh2tI_NSng9r-uwg0VMUp7gB2XWEUerjaDlOIbmynSTlhRM_HE9cxAW7o98yb7nvoDhPFB1qIxLMXOzhSZOO85P-MCaafQdMM47qZJVWNCVU4suFHVdgrYy3XAqD9rQA9ZmVx07ACNqyDI2yAtX7JdXSw8vlM-cXyccnDq3rNF86y_fg=w464-h570-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/YPpjkevbyv5HdWNKmva5FU-Lv75wYWJ6_ORnC4foUZBxH1xX04SoZ8q9sU5S7vCMqKHMmfPTTj_8tk8We-3BhrFBSNs8UyZQokXww92aM6RquZlf1YH7NkKBzMsY0HHVWf_F0g1_qD2mh4kbbwZeaT2iQN_vrNo1jd3diwoPtT4FwB4zr4yPWxx5449C_2HozS2tC2hd19tWn1awKBMAB3alrYkdP2TlEUGJheIljg17_1oJ4ZHW8IvcBVIhBiwhtL_jis8zqopEswb-r2pz46U8k9s6DsRE3p-rSgNu9w1lbc3ppTTl_1hB4Cs6BLRm1ERsiz_ooAqq4YehfzQI1FtxlVnKSvWySSyvQG9gCuW3HMPQeeM65zBWOef-v0qrDRS0sMF9R-_GqHfZku57XPp39ejJKt5abrtHrUCCLMT3wNvGpkcBzQQhA6crYIlNtxhyUSTuXq6uxXIh76G0ZesEBSz2__VKzYf1wrd6cKAi7wgQ6ZKd5wT9ocbgA5nB_b9iDTr09GsntbnHHcqlSGT7O0vr24kV6MEtzzrAx2pYVjDDjvv_6tHXwAXkOnpz-2ZMSuBVgMpWR1dh2tI_NSng9r-uwg0VMUp7gB2XWEUerjaDlOIbmynSTlhRM_HE9cxAW7o98yb7nvoDhPFB1qIxLMXOzhSZOO85P-MCaafQdMM47qZJVWNCVU4suFHVdgrYy3XAqD9rQA9ZmVx07ACNqyDI2yAtX7JdXSw8vlM-cXyccnDq3rNF86y_fg=w464-h570-no?authuser=0"
+          alt=""></a></p>
+    <hr>
+    <br>
+    <p>
+      <b>break</b> bo'lmasa hatolik yuz beradi ya'ni shartga to'g'ri kelgan amalni va undan keyingi amallarni ham
+      bajaradi <br>
+      <a
+        href="https://lh3.googleusercontent.com/9orAYvb6vD-JuUeqgusZz6LNnVEO7e6TASX-CjEK5UJvcw8RChSn-Ll6oUJPfQ0L1Ya6SLy0UceOoeRd7OJAdHQZsSDvC73iwzaIH-UNIDvu32PBsxHl8cxcNH6oNHgp5Ht5vMt6zsi7BiC2TdYDdEfkiVoXc-GPwmtl-Ac8A-_36sNHtPwYsabk6U7NYK8CUJ_7iznjp8hGEHIyRJdFY_rMdh5CUWqlRKjldLU2DOqrq2zCplqEef5dfix-qp_NQEqe7OPVlqagsNfAsjIwyO7V8Zq9r4aGowea6CHOdtx5wsPm91pe4q64mkQlwT2zU74BhuP4tOvAUbIR-1M7i32LWGggtKmVBjtbbhhoI5FQAAG7ag3pxayFsYdIY8dCQwKFxLse_3j_kXQocN2DnrFuIsCHsHwEI5ilg5tn_LEZvRVJZjGN5RCrYlM9huiWknR5A1gG0Bk6H0i2RWt5OSVxQiZGlGcaR5p5jWBx_UKfPKoId2DyS3ZtBIyGOcRWSrKh18OP6Ufziuztr6E1xeNpL9NGrMEKWtWwcsj03ry4BQ9o-dB80-g1w8VD3fAG3sTZVaJTjKeq0g4wCXHCnPvVBVtrEQlelBFZ9HZ9nEv7KF6maIABW4_KPDuhmQ3ei1Bb1sdUzI7DD7rEFetk_dVNKIegrkBn3WARVv3ZQh5h6uNlcK5SZtF4_YPtDjVoSIAANVQd4EvJrGiJu55y0UKYpNhEG29rL0BP_MNjmj-lE24wQOSHIzJHX_AD4g=w439-h602-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/9orAYvb6vD-JuUeqgusZz6LNnVEO7e6TASX-CjEK5UJvcw8RChSn-Ll6oUJPfQ0L1Ya6SLy0UceOoeRd7OJAdHQZsSDvC73iwzaIH-UNIDvu32PBsxHl8cxcNH6oNHgp5Ht5vMt6zsi7BiC2TdYDdEfkiVoXc-GPwmtl-Ac8A-_36sNHtPwYsabk6U7NYK8CUJ_7iznjp8hGEHIyRJdFY_rMdh5CUWqlRKjldLU2DOqrq2zCplqEef5dfix-qp_NQEqe7OPVlqagsNfAsjIwyO7V8Zq9r4aGowea6CHOdtx5wsPm91pe4q64mkQlwT2zU74BhuP4tOvAUbIR-1M7i32LWGggtKmVBjtbbhhoI5FQAAG7ag3pxayFsYdIY8dCQwKFxLse_3j_kXQocN2DnrFuIsCHsHwEI5ilg5tn_LEZvRVJZjGN5RCrYlM9huiWknR5A1gG0Bk6H0i2RWt5OSVxQiZGlGcaR5p5jWBx_UKfPKoId2DyS3ZtBIyGOcRWSrKh18OP6Ufziuztr6E1xeNpL9NGrMEKWtWwcsj03ry4BQ9o-dB80-g1w8VD3fAG3sTZVaJTjKeq0g4wCXHCnPvVBVtrEQlelBFZ9HZ9nEv7KF6maIABW4_KPDuhmQ3ei1Bb1sdUzI7DD7rEFetk_dVNKIegrkBn3WARVv3ZQh5h6uNlcK5SZtF4_YPtDjVoSIAANVQd4EvJrGiJu55y0UKYpNhEG29rL0BP_MNjmj-lE24wQOSHIzJHX_AD4g=w439-h602-no?authuser=0"
+          alt=""></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>Tsikl / sikl</h3>
+    <div>
+      <h3>while sikli</h3>
+      <p><a
+          href="https://lh3.googleusercontent.com/3Lnk73qhTZ-2lQtG8ajxyWYEU5GXIF8rDiRFdwfgrdT-9aBT_lKglETbITg3ZxmnJhyrLMSmdd5C23JwwjimgyDdiD2jJcIgQLGpXY50HAZ81giUgdb8EZPWtkuLpim1pbXoDOacDH7IqVgcZkn9IkD4qxPS4_x-PSEbEEy_IIzcmRjQZlw7RjFd8hQTs03nOZs9bORMjPU1UjF-LUU4uEDTzl0CY96rc1uhtkRRHaR7FHD5jGKbdYbE-Ec7X7cK375hD5kBxQiIRcx_sR9S2oqRKtJQMhf39CuSR8Vv9HEOa52LfGXGvB4GyYGzo36gSuSC0gXf5QZJm4PJnRKiuMSNrWmuNhQaIbs-IP-M-CvL_P9FqwgNr8V8e4NV11jdsohhnhJS48bT99RKBNjlZc4Wmc9VMLBfk6RtCeOnoLlIhL_7y0MF-Pefw0LGOApf1th5Wwy4h_SWolxeIKAdNgNXupIGpAkTOwvaDR7-z-hhh6zyeid-55v8B7ZU2TyX_AGbEEaR7M0w3zNQlR00xQoAFiYMMp-FXGSqHAQXVZW3jSP3wl3JTDSh9C-utUEFhthJy7uggloFRkSAKBRQD4zjgxlYruW4pgZvOzIJDvgP_rR0W2qQG9jG-erqJQY99QNLH7D1o7aK6cN9wGQOf1PA6n170iPJ4P9P6BOZ81pLhyD0rg4aT_bQCKi6n-mMxGhAzFZVIZJOWM_S8Fpv93hTQX6itZoV_eJ1nsfhCeWizzTra4iYu15nNy7WGg=w446-h428-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/3Lnk73qhTZ-2lQtG8ajxyWYEU5GXIF8rDiRFdwfgrdT-9aBT_lKglETbITg3ZxmnJhyrLMSmdd5C23JwwjimgyDdiD2jJcIgQLGpXY50HAZ81giUgdb8EZPWtkuLpim1pbXoDOacDH7IqVgcZkn9IkD4qxPS4_x-PSEbEEy_IIzcmRjQZlw7RjFd8hQTs03nOZs9bORMjPU1UjF-LUU4uEDTzl0CY96rc1uhtkRRHaR7FHD5jGKbdYbE-Ec7X7cK375hD5kBxQiIRcx_sR9S2oqRKtJQMhf39CuSR8Vv9HEOa52LfGXGvB4GyYGzo36gSuSC0gXf5QZJm4PJnRKiuMSNrWmuNhQaIbs-IP-M-CvL_P9FqwgNr8V8e4NV11jdsohhnhJS48bT99RKBNjlZc4Wmc9VMLBfk6RtCeOnoLlIhL_7y0MF-Pefw0LGOApf1th5Wwy4h_SWolxeIKAdNgNXupIGpAkTOwvaDR7-z-hhh6zyeid-55v8B7ZU2TyX_AGbEEaR7M0w3zNQlR00xQoAFiYMMp-FXGSqHAQXVZW3jSP3wl3JTDSh9C-utUEFhthJy7uggloFRkSAKBRQD4zjgxlYruW4pgZvOzIJDvgP_rR0W2qQG9jG-erqJQY99QNLH7D1o7aK6cN9wGQOf1PA6n170iPJ4P9P6BOZ81pLhyD0rg4aT_bQCKi6n-mMxGhAzFZVIZJOWM_S8Fpv93hTQX6itZoV_eJ1nsfhCeWizzTra4iYu15nNy7WGg=w446-h428-no?authuser=0"
+            alt=""></a></p>
+    </div>
+
+    <div>
+      <h3>do while silki</h3>
+      <p>Bunda shart bajarilmasa ham amal bir marta bajariladi. Shart ohirida tekshiriladi va shart bajarilmasa sikl
+        ishlashdan to'htaydi</p>
+      <p><a
+          href="https://lh3.googleusercontent.com/vpi6XXtPL_19HhZgrD5LzFXT-Cmfg9NLqZ2_abTD3PWT9c7jrFb4_V9VWkn1EsK_0iUFryzOLuENCg9z3egmYvCZpCABs_dqZ6fFYzGkw8VKGVqh38orEryfiZu9zqyYnHgiClHskSuSfD014nrwUOWsJqt3Ew_t0Zbt2hzT4yItSlfcC0X_s6KdGKkG1SA3OXFIPds1LK3mFnEvZbS46wQHtM6bVbGmU_P6r1tJhg_aIoFV8XX4Vje3zGJduapWAMjepHSekifKUXXo7xY7GAR37U2mc6GTUlbI52v_XRyzbyPDXS5Wgc1e7u_tG_uZt4IQ-6fwVJ_xC5VZoa892Qyy4AxxI2YR-1L4s9d_bZzHZLTW0XOiz1uE47gov46pt0mr_dtOUbAWSUMwwra51QvQkf9qgsC7I5dKBAjWey6jTTJ7G2DKcpOW0RhPkZOMRiJfZ7u3bQ1kfJKQtBEPPZm5PzEU6F0oL3q7JMoMY4OWdWTd5t9dMKBTUnFRLYvFFduobAb_ixGbuyfxfF16NSKj789-fCqGvShTafrhe1t-9BT9cFgQ1WrRWuwfM0JH-d40J7aLszNtSg7UCwoZFk-y8eariSj8xUSf_KTRGi49Iw1cLi0RykEkktMFxZddf_zTcerONvy48oLzCIkU2Bw8MxaIr5rFEGC7X9Ah9Fln1zQC0yPD7LuwRZsu8Y1ZPDsUSutUFEE-pCK4FaHJvh8jN4XFvqWk_OpDhWz_fLPeUYL-s2HFGXd9YxqOqQ=w467-h452-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/vpi6XXtPL_19HhZgrD5LzFXT-Cmfg9NLqZ2_abTD3PWT9c7jrFb4_V9VWkn1EsK_0iUFryzOLuENCg9z3egmYvCZpCABs_dqZ6fFYzGkw8VKGVqh38orEryfiZu9zqyYnHgiClHskSuSfD014nrwUOWsJqt3Ew_t0Zbt2hzT4yItSlfcC0X_s6KdGKkG1SA3OXFIPds1LK3mFnEvZbS46wQHtM6bVbGmU_P6r1tJhg_aIoFV8XX4Vje3zGJduapWAMjepHSekifKUXXo7xY7GAR37U2mc6GTUlbI52v_XRyzbyPDXS5Wgc1e7u_tG_uZt4IQ-6fwVJ_xC5VZoa892Qyy4AxxI2YR-1L4s9d_bZzHZLTW0XOiz1uE47gov46pt0mr_dtOUbAWSUMwwra51QvQkf9qgsC7I5dKBAjWey6jTTJ7G2DKcpOW0RhPkZOMRiJfZ7u3bQ1kfJKQtBEPPZm5PzEU6F0oL3q7JMoMY4OWdWTd5t9dMKBTUnFRLYvFFduobAb_ixGbuyfxfF16NSKj789-fCqGvShTafrhe1t-9BT9cFgQ1WrRWuwfM0JH-d40J7aLszNtSg7UCwoZFk-y8eariSj8xUSf_KTRGi49Iw1cLi0RykEkktMFxZddf_zTcerONvy48oLzCIkU2Bw8MxaIr5rFEGC7X9Ah9Fln1zQC0yPD7LuwRZsu8Y1ZPDsUSutUFEE-pCK4FaHJvh8jN4XFvqWk_OpDhWz_fLPeUYL-s2HFGXd9YxqOqQ=w467-h452-no?authuser=0"
+            alt=""></a></p>
+    </div>
+
+    <div>
+      <h3>for sikli</h3>
+      <p><a
+          href="https://lh3.googleusercontent.com/THePG_6FhWQxWCkcNXxZlqUCpRktqhhP2jX0UIy5SMXXqY6c5fA_A4mJs6Dc5SVxxnAGfKXYZSzveyubKAOlBS9kiOrBDd8RYW8rQBNIrd8Augf2D3bi0I-qzTEXL3wiEst4ejrNUmZXIg_dgBq8RCfgBCdOMEbKAkJUSUr9NRdJsOFa_k9H6FwjvrA8tunr1jOoE2-RzN-4QgzNrMSc6pdOBDN5dRrYragwDHVtpiv6EwZkiWcunAIzoGmuM-aep4Gmtq3vW83XQZLMuMmZsRqjTlz3i1-hO_XH811H-kcvj66wjaibxZ5WCMziSh_bukyofoAVo_ScUt0szfH6tgcuNyhBwJYJDRPw7I25qbq3OLL4vgxgK-mti4EHiKlf-YL4r1UN9VrnTMVXNJMZpkrQUwBOQGifnOMzEyekjpM2TTWNdh1E4QnxPmeGzKMJcK4Qz2bJexdHFfxezr7rTzVX0pyKabYvJJhu8zFrgoIHfYthl7IJ_CLzQVj-PdVyDRNFSpAQwpBRVosW51nGo91tWGhXV-yAjMCFsi4FjrNX6RCpC2a3ZhM90V5JPmaKyveIEAqkboh5fHFBflBktgEwPMlIe4zB_DrgdydOODDSNGNG0ZPK04gjZ0p0RjMEcZ7nVDa2NnsrntbF6Y4qiwwdJjYfb8cK0C6S2R9e7Uihw1cgqxEEGwajpe61UcGkMHqiKGPlMJl1YHVmUCRgT1t9IqkrLLOWi14rPXAqTFhbV_T_QfAUXdlyEgB1YQ=w482-h371-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/THePG_6FhWQxWCkcNXxZlqUCpRktqhhP2jX0UIy5SMXXqY6c5fA_A4mJs6Dc5SVxxnAGfKXYZSzveyubKAOlBS9kiOrBDd8RYW8rQBNIrd8Augf2D3bi0I-qzTEXL3wiEst4ejrNUmZXIg_dgBq8RCfgBCdOMEbKAkJUSUr9NRdJsOFa_k9H6FwjvrA8tunr1jOoE2-RzN-4QgzNrMSc6pdOBDN5dRrYragwDHVtpiv6EwZkiWcunAIzoGmuM-aep4Gmtq3vW83XQZLMuMmZsRqjTlz3i1-hO_XH811H-kcvj66wjaibxZ5WCMziSh_bukyofoAVo_ScUt0szfH6tgcuNyhBwJYJDRPw7I25qbq3OLL4vgxgK-mti4EHiKlf-YL4r1UN9VrnTMVXNJMZpkrQUwBOQGifnOMzEyekjpM2TTWNdh1E4QnxPmeGzKMJcK4Qz2bJexdHFfxezr7rTzVX0pyKabYvJJhu8zFrgoIHfYthl7IJ_CLzQVj-PdVyDRNFSpAQwpBRVosW51nGo91tWGhXV-yAjMCFsi4FjrNX6RCpC2a3ZhM90V5JPmaKyveIEAqkboh5fHFBflBktgEwPMlIe4zB_DrgdydOODDSNGNG0ZPK04gjZ0p0RjMEcZ7nVDa2NnsrntbF6Y4qiwwdJjYfb8cK0C6S2R9e7Uihw1cgqxEEGwajpe61UcGkMHqiKGPlMJl1YHVmUCRgT1t9IqkrLLOWi14rPXAqTFhbV_T_QfAUXdlyEgB1YQ=w482-h371-no?authuser=0"
+            alt=""></a></p>
+      <hr><br>
+      <h4>continue & continue</h4> <br>
+      <p>
+        <b>continue</b> - siklni belgilangan qismini tashlab o'tib ketadi <br>
+        <b>break</b> - siklni to'htatadi
+      </p><br>
+      <p><a
+          href="https://lh3.googleusercontent.com/50YLu5_a0Ki5vgnZ4CCAm5v40b2uewIy6vhRcgYGF9F7mY1Gbnc_yW6rQZOaZ9f0L9rEsvFuAmcmR977W7myNebunKnnKM0wxNm_j459lBZsfG43ghjG6aec0-EkPJs-ULdBlNyAl_03HGPwBqhtBXtCX-fOUg5m8hr1TjB1OD9s7xFub9JDuQABwC-jg9nWSDvyqKLmSoSfbuKx0JhCGuAnOIFVekID8Tvq2kgCK_jhoJiN7RWdukOxGVcjx08bI4k0cKvoEJQ0ukrim8agEssgFzp2wD48QC4PelYKEttVW8xUTT9UoxnrTw8bbDI7MoYankqK4cUg5R-WZIIs913belUOzBzvh6B-q0zvxh7W1rXPunbbEh9nCIS4unyol-DzVApe9Q_inF6Y_tVbA2kDWOaVh1iaBAFWosR9GH5_aP3FB0_fjJ0fLhcWFhicFX2Tkjyesn6VhOZ7NsY64s3qwjs_moiTOPLqCgMMOMoZIhxmHN7HB-F4968-M2r7PPRhl0SawJsmAxlqkugqFZavIMH6rcXv9t-RuRCUuu-wUOz-Y698ucX-7llF7huAT5KHy10IQ1QC_96TceixZ15V0Hh45kcZQvbP6zwGkZyidRehSgMXSR2DSCsKC-s_C_19uBpuUgArPIr_vd3x_IE5Pj1-BImBPrH_BnmHfYnn7YRYxBU19C7howUDpy-K399VlY0kjgIR9RFYDeXs-9bNdiPk-npoMm7ZwwLOPukuXlIkjgbyPlUeTOqw9A=w447-h468-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/50YLu5_a0Ki5vgnZ4CCAm5v40b2uewIy6vhRcgYGF9F7mY1Gbnc_yW6rQZOaZ9f0L9rEsvFuAmcmR977W7myNebunKnnKM0wxNm_j459lBZsfG43ghjG6aec0-EkPJs-ULdBlNyAl_03HGPwBqhtBXtCX-fOUg5m8hr1TjB1OD9s7xFub9JDuQABwC-jg9nWSDvyqKLmSoSfbuKx0JhCGuAnOIFVekID8Tvq2kgCK_jhoJiN7RWdukOxGVcjx08bI4k0cKvoEJQ0ukrim8agEssgFzp2wD48QC4PelYKEttVW8xUTT9UoxnrTw8bbDI7MoYankqK4cUg5R-WZIIs913belUOzBzvh6B-q0zvxh7W1rXPunbbEh9nCIS4unyol-DzVApe9Q_inF6Y_tVbA2kDWOaVh1iaBAFWosR9GH5_aP3FB0_fjJ0fLhcWFhicFX2Tkjyesn6VhOZ7NsY64s3qwjs_moiTOPLqCgMMOMoZIhxmHN7HB-F4968-M2r7PPRhl0SawJsmAxlqkugqFZavIMH6rcXv9t-RuRCUuu-wUOz-Y698ucX-7llF7huAT5KHy10IQ1QC_96TceixZ15V0Hh45kcZQvbP6zwGkZyidRehSgMXSR2DSCsKC-s_C_19uBpuUgArPIr_vd3x_IE5Pj1-BImBPrH_BnmHfYnn7YRYxBU19C7howUDpy-K399VlY0kjgIR9RFYDeXs-9bNdiPk-npoMm7ZwwLOPukuXlIkjgbyPlUeTOqw9A=w447-h468-no?authuser=0"
+            alt=""></a></p>
+    </div>
+  </div>
+
+  <div>
+    <h3>15-dars. Amaliyot. Uyga vazifa. Tsikl</h3>
+    <p><a
+        href="https://lh3.googleusercontent.com/nWTXEczH4CE-zXyVc0bPyR-31YB1fMFYKsYYKXJD0E-luJAeAVrDDIfRntyvMmsITLOrTDInXolaNVdsImpbCTqvmnL_81wwqrJDArkiyZX3cAkuWQNAyrPMgCTFvMPd2Wf_P_SVLLAX9TO6NFWtX_Kk-n6xAUy6rrKxy8P0mnNp6-nwdLPklLDDpnoTI53aQ8shAx7PQ6umWrfboYyT07KawG8UlZkCSIIRlZHEJgrvZtVJKtpvVFZpi-wMDZbfgrs5Yhjz_VKS46ghH5TO41Ob42G_09G8DyImFf9kKRYJA5ws-4ANB4W7wty24R19HxHx3YV547jmnzHDHyqxCV0xLG56Fn58ljFhtmRqweECVVk0aA1NCGqMnMpz_euNrLDh5HqnaqoQiL-PJ4lqHOJpAu4HgW55I2wSMSv3tl5mhXgnq6puef41nvY1cyzMDSFpBI_07HLluOGUo-nGCerSgZy7cg_DAm5QSx5fuKeNq5PF8i_1BUvwG22GyDNaWjeZQeplgLL4u7e9TcY_1uUXA2Tue6qDauwrojB_vSjKkbUdCp9u2tLBSaOY-qBTYDVfXx2Tw4-nZiDiPPAIzfI24ON6TuL2Z22qelEDgauR6h8crzH5FTv6CAW_qnLGrHtoMyiHHQ2lHJkCL8QyWzcAZ7Gucm4CaBvumM9Xdj8eK3PBBR79lUP97VXidnxfTQ9aXR-1kp1cUNGpqDDbW0wUyJdDTYHjLtnLWns5O2GywRnTzZhk8rWamlA83A=w1392-h578-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/nWTXEczH4CE-zXyVc0bPyR-31YB1fMFYKsYYKXJD0E-luJAeAVrDDIfRntyvMmsITLOrTDInXolaNVdsImpbCTqvmnL_81wwqrJDArkiyZX3cAkuWQNAyrPMgCTFvMPd2Wf_P_SVLLAX9TO6NFWtX_Kk-n6xAUy6rrKxy8P0mnNp6-nwdLPklLDDpnoTI53aQ8shAx7PQ6umWrfboYyT07KawG8UlZkCSIIRlZHEJgrvZtVJKtpvVFZpi-wMDZbfgrs5Yhjz_VKS46ghH5TO41Ob42G_09G8DyImFf9kKRYJA5ws-4ANB4W7wty24R19HxHx3YV547jmnzHDHyqxCV0xLG56Fn58ljFhtmRqweECVVk0aA1NCGqMnMpz_euNrLDh5HqnaqoQiL-PJ4lqHOJpAu4HgW55I2wSMSv3tl5mhXgnq6puef41nvY1cyzMDSFpBI_07HLluOGUo-nGCerSgZy7cg_DAm5QSx5fuKeNq5PF8i_1BUvwG22GyDNaWjeZQeplgLL4u7e9TcY_1uUXA2Tue6qDauwrojB_vSjKkbUdCp9u2tLBSaOY-qBTYDVfXx2Tw4-nZiDiPPAIzfI24ON6TuL2Z22qelEDgauR6h8crzH5FTv6CAW_qnLGrHtoMyiHHQ2lHJkCL8QyWzcAZ7Gucm4CaBvumM9Xdj8eK3PBBR79lUP97VXidnxfTQ9aXR-1kp1cUNGpqDDbW0wUyJdDTYHjLtnLWns5O2GywRnTzZhk8rWamlA83A=w1392-h578-no?authuser=0"
+          alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>function</h3>
+    <div>
+      <h3>function decloration</h3><br>
+      <p>Funksiyani o'zidan oldin chaqirsa hatolik bo'lmaydi</p>
+      <p><a
+          href="https://lh3.googleusercontent.com/-gCArvQV0ojxxJ-UaOhXdC0S6cRFGay-UJLq5-FEcbxNuxU9TwJzvcw3gl3jEzQlHozh8B8IBsU-lxSVlaPi5ynUpiAIScxVNuPzVNr7-FZCicaw6nwm_Ggiqtjms1BvTTbXvOS7LIp3fMVL_2lxa_2oLPq1sycMmVpEPKKRPIxCMWwkrvS1PTKyrmnHK0Mp4QZXhYkspfLZ-cT-8bvkNCTMc3BaygU33KRgh2vuCXW_He8HhXaiuHjAbpCSUxFeZv2bC4vGOuzWNR2Im119lthxRHF1XkKDremjBuxetBhtIPWVtoBQFV3mn5NK5RWOj5ix-Hp1GJGpgp9Zc0jAjJ5zov5NSYHI6RnlwoQYHbMy4rCF14eCNMAAUqqhazqn0-0F_FHeUDdV_nl7WNdW2uoZUeGAyYBoV9D2c8hTpoy7yg9aTc8sMTOXT-jyDkWVkupWDvk3KCzvQPV0Z_EOC4ZgKgLVu667I8TopRS5yxfVYYNZDSWeG7DwpMkxmh7x9odT297FLZTBk8vJygHZbjpyWAKjmif2Kr_xPInpbBS5UXjNS5PUnTVSzF8u9-8CRavEFSeZ_cGGQpP42eGxFeOISMeDQgzVFu0fq0hY5EFWW3eXAauxpm84k-d8oX-V8QBgU404YzDVaCiLM2wEnyzOSbJAeQDylgy5r1AR2xOpMvP0chB4lWXCyB9iF68J0hNapqSuwacfOh0638FylvherdCaNT99LO7ql-bBnBr4FrS1gZHhMf9wF4TDWQ=w230-h120-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/-gCArvQV0ojxxJ-UaOhXdC0S6cRFGay-UJLq5-FEcbxNuxU9TwJzvcw3gl3jEzQlHozh8B8IBsU-lxSVlaPi5ynUpiAIScxVNuPzVNr7-FZCicaw6nwm_Ggiqtjms1BvTTbXvOS7LIp3fMVL_2lxa_2oLPq1sycMmVpEPKKRPIxCMWwkrvS1PTKyrmnHK0Mp4QZXhYkspfLZ-cT-8bvkNCTMc3BaygU33KRgh2vuCXW_He8HhXaiuHjAbpCSUxFeZv2bC4vGOuzWNR2Im119lthxRHF1XkKDremjBuxetBhtIPWVtoBQFV3mn5NK5RWOj5ix-Hp1GJGpgp9Zc0jAjJ5zov5NSYHI6RnlwoQYHbMy4rCF14eCNMAAUqqhazqn0-0F_FHeUDdV_nl7WNdW2uoZUeGAyYBoV9D2c8hTpoy7yg9aTc8sMTOXT-jyDkWVkupWDvk3KCzvQPV0Z_EOC4ZgKgLVu667I8TopRS5yxfVYYNZDSWeG7DwpMkxmh7x9odT297FLZTBk8vJygHZbjpyWAKjmif2Kr_xPInpbBS5UXjNS5PUnTVSzF8u9-8CRavEFSeZ_cGGQpP42eGxFeOISMeDQgzVFu0fq0hY5EFWW3eXAauxpm84k-d8oX-V8QBgU404YzDVaCiLM2wEnyzOSbJAeQDylgy5r1AR2xOpMvP0chB4lWXCyB9iF68J0hNapqSuwacfOh0638FylvherdCaNT99LO7ql-bBnBr4FrS1gZHhMf9wF4TDWQ=w230-h120-no?authuser=0"
+            alt=""></a></p>
+    </div>
+    <div>
+      <h3>function expression</h3><br>
+      <p>Funksiyani o'zidan oldin chaqirib bo'lmaydi</p>
+      <p><a
+          href="https://lh3.googleusercontent.com/O0sDPYQItjrxlq2UlAwN_7OBD6WY-avX-L_msvSzQnN0TbLDy6feliWuRCvzXS-sDaNSKGlCmWPZakN4xReogjrfWsmlEaov_qaMJT4Ib_A6bn5jL4d_9zIugcY9hHjLI55aEdwE-UDD2NSVGnKC7H1mAIVnQHtZ0_saPiNxCSDjNhHMn_5lXeg0c_-t8Aghco_WKSuNREELGey5w0BAjDDynb8_SgNsg9m6jYNP9XhtCNGVJrcdLdkDX68JLVOV0TUs6PFVgSek87VZ3xRQQ5yNZVrgAiYb4en_DAoff-f9X3l2lvO15v4nd_vQc93WHYG_xata5YJRqtCCkmTSCHO-s7q_POtSrQmLtQJl6vwt7WlzgtzjrXSPcXlX622XJIARu_07ai7rc0HGd4mafw9V4YGrxYgfX4L8cB-iPPjPvfdYup0Z2R2VKTa-pfNErXN5dj0WfQ1_8JHBTYl16dP_KD4vaYd_LGLyzsBBEzVM8hwtM-3mO_S_tnSgaY8wN5ZfTkyEQridVYYj6be4ar2cXjSnBZbTwfF0YYdpDFVpZdR7pNPQL5Pd5kKfeAAz1qgyc33sAdJWY7wbkdXiTPsrdNypy1Br_es1w78K9Cgg7xgZlftws8mhzql3tY0_w5MwESo0cj2fzbSGX3kIO-z6Jh0GaG0aHLThwfjsoprQZaxe_fQZnGq-uC-S1mGIHX9lDlLgiZ2tDlJd7BfREur65w-VfIJm-JQFsVcqwHYV_KtNwey0Xujmr7XZvQ=w239-h113-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/O0sDPYQItjrxlq2UlAwN_7OBD6WY-avX-L_msvSzQnN0TbLDy6feliWuRCvzXS-sDaNSKGlCmWPZakN4xReogjrfWsmlEaov_qaMJT4Ib_A6bn5jL4d_9zIugcY9hHjLI55aEdwE-UDD2NSVGnKC7H1mAIVnQHtZ0_saPiNxCSDjNhHMn_5lXeg0c_-t8Aghco_WKSuNREELGey5w0BAjDDynb8_SgNsg9m6jYNP9XhtCNGVJrcdLdkDX68JLVOV0TUs6PFVgSek87VZ3xRQQ5yNZVrgAiYb4en_DAoff-f9X3l2lvO15v4nd_vQc93WHYG_xata5YJRqtCCkmTSCHO-s7q_POtSrQmLtQJl6vwt7WlzgtzjrXSPcXlX622XJIARu_07ai7rc0HGd4mafw9V4YGrxYgfX4L8cB-iPPjPvfdYup0Z2R2VKTa-pfNErXN5dj0WfQ1_8JHBTYl16dP_KD4vaYd_LGLyzsBBEzVM8hwtM-3mO_S_tnSgaY8wN5ZfTkyEQridVYYj6be4ar2cXjSnBZbTwfF0YYdpDFVpZdR7pNPQL5Pd5kKfeAAz1qgyc33sAdJWY7wbkdXiTPsrdNypy1Br_es1w78K9Cgg7xgZlftws8mhzql3tY0_w5MwESo0cj2fzbSGX3kIO-z6Jh0GaG0aHLThwfjsoprQZaxe_fQZnGq-uC-S1mGIHX9lDlLgiZ2tDlJd7BfREur65w-VfIJm-JQFsVcqwHYV_KtNwey0Xujmr7XZvQ=w239-h113-no?authuser=0"
+            alt=""></a></p>
+    </div>
+
+    <div>
+      <h3>arrow function</h3>
+      <br>
+      <p>Funksiyani o'zidan oldin chaqirib bo'lmaydi</p>
+      <p><a
+          href="https://lh3.googleusercontent.com/N4bujUgK7tv5O9unRvBDPDSHZEpTRA4L-QCxmSF3puWGnpxZMWewSltCxp7AZS-TkLg1dxbgWT68FSlf230R2mSD_BTe0SMil4uTG6oiIb1LAjEI99lOxeMIzYUelXa3HZXAc-M8wDLGMrf3JD0ksYQIe5g073pTXTFoKCgGpCuPLRWR_04KxpVTaVE1igMtLwDBi7xrKZiJSKblKqn70MBIqzrKJ6rvNEtO2J4WNtn9ezB5wX6Dr1fx7jHYSp1K-u2lfv9Vl2iCh7UC2USuQcLO5P9SuKrfriKz3smg_TTcdKmZktszmpF7JKCIcFI2wEVHIgrHKZCoDuG09lbHnPDy982SehPDJwB060yTgAA2xz7erQ1Sd7NrupRmDyJT1qreJZlYvBrkZlpYtn7Nve28TQskwsyw5hIW0oqw9ZhHEwcxOLi-gjDah70UWNko0bL-pgEuWZ8HLvCCBQAk26DLNLneRCPBZT0DHjZP6UAQQ-j_wwgkKiJfY2T_GDH9EXSCklRcHFkAJT0tGhSmTTBOKnodHL7kTAMjNyboeXj4trDc4fBskNGuNFqKuvJVFG1geuYin0qu9gEa9DJdg0cWPkI2VYdNPMWxnZESU6AauciIh8iEyLe6vplmggPpDUElrDpxxz_-ruF4hY15u-UPXyvkV7v7rBdl5GcjxAUmhEP3Um1-QAnEBRC6NAXUx6SVamJdLu6CGRlZ-P2ZPtFr6dgglvdw4iAFPULnufebn10SfGxz5CdvKGRRkA=w273-h81-no?authuser=0"><img
+            src="https://lh3.googleusercontent.com/N4bujUgK7tv5O9unRvBDPDSHZEpTRA4L-QCxmSF3puWGnpxZMWewSltCxp7AZS-TkLg1dxbgWT68FSlf230R2mSD_BTe0SMil4uTG6oiIb1LAjEI99lOxeMIzYUelXa3HZXAc-M8wDLGMrf3JD0ksYQIe5g073pTXTFoKCgGpCuPLRWR_04KxpVTaVE1igMtLwDBi7xrKZiJSKblKqn70MBIqzrKJ6rvNEtO2J4WNtn9ezB5wX6Dr1fx7jHYSp1K-u2lfv9Vl2iCh7UC2USuQcLO5P9SuKrfriKz3smg_TTcdKmZktszmpF7JKCIcFI2wEVHIgrHKZCoDuG09lbHnPDy982SehPDJwB060yTgAA2xz7erQ1Sd7NrupRmDyJT1qreJZlYvBrkZlpYtn7Nve28TQskwsyw5hIW0oqw9ZhHEwcxOLi-gjDah70UWNko0bL-pgEuWZ8HLvCCBQAk26DLNLneRCPBZT0DHjZP6UAQQ-j_wwgkKiJfY2T_GDH9EXSCklRcHFkAJT0tGhSmTTBOKnodHL7kTAMjNyboeXj4trDc4fBskNGuNFqKuvJVFG1geuYin0qu9gEa9DJdg0cWPkI2VYdNPMWxnZESU6AauciIh8iEyLe6vplmggPpDUElrDpxxz_-ruF4hY15u-UPXyvkV7v7rBdl5GcjxAUmhEP3Um1-QAnEBRC6NAXUx6SVamJdLu6CGRlZ-P2ZPtFr6dgglvdw4iAFPULnufebn10SfGxz5CdvKGRRkA=w273-h81-no?authuser=0"
+            alt=""></a></p>
+    </div>
+  </div>
+
+  <div>
+    <h3>metodlar / method</h3>
+    <div>
+      <h3>string metodlar</h3>
+      <p>
+        1. <b>toUpperCase()</b> - katta harfga o'zgartiradi <br>
+        2. <b>toLowerCase()</b> - kichik harfga o'tkazadi <br>
+        3. <b>indexOf()</b> - indeksini qabul qiladi. Yo'q ma'lumot qidirilsa <b>-1</b> qaytaradi<br>
+        4. <b>slice(x, y)</b> - ma'lumotni kesai. <b>x</b> dan <b>y</b> gacha bo'lganni oladi. Agar argumenti bitta
+        bo'lsa argumentgacha bo'lganni kesib qolganini qaytaradi <br>
+        5. <b>substring(x, y)</b> - slice bilan bir xil, faqat manfiy qiymat qabul qilmaydi <br>
+        6. <b>substr(x, y)</b> - <b>x</b> dagi indeksdan boshlab <b>y</b> ta bo'lgan ma'lumotni qabul qiladi
+      </p>
+    </div>
+
+    <div>
+      <h3>number metodlar</h3>
+      <p>
+        1. <b>Math.round(x)</b> - eng yaqin butun sonni qabul qiladi <br>
+        2. <b>parseInt(x)</b> - ma'lumot turini <b>string</b>dan <b>number</b>ga o'zgartiradi va sonning butun qismini
+        oladi. parseInt("13.8px") = 13 <br>
+        3. <b>parseFloat</b> - ma'lumot turini <b>string</b>dan <b>number</b>ga o'zgartiradi va son qismini oladi.
+        parseFloat("13.8px") = 13.8 <br>
+        4. <b>Date.parse(<i>date</i>)</b> - millisekundga o'tkazadi <br>
+        5. <b>Math.floor(x)</b> - sonning butun qismini chiqaradi <br>
+        6. <b>toFixed()</b> - sonning qoldiq qismini qanchadir qismini ko'rsatadi. <br>
+        M.: <b>console.log(12.3456789.toFixed(2));</b> 12.34 ni qabul qiladi <br>
+        7. <b>Math.ceil()</b> - M.: Math.ceil(4.1) = 5
+      </p>
+    </div>
+
+    <div>
+      <div>
+        <h3>obyekt metodlar | object methods</h3> <br>
+        <p>
+          delete | Object.keys() | for in | destruptizatsiya
+        </p>
+      </div><br>
+      1. <b>delete</b> - obyektdan ma'lumotni o'chirish <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/EiK4rRxe_hk6KkeQHZbq1rvSwgzImlURKHvE45ASWxaV42Oj00R9YjLfMO1P3As59KPjCV0W9Riho6L6iYob2D13RKodhvJZDUnRQeh9fkH9qV6WfemuVo_TrrW8rOTZ2YbqxevmjGRPmbxKFBckaOb0enYpblnPrJ3JdtqEsnNjbo5jP_ENOC7QgCT4GS9y_UdfLKMj895j33q1qfTnYHD601Xx_XrcjuMzmds_c1WNifS49ZdNRDSPUvUXG2DnaEKZ70cx5sP3EB-4u3momcY-i_MH4uoqYte3PYPiiMM1m01bTYsyKl8z4PXOgCA3SUunUzLyKRN4PYvrCiQhBmGJPimmG-6ryRII32p2ikFWHmueUdCJxpCOIjWE1MksxkVfv_Qr60nrHAwBrwAlWyuciYRK6IaeGw0a2U-tWHgc9CcoE_MfYyVDrCYS3Zr8ObRUdo-9dhdjEWdnI480HdtfOVu6FDlNzm-S94MkAjwG4YEkXZwtAMZIwh_40ASobDdYixHR8jyplvX5ZUW4ADg-99eB4XtSG6Tm1ZBe5vGxGajGqn_-kRhFgA25blSt07-voCnAp3znPiO4DXJf7So7uLDQUe9FI5muCU0MlW1n0VJ01hZcCWUCw9THOIoZ06fblIvYDf6m2pZYVU3fus4iUGuanYdwDO3MwxDG2EzHY1SgBil3oDpuO7h4NSXP2Ll70WWQCAxXpcxOg1uMl0J1CzpdEjLLlOL7OMPkUI9BCNsd-TeSbE0g1g1fFw=w488-h405-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/EiK4rRxe_hk6KkeQHZbq1rvSwgzImlURKHvE45ASWxaV42Oj00R9YjLfMO1P3As59KPjCV0W9Riho6L6iYob2D13RKodhvJZDUnRQeh9fkH9qV6WfemuVo_TrrW8rOTZ2YbqxevmjGRPmbxKFBckaOb0enYpblnPrJ3JdtqEsnNjbo5jP_ENOC7QgCT4GS9y_UdfLKMj895j33q1qfTnYHD601Xx_XrcjuMzmds_c1WNifS49ZdNRDSPUvUXG2DnaEKZ70cx5sP3EB-4u3momcY-i_MH4uoqYte3PYPiiMM1m01bTYsyKl8z4PXOgCA3SUunUzLyKRN4PYvrCiQhBmGJPimmG-6ryRII32p2ikFWHmueUdCJxpCOIjWE1MksxkVfv_Qr60nrHAwBrwAlWyuciYRK6IaeGw0a2U-tWHgc9CcoE_MfYyVDrCYS3Zr8ObRUdo-9dhdjEWdnI480HdtfOVu6FDlNzm-S94MkAjwG4YEkXZwtAMZIwh_40ASobDdYixHR8jyplvX5ZUW4ADg-99eB4XtSG6Tm1ZBe5vGxGajGqn_-kRhFgA25blSt07-voCnAp3znPiO4DXJf7So7uLDQUe9FI5muCU0MlW1n0VJ01hZcCWUCw9THOIoZ06fblIvYDf6m2pZYVU3fus4iUGuanYdwDO3MwxDG2EzHY1SgBil3oDpuO7h4NSXP2Ll70WWQCAxXpcxOg1uMl0J1CzpdEjLLlOL7OMPkUI9BCNsd-TeSbE0g1g1fFw=w488-h405-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      2. <b>Object.keys()</b> - Obyektni kalitlarini (keys) massiv ko'rinishida qaytaradi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/CBmQQyLcqbynTtlHxygXjX3fY0xniWpX4LQkIDL_vgKB3MxkcNhsAAlddfSsZ_6cqsrBSGaVQ8TJGJwXftHak2b_VrPdz0eNchOkC6Ft9bVaPk51R0ivMJufwd1Epgeiy-nuRvD7DaeUfAkZ-nDTFvIdJtukjn-tPkdlnTTSl2_oRLMmhK7-g1853XPp3XtXwlSqYVpR1-oaa0-AxckNavyAHZ3p2pSpUnkCYBMaaGCvpkfjErw4ThkrHui9bOsQ2x71eRFVXm3FwhShv7lmI-E8yyfSr-4cWPOCmhm-nOm8L9wcw7qNarr7Cah5CnU7sw1llTvf18rOWiDgC7KmrI_nKZFTs__4ZpBNYeDYr1n81g3xopGke3_osZNE4rzCBQPtEP7rRrShHVI5FF-nsLn3FxyuheBWXS93rLaN1ktI6FSKv7MVFany2L8r_o_Geff7IkmuFiHLAhANMNtAh4r7K_uN8-oUBlThbCc9s_eQmWorLbbuwROEUYFOmLe9NKV9a9Bb4VYLZoWSacz0cvmlBEqpH8BDEZJDnLHYc9ca5DbFkgOZTMr0eBnACnECh-BPH99_gPADY4DbwywtP0feiP5jzfkvyAPCUs_oswE_yPsIOKEwnXLzVcctXNas19wvyWD8CYUDpY9vueq1kZg3ScsEXO4gb3jfWYyoQoCr31zqEfVv-XAyvfgap_hKwCbJpLajAgwm7Sh4nUTNBJXXxIZ6AvswB787Vt59wyPJzasW3orDxsgE94sIIA=w459-h348-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/CBmQQyLcqbynTtlHxygXjX3fY0xniWpX4LQkIDL_vgKB3MxkcNhsAAlddfSsZ_6cqsrBSGaVQ8TJGJwXftHak2b_VrPdz0eNchOkC6Ft9bVaPk51R0ivMJufwd1Epgeiy-nuRvD7DaeUfAkZ-nDTFvIdJtukjn-tPkdlnTTSl2_oRLMmhK7-g1853XPp3XtXwlSqYVpR1-oaa0-AxckNavyAHZ3p2pSpUnkCYBMaaGCvpkfjErw4ThkrHui9bOsQ2x71eRFVXm3FwhShv7lmI-E8yyfSr-4cWPOCmhm-nOm8L9wcw7qNarr7Cah5CnU7sw1llTvf18rOWiDgC7KmrI_nKZFTs__4ZpBNYeDYr1n81g3xopGke3_osZNE4rzCBQPtEP7rRrShHVI5FF-nsLn3FxyuheBWXS93rLaN1ktI6FSKv7MVFany2L8r_o_Geff7IkmuFiHLAhANMNtAh4r7K_uN8-oUBlThbCc9s_eQmWorLbbuwROEUYFOmLe9NKV9a9Bb4VYLZoWSacz0cvmlBEqpH8BDEZJDnLHYc9ca5DbFkgOZTMr0eBnACnECh-BPH99_gPADY4DbwywtP0feiP5jzfkvyAPCUs_oswE_yPsIOKEwnXLzVcctXNas19wvyWD8CYUDpY9vueq1kZg3ScsEXO4gb3jfWYyoQoCr31zqEfVv-XAyvfgap_hKwCbJpLajAgwm7Sh4nUTNBJXXxIZ6AvswB787Vt59wyPJzasW3orDxsgE94sIIA=w459-h348-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      Obyekt ma'lumotlarini olishni yana bir usuli <br>
+      <a
+        href="https://lh3.googleusercontent.com/i1maCCyKpPvYMLBaziCwN3yt53KGVmkdWbzmwVyYzMh129mUIYNMTzpPVci4F8TSa-VxYLeSpL8w83Db5zJmeHU1-ow1Rp3jX1kiX7yi3N2NQfWfRhzojIi3ch7BIJP2-yQ9PP_szojbf2UCpb0fg22qGf_0wdl3Z43b_aPw6e2lYegEgfWuqJQ6qovDh5QL_AybJqPnDJckFLKRd0l_fpxWHHBpsUU97sarpGMIUBLPxA-WkrAHY9dAannoIY-gopLy_HQRxH6Y7e5BTYsA2UGQ5lxSuS3I-MPObMznwGK1G7Zc7Xyf_GktQZfHfvwzdHdHtQzhRNPEVwYnRiFRn--7M053GOGdYs_gTnCj0KZeQBkJY7xdIrpwS8sfneawychR6Rb-EjZ_HWVLD6rhaol_JcHIJEi4T29bE1rNlJTMJ5s4tBzUiJJzgnVx-5LVwxg5Csur9iP4dcC-LHwSOKUskRQ9fi_uWxM3IoH_qe1kRwZ15oFbDwQOfQxxfp5lPGCdQHKGDAdoyZpjYBJhJ3I9Z7vTRyi3cTqfYm2Flcn0W5QmBn6-dj2229_n8pv81w2Ulf0wqmd7HBGY0nibER6aCnkF4WdqKCBioeUlwUNbAhtuiqg601lFOlAfYgV1dzmS-Cqd66YrDZgNVSJPC9ZR42J5-G7VwGlPeNmVqIjO6EPZaObJTQr5xcD0EyOho5Z4cLHfuE_m2ETbUUX61rSSoTZDTrDvxqjEaA-G0Vyg0N-PlDEw4FEfjMItfg=w546-h341-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/i1maCCyKpPvYMLBaziCwN3yt53KGVmkdWbzmwVyYzMh129mUIYNMTzpPVci4F8TSa-VxYLeSpL8w83Db5zJmeHU1-ow1Rp3jX1kiX7yi3N2NQfWfRhzojIi3ch7BIJP2-yQ9PP_szojbf2UCpb0fg22qGf_0wdl3Z43b_aPw6e2lYegEgfWuqJQ6qovDh5QL_AybJqPnDJckFLKRd0l_fpxWHHBpsUU97sarpGMIUBLPxA-WkrAHY9dAannoIY-gopLy_HQRxH6Y7e5BTYsA2UGQ5lxSuS3I-MPObMznwGK1G7Zc7Xyf_GktQZfHfvwzdHdHtQzhRNPEVwYnRiFRn--7M053GOGdYs_gTnCj0KZeQBkJY7xdIrpwS8sfneawychR6Rb-EjZ_HWVLD6rhaol_JcHIJEi4T29bE1rNlJTMJ5s4tBzUiJJzgnVx-5LVwxg5Csur9iP4dcC-LHwSOKUskRQ9fi_uWxM3IoH_qe1kRwZ15oFbDwQOfQxxfp5lPGCdQHKGDAdoyZpjYBJhJ3I9Z7vTRyi3cTqfYm2Flcn0W5QmBn6-dj2229_n8pv81w2Ulf0wqmd7HBGY0nibER6aCnkF4WdqKCBioeUlwUNbAhtuiqg601lFOlAfYgV1dzmS-Cqd66YrDZgNVSJPC9ZR42J5-G7VwGlPeNmVqIjO6EPZaObJTQr5xcD0EyOho5Z4cLHfuE_m2ETbUUX61rSSoTZDTrDvxqjEaA-G0Vyg0N-PlDEw4FEfjMItfg=w546-h341-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      3. <b>for in</b> - obyektlarni kalitlari (keys) va qiymatlari (value) ustida ishlash uchun <br><br>
+
+      <a
+        href="https://lh3.googleusercontent.com/bBflSIWiDpODjrgguKioMX0w5gu_NKqdKOxHU51_Uf9djl76L5AZrRSDHzBIRys_jcHjbch9dY1O6tlJEVfgws7MINvPzVrhJn7cVb7oJNds6W8b8d5sNhS6Vu9m26fDmfqYzmzUFwl1ap7nhHjs62hrClOpRe1J6QzL3J18InAGYRnm68L7Nvl0hlD24UmxJXdjpDmwMafyKLsi9jebTUUCkG1fst94goLh_PADhO8LWED5gOvBCfn95e_bxiQUsVDQMtPotSmEWNoxZefRWloUt8qaJh5ysgGZU9g9arrScMcxz7gwwVG40yU72LemP3d-yDUG-ygYqVsNWyMzWuSd_N280dwYGjm_9LLkCfgMRy9ojpZaxxexS_9ni3yKyRF7Y5nUMPACYeVa-TP5ssnZFwzi_znwRYOlkv2vE7sa_O1JSlt6vIP_vPATfqmZaetfGe5eMMUACagTDMt0_-2cRed90kVMg_0MbPusFDsz_JTs1Ack4Pr5vD65vEAga7zfWcBIuzRAJQiro6gFFSq7dG1s_zSwSygdDewvcLq8s4FElQZP0hp1UrsFvtEzaJs_EArNBlrrtic468n4acEID7_z8RAtPJJ-r1m8xzXq06K6DCHf5uzan000bhb_gu7AiqyOvUuXnHVj-cZn6uG4QSdQp3FHZ3ESShlEOy26rSFoczAwUAIXMaPZwzNkaSHCCi2D0TY7g4PbyVDaeAhRDIixs3K-cCd4-8aRlM60dFGCHuvCgVNN127b2Q=w502-h425-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/bBflSIWiDpODjrgguKioMX0w5gu_NKqdKOxHU51_Uf9djl76L5AZrRSDHzBIRys_jcHjbch9dY1O6tlJEVfgws7MINvPzVrhJn7cVb7oJNds6W8b8d5sNhS6Vu9m26fDmfqYzmzUFwl1ap7nhHjs62hrClOpRe1J6QzL3J18InAGYRnm68L7Nvl0hlD24UmxJXdjpDmwMafyKLsi9jebTUUCkG1fst94goLh_PADhO8LWED5gOvBCfn95e_bxiQUsVDQMtPotSmEWNoxZefRWloUt8qaJh5ysgGZU9g9arrScMcxz7gwwVG40yU72LemP3d-yDUG-ygYqVsNWyMzWuSd_N280dwYGjm_9LLkCfgMRy9ojpZaxxexS_9ni3yKyRF7Y5nUMPACYeVa-TP5ssnZFwzi_znwRYOlkv2vE7sa_O1JSlt6vIP_vPATfqmZaetfGe5eMMUACagTDMt0_-2cRed90kVMg_0MbPusFDsz_JTs1Ack4Pr5vD65vEAga7zfWcBIuzRAJQiro6gFFSq7dG1s_zSwSygdDewvcLq8s4FElQZP0hp1UrsFvtEzaJs_EArNBlrrtic468n4acEID7_z8RAtPJJ-r1m8xzXq06K6DCHf5uzan000bhb_gu7AiqyOvUuXnHVj-cZn6uG4QSdQp3FHZ3ESShlEOy26rSFoczAwUAIXMaPZwzNkaSHCCi2D0TY7g4PbyVDaeAhRDIixs3K-cCd4-8aRlM60dFGCHuvCgVNN127b2Q=w502-h425-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      <b>for in</b> orqali obyekt ichidagi obyekt ma'lumotlarini chiqarish <br>
+      <a
+        href="https://lh3.googleusercontent.com/WtL-ByN4eWILdW4eoxb4CBoU-c9SqRHR5VaZbp9x0ZV11MFUi6xxM3Q-8Xxf-C5qkQK1TrbIRO-Dt-tl8XhhLwRbmv1vPPQuLUDDJ5AF7cDusAAL_JxecMl7mtFUQ2IAbb0WVprHdIcZiI5_bRReNW9PfCZ0R66aN8vNUSDQBmTVYE9SDh-YpbPJJh_HDSirebPgMNt62IB0jd3pm0UIF8_Rd8T6r9-AbMv3YQ_jgh4Wlw-HPmYTMmOc3HmZIiz1SDRdvkloplbnJA-7mYcVLQD-Ak12OoFKbs629PTQnySV1vgD6TcEYKgOILQgSy2X_zrepe1-1I-etB-KXMUyQTvv6st9J0n0Ir8__97jJchS-xD5XTndvJM1vcd3ra-2NGU_qdeFuaS50mpg1ZUp1T5hog_FaHTGTsgropTf-YWOERG4T4H-DOdt8r4ovZ2-rY_1oF_3hSpXtenmsgUZpV3wTv9iGn3i7EkQ22MFQpln3JxpnGCMCeCkM3p4BZJw8y3GvQYunYFbDMryJb5Sfo0N1MHEXh1xWij2LZE6qFGIDs4JY8lMIlSF5TuGYxiBhxxKpOKae1SWaO-swOq8Yw9OqhMo2FaqAjlq4QCYI9g-fKFWK9ViBPYEBEgqjwpUBqcQ9UDFJIpQX0vlz_PKY0u2FYeQXs1ESDv8PE-ePokvfVSDu3pdAYdKvN-iOUZHCGYLiS2GHKS86XufIl_8IdWxeyi-CR5GbrshEjJjZ4e-TdhCRWkoqISZ_3ny3g=w471-h557-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/WtL-ByN4eWILdW4eoxb4CBoU-c9SqRHR5VaZbp9x0ZV11MFUi6xxM3Q-8Xxf-C5qkQK1TrbIRO-Dt-tl8XhhLwRbmv1vPPQuLUDDJ5AF7cDusAAL_JxecMl7mtFUQ2IAbb0WVprHdIcZiI5_bRReNW9PfCZ0R66aN8vNUSDQBmTVYE9SDh-YpbPJJh_HDSirebPgMNt62IB0jd3pm0UIF8_Rd8T6r9-AbMv3YQ_jgh4Wlw-HPmYTMmOc3HmZIiz1SDRdvkloplbnJA-7mYcVLQD-Ak12OoFKbs629PTQnySV1vgD6TcEYKgOILQgSy2X_zrepe1-1I-etB-KXMUyQTvv6st9J0n0Ir8__97jJchS-xD5XTndvJM1vcd3ra-2NGU_qdeFuaS50mpg1ZUp1T5hog_FaHTGTsgropTf-YWOERG4T4H-DOdt8r4ovZ2-rY_1oF_3hSpXtenmsgUZpV3wTv9iGn3i7EkQ22MFQpln3JxpnGCMCeCkM3p4BZJw8y3GvQYunYFbDMryJb5Sfo0N1MHEXh1xWij2LZE6qFGIDs4JY8lMIlSF5TuGYxiBhxxKpOKae1SWaO-swOq8Yw9OqhMo2FaqAjlq4QCYI9g-fKFWK9ViBPYEBEgqjwpUBqcQ9UDFJIpQX0vlz_PKY0u2FYeQXs1ESDv8PE-ePokvfVSDu3pdAYdKvN-iOUZHCGYLiS2GHKS86XufIl_8IdWxeyi-CR5GbrshEjJjZ4e-TdhCRWkoqISZ_3ny3g=w471-h557-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      4. <b>destruptizatsiya</b> - obyekt ma'lumotlarini o'zgaruvchi va const ga saqlashni oson usuli. Nomlari
+      obyektdagi ma'lumot bilan bir xil bo'lishi kerak <br>
+      <a
+        href="https://lh3.googleusercontent.com/qtJs6rwKoKDnEfzdOFQtSphNJHlczJFFHzovxG9VJIuHl78HoQXOVQQ4X0QURGuXm6N0Fehsbvno4z8u63Xp4IZhBhN1zcen_MDnKWhh-SrWAvBz2rV0wwfZ2EgPdOx9uOi5hu5fNGlCKnj_Paws6K90TrPhYDvkRMp9cOannYFM8ub89TKybIK6fPIt7XhmqhSildXi03Dm9t-B3LHsmWRsujhUazlWpk--BJaLCfreHIkJupUNSZz-gWfYhPv1SLhZTlr3-yFfddfHGPPA_1j3HZs6QRnJtqmsBtlTUpyZ7MM3TcEWEEfgUBXwzK2_N6Un98-ZumXrji8tgGZl2cz9mFOwtsm7Akm-oOQJSXU7pfqt4aiZ8WOGrbSxlzjxRM2LegUj3VzWE1N6XReccz8a4EdD-Wwlp0dh1p4OqE0-XOWoDVzNRKcuXHDvW_1ozYSw2gXl-pIrk46_9aRRdCGR5L1wJW2dkWbeGOIZkYrOWjWz3sW9m9drWEw4B4Ddf1HLdedn8HyZrHeUkBP-wGaQy2upEW9AStUAo9D1DrVfY98EDtvJ2WiF14nQOGKEd2VnKpsgrkMMebBfpxaxxK2QifSi2vX-i2Zefe7bIacb1pJUvqwvWSSyAq_d529TgaZeV5BiezIk9V1WReOWzQHogEeCjWiqi2_ZDG4ora8l1wXhovG0uQR3Ar9tQQSHNwdNw3snJWWXM50Bkdd1jA25iXK7ax2e3BkClTuULhFaLeicScvQ9IgWDT8zPg=w452-h433-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/qtJs6rwKoKDnEfzdOFQtSphNJHlczJFFHzovxG9VJIuHl78HoQXOVQQ4X0QURGuXm6N0Fehsbvno4z8u63Xp4IZhBhN1zcen_MDnKWhh-SrWAvBz2rV0wwfZ2EgPdOx9uOi5hu5fNGlCKnj_Paws6K90TrPhYDvkRMp9cOannYFM8ub89TKybIK6fPIt7XhmqhSildXi03Dm9t-B3LHsmWRsujhUazlWpk--BJaLCfreHIkJupUNSZz-gWfYhPv1SLhZTlr3-yFfddfHGPPA_1j3HZs6QRnJtqmsBtlTUpyZ7MM3TcEWEEfgUBXwzK2_N6Un98-ZumXrji8tgGZl2cz9mFOwtsm7Akm-oOQJSXU7pfqt4aiZ8WOGrbSxlzjxRM2LegUj3VzWE1N6XReccz8a4EdD-Wwlp0dh1p4OqE0-XOWoDVzNRKcuXHDvW_1ozYSw2gXl-pIrk46_9aRRdCGR5L1wJW2dkWbeGOIZkYrOWjWz3sW9m9drWEw4B4Ddf1HLdedn8HyZrHeUkBP-wGaQy2upEW9AStUAo9D1DrVfY98EDtvJ2WiF14nQOGKEd2VnKpsgrkMMebBfpxaxxK2QifSi2vX-i2Zefe7bIacb1pJUvqwvWSSyAq_d529TgaZeV5BiezIk9V1WReOWzQHogEeCjWiqi2_ZDG4ora8l1wXhovG0uQR3Ar9tQQSHNwdNw3snJWWXM50Bkdd1jA25iXK7ax2e3BkClTuULhFaLeicScvQ9IgWDT8zPg=w452-h433-no?authuser=0"
+          alt=""></a>
+
+
+    </div>
+    <div>
+      <h3>massiv metodlar | array methods</h3><br>
+      <p>
+        pop() | push() | shift() | unshift() | for of | forEach() | split() | join() | sort() | includes
+      </p><br>
+      <hr><br>
+
+      1. <b>pop()</b> - massivni oxiridan bitta ma'lumot o'chiradi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/6eSYkekSExDX6PInO3B2Yt9sKZaX79oO8OlIWyHFGiGruQBDeWSKI6NsQ1Zxd8pSEfphC2AhhFmjPV1qGxkho4KUyGMxruNnghD7UfSLohi92WJWEEmte-JsqTU8HOfCk3Of2KzU-s4Zby5UbgE8OiIbKez-CGPSA5zeR54KFsZXkmKdTazojIz0PpqEpgnzjIieuotR6i_ZiPICL_4hY-XSDwpARkJ2A79J9cEsCoTqRs_xgKQhtVBLWtYwTm8PzDRNwtIYUFm2x_O0LorKNerBdtgozleAgROBMCQKiPE0bNssskhZhrK_TL0fVQleR0lN0Ob7vmEM1CQyXJxi-Qu3Gp4L97lg44EU62_dswMhIaupxsNeHVkkjozdIeIvM__jlkTD-VUJusD1UC49T9fXZMdNaCM2Zqr5r8Q821lr5R-za1M7U9lHDsZcgHvHhDdZOpeioeS6eAVAhO6bS0oiQCQWBLlNe2jU_MVHXWmGS7ds8zIPVn4jrdU8OqMXlzRCekk5xuQY66eqRoq5fLpdoWwulMGriLF5xAwaxlbpPIOhHmbMEc8jarYld9UgfrBOCqV-aCxapwBddKBT9rZ9NL0Sap06-ZlIsyKOcxCMR-3PDctAwZEoVsStUqVu_r_pP0IIFj7i84YSibLgf5iQ3gKAOoults3amrMSzOgQXY0R960rWYp-XVunYZxndnWCGTGwN2i98u2KO6JLyHR4Wl5jp6uZLHFiSQo20acjFYalpAPujFAi-lQ3Kw=w458-h277-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/6eSYkekSExDX6PInO3B2Yt9sKZaX79oO8OlIWyHFGiGruQBDeWSKI6NsQ1Zxd8pSEfphC2AhhFmjPV1qGxkho4KUyGMxruNnghD7UfSLohi92WJWEEmte-JsqTU8HOfCk3Of2KzU-s4Zby5UbgE8OiIbKez-CGPSA5zeR54KFsZXkmKdTazojIz0PpqEpgnzjIieuotR6i_ZiPICL_4hY-XSDwpARkJ2A79J9cEsCoTqRs_xgKQhtVBLWtYwTm8PzDRNwtIYUFm2x_O0LorKNerBdtgozleAgROBMCQKiPE0bNssskhZhrK_TL0fVQleR0lN0Ob7vmEM1CQyXJxi-Qu3Gp4L97lg44EU62_dswMhIaupxsNeHVkkjozdIeIvM__jlkTD-VUJusD1UC49T9fXZMdNaCM2Zqr5r8Q821lr5R-za1M7U9lHDsZcgHvHhDdZOpeioeS6eAVAhO6bS0oiQCQWBLlNe2jU_MVHXWmGS7ds8zIPVn4jrdU8OqMXlzRCekk5xuQY66eqRoq5fLpdoWwulMGriLF5xAwaxlbpPIOhHmbMEc8jarYld9UgfrBOCqV-aCxapwBddKBT9rZ9NL0Sap06-ZlIsyKOcxCMR-3PDctAwZEoVsStUqVu_r_pP0IIFj7i84YSibLgf5iQ3gKAOoults3amrMSzOgQXY0R960rWYp-XVunYZxndnWCGTGwN2i98u2KO6JLyHR4Wl5jp6uZLHFiSQo20acjFYalpAPujFAi-lQ3Kw=w458-h277-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      2. <b>push()</b> - ohiridan ma'lumot qo'shadi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/DZnwxOBWe8LPLKdJehtz-IMGpR99loyUiqnMwNmohkEuXMeKI2BT-k7zG3VJJnMPloACBtqVHf7dgBcbBUVLWmgNAOVPYopwLWt_IaEc56Wiox6OL_kkLzn6foY88-ZX6ETgouDAiaP57vtrSC-NnEYZozgdYelxLBqgwPo1BMwKVtdN83UpSdwGnKw1m5BOQ-A86tJbuAFNfQEON8un5fI39GddvpgXP-6cXdkCZI4AdVNjQ7coEV-N8f1X1iLf37gD-cf-wm5tAaVp5U_wPxkOM8v9dKnfj5o2XqPY3NdTW4jpYEdjb7GMENuDWdFNh8G4_QzKEI7OCwZT72dSC8JtGnbG9GBcKkRLYrYofGDX_UMl3qHDSQQmWfAN9oMaDa8SP_yxyL0h4UHyAy3G7KU8T87p-ulGnxuMXM3HC89Av3He_d_NMbAp7shicmVeviqdX4QgTJi7Sog2qEU-Ea79LASIxJpjkE2VgYV6xgOZgdoSh7jPsfPQUT5ct-OnB1nbdw2Nr9LX_blHCTciXU45aFCrdyljL1X3hUKd1CpetJIMvfdI4jfxe6UPi1w0_5nffME0cIU77kxJLRmetZrwyQ56Twegrx_CTULGW6ihYjRUkzIokhvltlb6plQvP8bS5PVLjGB8viVPpHTs9xiKfCM6fAB7y-ipEK9iKV-_6RjZKn_aUsAD_54l1XoN2wWFhGgxSQ6s3Aw6_nkR76HGgFo5eIvpRdk160IhPWk5P7ZJRtADmyGY_uyKng=w449-h338-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/DZnwxOBWe8LPLKdJehtz-IMGpR99loyUiqnMwNmohkEuXMeKI2BT-k7zG3VJJnMPloACBtqVHf7dgBcbBUVLWmgNAOVPYopwLWt_IaEc56Wiox6OL_kkLzn6foY88-ZX6ETgouDAiaP57vtrSC-NnEYZozgdYelxLBqgwPo1BMwKVtdN83UpSdwGnKw1m5BOQ-A86tJbuAFNfQEON8un5fI39GddvpgXP-6cXdkCZI4AdVNjQ7coEV-N8f1X1iLf37gD-cf-wm5tAaVp5U_wPxkOM8v9dKnfj5o2XqPY3NdTW4jpYEdjb7GMENuDWdFNh8G4_QzKEI7OCwZT72dSC8JtGnbG9GBcKkRLYrYofGDX_UMl3qHDSQQmWfAN9oMaDa8SP_yxyL0h4UHyAy3G7KU8T87p-ulGnxuMXM3HC89Av3He_d_NMbAp7shicmVeviqdX4QgTJi7Sog2qEU-Ea79LASIxJpjkE2VgYV6xgOZgdoSh7jPsfPQUT5ct-OnB1nbdw2Nr9LX_blHCTciXU45aFCrdyljL1X3hUKd1CpetJIMvfdI4jfxe6UPi1w0_5nffME0cIU77kxJLRmetZrwyQ56Twegrx_CTULGW6ihYjRUkzIokhvltlb6plQvP8bS5PVLjGB8viVPpHTs9xiKfCM6fAB7y-ipEK9iKV-_6RjZKn_aUsAD_54l1XoN2wWFhGgxSQ6s3Aw6_nkR76HGgFo5eIvpRdk160IhPWk5P7ZJRtADmyGY_uyKng=w449-h338-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      3. <b>shift()</b> - boshidan bitta ma'lumotni o'chiradi (foydalanishga maslahat berilmaydi chunki boshidan
+      ma'lumot o'chirishi natijasida massivdagi barcha elementlarning indeksi o'zgarishiga sabab bo'ladi, bu esa ko'p
+      ma'lumotlar bilan ishlaganda massivni barcha ma'lumotlarini indeksi o'chirilib yangi yozilishi natijasida sekin
+      ishlashiga sababchi bo'ladi)<br><br>
+      <a
+        href="https://lh3.googleusercontent.com/90z1LlvyfcaalpdrGQlNoTP8HM9oEmrleeXiuMMGGcJx2dhm-WZHLmjyDC43Ac7ORZGj6Goegnj6vu9BS3Zt7OcaZrvli88PZmon9OGw8vE-MLxNSazyaGb0_wmsLRdnu2GRVL0y3r2T9HqKVEE-jLNuBRqzYhoO0zSL7b1-BAp05kVY9zVp-XOLq4xkt2C4UgcZz_g4jDYGzfQ0EJIogNh-AqUAZ4yyMm3zV4a4VCEGWpG-QlB5QmX5z_qrSg4GRnscr4bcK_TKz95p6BSnddGYwb2NVq6N7a9J1JjQZQzqP8ovZwYsxhsPOi5-YHsSJw9zzWXiTtoZBnW6czaciJPKFvkH8HpraNzYcn4c0kIsHQKqINiOxdziXsWrYQHQr05TQmYOfCnSb-IBQIa0zm0uU_lka0yjut2GdTB8WiD90d0HjAPiDvN1BSgEbP5Ct5GOib4tkWfKrb5DKpKNNJIizYM367sdVGl_v4NgTsEGMpyPsWwR1X19kEEjJ4CQOjEgA3CtbsBkCoDwmuE6KiW8Nh088L2OE_7Hwxb7q0qhjdKBG7jXsWKA2jaJ3V_vEOHDqiGNfDt3OY3P_9QzhRJnw2dELFbSsnAszzaSpsnKHHPGwiuhiWVZLr43GhICs6hzEe3rDcylQa6G3IVzvSr-JSF8eH1_WCJWB_DPaUDdtbOVhS5rlr0SKGmtMNZCJRQ_TcaZzXBTK5BPHMrvwfM5t3hnB6I8lMC6OmHV51d1DaAhIvbQpcvArFoqaQ=w453-h252-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/90z1LlvyfcaalpdrGQlNoTP8HM9oEmrleeXiuMMGGcJx2dhm-WZHLmjyDC43Ac7ORZGj6Goegnj6vu9BS3Zt7OcaZrvli88PZmon9OGw8vE-MLxNSazyaGb0_wmsLRdnu2GRVL0y3r2T9HqKVEE-jLNuBRqzYhoO0zSL7b1-BAp05kVY9zVp-XOLq4xkt2C4UgcZz_g4jDYGzfQ0EJIogNh-AqUAZ4yyMm3zV4a4VCEGWpG-QlB5QmX5z_qrSg4GRnscr4bcK_TKz95p6BSnddGYwb2NVq6N7a9J1JjQZQzqP8ovZwYsxhsPOi5-YHsSJw9zzWXiTtoZBnW6czaciJPKFvkH8HpraNzYcn4c0kIsHQKqINiOxdziXsWrYQHQr05TQmYOfCnSb-IBQIa0zm0uU_lka0yjut2GdTB8WiD90d0HjAPiDvN1BSgEbP5Ct5GOib4tkWfKrb5DKpKNNJIizYM367sdVGl_v4NgTsEGMpyPsWwR1X19kEEjJ4CQOjEgA3CtbsBkCoDwmuE6KiW8Nh088L2OE_7Hwxb7q0qhjdKBG7jXsWKA2jaJ3V_vEOHDqiGNfDt3OY3P_9QzhRJnw2dELFbSsnAszzaSpsnKHHPGwiuhiWVZLr43GhICs6hzEe3rDcylQa6G3IVzvSr-JSF8eH1_WCJWB_DPaUDdtbOVhS5rlr0SKGmtMNZCJRQ_TcaZzXBTK5BPHMrvwfM5t3hnB6I8lMC6OmHV51d1DaAhIvbQpcvArFoqaQ=w453-h252-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      4. <b>unshift()</b> - boshiga ma'lumot qo'shadi (foydalanishga maslahat berilmaydi chunki boshiga ma'lumot
+      qo'shish natijasida massivdagi barcha elementlarning indeksi o'zgarishiga sabab bo'ladi, bu esa ko'p ma'lumotlar
+      bilan ishlaganda massivni barcha ma'lumotlarini indeksi o'chirilib yangi yozilishi natijasida sekin ishlashiga
+      sababchi bo'ladi)<br><br>
+      <a
+        href="https://lh3.googleusercontent.com/QEi0QDbgkDQsWFdvi6iEnIFc2QaqtibXQptKEz2GeGkjO1r8ypQAfOijdnDAPcwv6H_h80CpYHErHzIVNEz_28gD2m5OjZhGgSiBS_ItQ5n2qNjOg9HGw-LzNYlIBTvO-BRfHbqjV1QAEJiVnwp9RGf1TrKlQmuGPFaEHF0qF888KYgZgdu-wO4bRRchTRlmyewOAN8J0xR0rOkEboEvayDP0O7cbpN_neBM66hBDRGhi-Pxuu_f9kp3f4CcWcXuyYj_yEtwWQ2c9sLbjlrAVOwcykz7dYA301uZ3P1ypFlyg2UUxaj15yNe95gTjNjdY4Z4_AN4Y-fBW9odj-UTILV069Ljhqv2InwJrzgRxvLKtva8lWkt0AMXvbTz1H9zFVJaL_Cv-t9ynGwfhYf6clh29awEqpKCtAKRdi9uzIG889woKAGNt70oPHCxvybEDAXor0-9eJvvTKVf9SZ4Z1ryOX4JCoFFNrPQi7uI_efv1nuPFYWZqO-4IfyEjR6aKxrr62mDZ365q99CU_cB7s8xdfUsBtFZcWNPjsldK081-a0CgwPHJX4hPFXPXOh3iVYPQhlopNGXVI-K_9GWFU3R5L2Dhwmdi_wk4KcKe2Kj2hsWaNsInGZ7dx6supmk5o6yV5HfkeOUgPNrjwVQ7SXJNx0M19byVKjqwM9ymtx1ZTqLvTBP8DS0o21EiHGE6M8QxkKb83TK2oL-rjvJFmLW9hKtKJDsq7Bp01QRXeq4AHpwPx0nZEvTLcNzYw=w446-h249-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/QEi0QDbgkDQsWFdvi6iEnIFc2QaqtibXQptKEz2GeGkjO1r8ypQAfOijdnDAPcwv6H_h80CpYHErHzIVNEz_28gD2m5OjZhGgSiBS_ItQ5n2qNjOg9HGw-LzNYlIBTvO-BRfHbqjV1QAEJiVnwp9RGf1TrKlQmuGPFaEHF0qF888KYgZgdu-wO4bRRchTRlmyewOAN8J0xR0rOkEboEvayDP0O7cbpN_neBM66hBDRGhi-Pxuu_f9kp3f4CcWcXuyYj_yEtwWQ2c9sLbjlrAVOwcykz7dYA301uZ3P1ypFlyg2UUxaj15yNe95gTjNjdY4Z4_AN4Y-fBW9odj-UTILV069Ljhqv2InwJrzgRxvLKtva8lWkt0AMXvbTz1H9zFVJaL_Cv-t9ynGwfhYf6clh29awEqpKCtAKRdi9uzIG889woKAGNt70oPHCxvybEDAXor0-9eJvvTKVf9SZ4Z1ryOX4JCoFFNrPQi7uI_efv1nuPFYWZqO-4IfyEjR6aKxrr62mDZ365q99CU_cB7s8xdfUsBtFZcWNPjsldK081-a0CgwPHJX4hPFXPXOh3iVYPQhlopNGXVI-K_9GWFU3R5L2Dhwmdi_wk4KcKe2Kj2hsWaNsInGZ7dx6supmk5o6yV5HfkeOUgPNrjwVQ7SXJNx0M19byVKjqwM9ymtx1ZTqLvTBP8DS0o21EiHGE6M8QxkKb83TK2oL-rjvJFmLW9hKtKJDsq7Bp01QRXeq4AHpwPx0nZEvTLcNzYw=w446-h249-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      5. <b>for of</b> - massiv qiymatlarini har biri bilan ishlash uchun ishlatilinadi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/HgUYl2HtAGxbV7F_tJWYLb8gAVb5qYNlv_PuaiInYCQvrKFVizZKmA-y-ua7pAK-s26JQv2jghIRe3TFLgmBNGY0yyjEpSor5CHDu_3QDnbaNiX2k5PFFeIYBnykW1hNxeQXqUbLGhTmGjbocV67fEEo3XpEcr8kSRvcrp_joqWqaYW8QcM7h-UcFpqySibdsb5TkUXV6kzfqphuRyxRf_hP-QM-wDoDguXRuXSTr_UgJzw71kJwjypti1Xjt4YuROzHuH8r8aGQeozP8BRubAinfMMeosywtCkkJx8sO2K8y97WH7iY2mnSEv7PHru2tHmoi952jQhKHIqDVNp_MbHw7GUGYndW_JqNbKqEa920dhTDCBX9_tktUX5xdlhrLzLtep1eKewnC8zMaK7257TlEMT-qU4mjKv9XJTa2l8VO3_QB8VBfFw1hB0_jRa4hmxMcPGpofa89MzyQ_RIEwHuwDCSmd5mOtiHk9IIMSETcg5McpiUtPPq34leXS1poPWIhiq9P8DvSq41iVD4RbqkE45sjCj8nbHGD6TH4oIutd6cNKUohBEydfQ8FvWcVDjI0VW7ye7HjWh95kh14AVpJNqzOL5mYsV2T2_6PmY4Kt1SsBorbBsvxDxGddjCwG9dW-dj2kdWH_sQbE9_rQz_QCj88ehQz-C1elbrlh5SCdfTSGK0gQOagq8JXdAfQAMUoLeQjCzc4BEucXrIjbSnK__7LYPUIJnn_VxDtTbe_pC_ppV4iYwEjwg4jA=w443-h309-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/HgUYl2HtAGxbV7F_tJWYLb8gAVb5qYNlv_PuaiInYCQvrKFVizZKmA-y-ua7pAK-s26JQv2jghIRe3TFLgmBNGY0yyjEpSor5CHDu_3QDnbaNiX2k5PFFeIYBnykW1hNxeQXqUbLGhTmGjbocV67fEEo3XpEcr8kSRvcrp_joqWqaYW8QcM7h-UcFpqySibdsb5TkUXV6kzfqphuRyxRf_hP-QM-wDoDguXRuXSTr_UgJzw71kJwjypti1Xjt4YuROzHuH8r8aGQeozP8BRubAinfMMeosywtCkkJx8sO2K8y97WH7iY2mnSEv7PHru2tHmoi952jQhKHIqDVNp_MbHw7GUGYndW_JqNbKqEa920dhTDCBX9_tktUX5xdlhrLzLtep1eKewnC8zMaK7257TlEMT-qU4mjKv9XJTa2l8VO3_QB8VBfFw1hB0_jRa4hmxMcPGpofa89MzyQ_RIEwHuwDCSmd5mOtiHk9IIMSETcg5McpiUtPPq34leXS1poPWIhiq9P8DvSq41iVD4RbqkE45sjCj8nbHGD6TH4oIutd6cNKUohBEydfQ8FvWcVDjI0VW7ye7HjWh95kh14AVpJNqzOL5mYsV2T2_6PmY4Kt1SsBorbBsvxDxGddjCwG9dW-dj2kdWH_sQbE9_rQz_QCj88ehQz-C1elbrlh5SCdfTSGK0gQOagq8JXdAfQAMUoLeQjCzc4BEucXrIjbSnK__7LYPUIJnn_VxDtTbe_pC_ppV4iYwEjwg4jA=w443-h309-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      6. <b>forEach()</b> - massiv elementlari bilan ishlash uchun eng ko'p qo'llanadigan metod <br><br>
+      birinchi argumenti <b>qiymat</b>, ikkinchisi <b>indeks</b>, uchinchisi <b>massiv</b>
+      <a
+        href="https://lh3.googleusercontent.com/BQzqNf4_1cLRXezpMwjmT7viGtuBrUYggX3biruOcLOZWidpERZb5LQaYHpLijOaUfXeNYAHfmMTA7DKWOcvsyy_3XI8Re4KeVWr5Zs_4awYkFHWWENuQbBy9GQk7racYpVWf11Ku6X42o5HtbezBx-MXOFtXHMSda4J6TG8D7Gdnz5HTiQqY-egRjj5fcF9EuL0WJqSfWJV-X2whJRLPSwlLVabker8BVrRNHxR_tYqQXgqbWelYCjMonHYhpQzdCvZQj8OKGyOKt9EZurCrGxnml_fNTbeSe8WlJsXp03qsAY49hir01epwJA4M4Ty-l0wWyDRmfKCRAck9B5zGOe3aou6O0lIHR-594xDBtm_UIcKhndk_GuPdrQIc51Z3rM7j5TvlQdsCQ9lnKGt4jzPMgzX0hgREjaNB1rO6gQcQ4xyrIRpoe_kEMVTCiBXK-OaQFnfOx3nQ1sf3VcGK8oS0bNY_H-M9zDO_ccv7uF286Q_6QHGFaWmQGFf2WL17ISKwBi5SSUqBWYueL-Y50znraA0kW7Oc9KzSlPOqDavWOLhCpA6CPhw_sndGuPoF4drIOgrpkDm2wtFWvJo0Gg0w8bGz5WXM84shFZd8A1b-KD4VN7KIBxE15dgI5Gbxe81b9FYA-SQ_aSlsCV-YaLNwhrydXjhArgzTtVeTt-tHmiZagnYnVjZtwmBGqRbpg4oEi2Z2XCSDLAH3IMN9TdwyGmgvvW4Xr3livkcxSe-l3ID3Oqe9ydKYnYN5w=w601-h303-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/BQzqNf4_1cLRXezpMwjmT7viGtuBrUYggX3biruOcLOZWidpERZb5LQaYHpLijOaUfXeNYAHfmMTA7DKWOcvsyy_3XI8Re4KeVWr5Zs_4awYkFHWWENuQbBy9GQk7racYpVWf11Ku6X42o5HtbezBx-MXOFtXHMSda4J6TG8D7Gdnz5HTiQqY-egRjj5fcF9EuL0WJqSfWJV-X2whJRLPSwlLVabker8BVrRNHxR_tYqQXgqbWelYCjMonHYhpQzdCvZQj8OKGyOKt9EZurCrGxnml_fNTbeSe8WlJsXp03qsAY49hir01epwJA4M4Ty-l0wWyDRmfKCRAck9B5zGOe3aou6O0lIHR-594xDBtm_UIcKhndk_GuPdrQIc51Z3rM7j5TvlQdsCQ9lnKGt4jzPMgzX0hgREjaNB1rO6gQcQ4xyrIRpoe_kEMVTCiBXK-OaQFnfOx3nQ1sf3VcGK8oS0bNY_H-M9zDO_ccv7uF286Q_6QHGFaWmQGFf2WL17ISKwBi5SSUqBWYueL-Y50znraA0kW7Oc9KzSlPOqDavWOLhCpA6CPhw_sndGuPoF4drIOgrpkDm2wtFWvJo0Gg0w8bGz5WXM84shFZd8A1b-KD4VN7KIBxE15dgI5Gbxe81b9FYA-SQ_aSlsCV-YaLNwhrydXjhArgzTtVeTt-tHmiZagnYnVjZtwmBGqRbpg4oEi2Z2XCSDLAH3IMN9TdwyGmgvvW4Xr3livkcxSe-l3ID3Oqe9ydKYnYN5w=w601-h303-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      7. <b>split()</b> - string ma'lumotni massivga o'tkazadi <br><br>
+      massivga olishda <b>", "</b> (vergul probel) yozuvga qarab qiladi
+      <a
+        href="https://lh3.googleusercontent.com/LSsrSn3GbkFyUs0mD2ZnUtGcshJoy4c-5sc0A5Wh_aLcxk2DqK735xlN5465AUe_ew2euHiKRP2JyAlmFc-tIBWYPNaV4nDEtbPl_mVgYpdx7nRnSrYUqT2XlXtpzKPO4gDxizDPvbLGCaXWSEIZjGOAtXGUzQ9JnqP2Z-pdw4vZzGPoVORkUuIIbItIsJSfrCWyRNjz4orF1WaslkBnxWtfgn_OXi-4pBU634IY2FEvzTDKmXbcWAe6xBo8NVbtjP6YYMXvMfTqjRxrJKBLFIcH14_OAC1yaTg-M6TAgFjo8YRxERojF5hLOwMXLlkbgvvmVWeIoVX6GE1n8aLAwCtIra9SpMIgpqJJHGy5CoSyDhXfNOf7JgpSpx9NYTyBIfAlaKzwyWJ_5TOfCYP0PiGFvJIaHdjSt42UNx6xed0pq-I1gJUi1oM55mFixY_nO7p1yw3N2fg-LpVT3qLvGh06p1BUoLqjix6ulqJflbugVf_m-ksmdYwPwByBB-VnThMSwaOarrktTX9LoMrx-kbITka2rLwqKG0Fmm0VH1sHY9_zvTxVVTW4pD_t--3qKoSfZkHnEERFbIwKY6gjBVo4QXehIXNY2yUJ750UbmskZztQr_VgkJfsTXx_wgpg8gBbdi94ejgYiYNv8DCYHQeNJc4p1p2xH0yOsznz8EnTfRQwI7C8I5Ap6ng_nWo6nsl7ISU8F8sMsD0HXnNCBA08bT9Yy0dpiHCNQ94lyTBkmMnPTaBGX1P63EVQHA=w483-h196-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/LSsrSn3GbkFyUs0mD2ZnUtGcshJoy4c-5sc0A5Wh_aLcxk2DqK735xlN5465AUe_ew2euHiKRP2JyAlmFc-tIBWYPNaV4nDEtbPl_mVgYpdx7nRnSrYUqT2XlXtpzKPO4gDxizDPvbLGCaXWSEIZjGOAtXGUzQ9JnqP2Z-pdw4vZzGPoVORkUuIIbItIsJSfrCWyRNjz4orF1WaslkBnxWtfgn_OXi-4pBU634IY2FEvzTDKmXbcWAe6xBo8NVbtjP6YYMXvMfTqjRxrJKBLFIcH14_OAC1yaTg-M6TAgFjo8YRxERojF5hLOwMXLlkbgvvmVWeIoVX6GE1n8aLAwCtIra9SpMIgpqJJHGy5CoSyDhXfNOf7JgpSpx9NYTyBIfAlaKzwyWJ_5TOfCYP0PiGFvJIaHdjSt42UNx6xed0pq-I1gJUi1oM55mFixY_nO7p1yw3N2fg-LpVT3qLvGh06p1BUoLqjix6ulqJflbugVf_m-ksmdYwPwByBB-VnThMSwaOarrktTX9LoMrx-kbITka2rLwqKG0Fmm0VH1sHY9_zvTxVVTW4pD_t--3qKoSfZkHnEERFbIwKY6gjBVo4QXehIXNY2yUJ750UbmskZztQr_VgkJfsTXx_wgpg8gBbdi94ejgYiYNv8DCYHQeNJc4p1p2xH0yOsznz8EnTfRQwI7C8I5Ap6ng_nWo6nsl7ISU8F8sMsD0HXnNCBA08bT9Yy0dpiHCNQ94lyTBkmMnPTaBGX1P63EVQHA=w483-h196-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      8. <b>join()</b> - massivdan string ga o'tkazadi <br><br>
+      massiv qiymatlarini orasiga <b>" - "</b> (probel chiziqcha probel) qo'yib string ga o'tkazadi
+      <a
+        href="https://lh3.googleusercontent.com/IyQnoyyZiPnxnBmE4DO_R9OvJZ0NJCYiEMmh1MF5mcS-1H5UW-WAgkYYciFdyi0DEg1po724-oSd3nWK6sRybI0PO0F9YUV6embNEmQkSZgVOyGO5wWGrPZaMeTjp0FKvF35K3AMkhH0XRLnIJJPcKhcSEkewq5GKBSeTHLQi8CIv8AnYk9Y6h5jCadGpY2EyeKuU6VhATtm9IWpTvO2uxm8XdSOm2BMuamy4j1sEQlkCOUPJfrKQxorDPlZioDFbi0KrRgLUQ43A1tGAq_lVqDjmLo_b-ux1k4dNP5dANlhAXaDT1rNeYix7D7kfgEHK6qsMGr4xsUvMhNyRBS4k_QLhF_SttKaEVTpJthKHV8bPvE0Ec5zUCT7_tZO4GGGGWEsJLJXoHZ5Os9ez4jCZKq9LLZkxV7Nf6pC-m5SIdRO6AOALdZtynU9Qa1_VWALO9n4PhCRBk9-BH3MfG69ehXpRr8B91WwPdVMLfGwCb4TOptF8aLA-Xssnapa_cLQVvRjLZpeFMBXaWONdOQ87xCclOdNOluazIBbC1tEsZa_qYUMu1jRoQP27_2p-JG4jbcQQthjfZNOXrocKRnvBYMueXW0GQa8REJy8zo6htr7RyWDvHo1rZVIQXS1RciqMoTqo0GmVaNWtT2xexD8bP2OixzvQqa5cFUKX0awTKDjrHyUCrSD9DG0EvQsXv32mmnQGSUrjO9CuXdbwzIXZxzGwo0ZXshlE5-eRmPaiRpZM1_GKAATxIsnzyO53Q=w516-h182-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/IyQnoyyZiPnxnBmE4DO_R9OvJZ0NJCYiEMmh1MF5mcS-1H5UW-WAgkYYciFdyi0DEg1po724-oSd3nWK6sRybI0PO0F9YUV6embNEmQkSZgVOyGO5wWGrPZaMeTjp0FKvF35K3AMkhH0XRLnIJJPcKhcSEkewq5GKBSeTHLQi8CIv8AnYk9Y6h5jCadGpY2EyeKuU6VhATtm9IWpTvO2uxm8XdSOm2BMuamy4j1sEQlkCOUPJfrKQxorDPlZioDFbi0KrRgLUQ43A1tGAq_lVqDjmLo_b-ux1k4dNP5dANlhAXaDT1rNeYix7D7kfgEHK6qsMGr4xsUvMhNyRBS4k_QLhF_SttKaEVTpJthKHV8bPvE0Ec5zUCT7_tZO4GGGGWEsJLJXoHZ5Os9ez4jCZKq9LLZkxV7Nf6pC-m5SIdRO6AOALdZtynU9Qa1_VWALO9n4PhCRBk9-BH3MfG69ehXpRr8B91WwPdVMLfGwCb4TOptF8aLA-Xssnapa_cLQVvRjLZpeFMBXaWONdOQ87xCclOdNOluazIBbC1tEsZa_qYUMu1jRoQP27_2p-JG4jbcQQthjfZNOXrocKRnvBYMueXW0GQa8REJy8zo6htr7RyWDvHo1rZVIQXS1RciqMoTqo0GmVaNWtT2xexD8bP2OixzvQqa5cFUKX0awTKDjrHyUCrSD9DG0EvQsXv32mmnQGSUrjO9CuXdbwzIXZxzGwo0ZXshlE5-eRmPaiRpZM1_GKAATxIsnzyO53Q=w516-h182-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      9. <b>sort()</b> - massivda sonlarni tartibga soladi va sonlarning birinchi raqami bo'yicha ishlaydi<br><br>
+      <a
+        href="https://lh3.googleusercontent.com/sANtvNpT1rFxb8BupyOcs9PhE7lQbhG6LkGQR3jNZYZseloU14UXxMVm3N5CgESyU8s1FsN9SH9AxRay2pRq7G0tyo3ZSSnUmdCXZ5HG6VCCWZuQ-S2eYjfGAWlBDsFh6fxqAOntMfa1zZIR39f7pTGPVL-zsXsBsT57IA0VOQXZ9mFK8f-pbnAXM6uXS3kRpsmjONZtY4R4KreZJJ-5mT1iUkcvb7X34BAM1dZuqoJIB95u-PmUO0-ppi7vPpDNO7LAfmuab2eAKzMw-BS0_oWfDq1nJTtiD89_8zc9XvjV35gETC_cXzr4onR1PsZ_XizGl-egANe5WK6c7DtWSjyHCsNU_irtsxHOkF48EgluXAb4sLN59hhmPBF4WX99rCcNOZQ_Y0a7p_nYBz8d9SI0R5tUgVtJl7n8QGvqP9dknHUq6_4RLvZu-0xPLXhLalDCNPsveACfTBFEGY_RGkAiGT86ejt9vCJtgQbEK2xb2M3AK2Q_5ttXeITJWY0_0rrg2MlKDwCHTu6WQJtUct20pqtS89MGxBuL1lkxo_FCTSJQWijv-NIUC-2ehEF48pcHfxx28AskCrxcc2fd5W40UhPxmPXw8STpkepP0rUApxP6QcKgjShSpheFYQ4T0n-j1Yrwpj7nIm-sLqRMrEPBUSN-4qr4MBWI0eFCBFRdr76M6VbwmjyBfMPAsLM-n1vSzV8P2ZhUnJxt6FrLjv3S3eLehwKHkd0NTXXMS--_hI6n1P-x2m1vufTiaQ=w438-h264-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/sANtvNpT1rFxb8BupyOcs9PhE7lQbhG6LkGQR3jNZYZseloU14UXxMVm3N5CgESyU8s1FsN9SH9AxRay2pRq7G0tyo3ZSSnUmdCXZ5HG6VCCWZuQ-S2eYjfGAWlBDsFh6fxqAOntMfa1zZIR39f7pTGPVL-zsXsBsT57IA0VOQXZ9mFK8f-pbnAXM6uXS3kRpsmjONZtY4R4KreZJJ-5mT1iUkcvb7X34BAM1dZuqoJIB95u-PmUO0-ppi7vPpDNO7LAfmuab2eAKzMw-BS0_oWfDq1nJTtiD89_8zc9XvjV35gETC_cXzr4onR1PsZ_XizGl-egANe5WK6c7DtWSjyHCsNU_irtsxHOkF48EgluXAb4sLN59hhmPBF4WX99rCcNOZQ_Y0a7p_nYBz8d9SI0R5tUgVtJl7n8QGvqP9dknHUq6_4RLvZu-0xPLXhLalDCNPsveACfTBFEGY_RGkAiGT86ejt9vCJtgQbEK2xb2M3AK2Q_5ttXeITJWY0_0rrg2MlKDwCHTu6WQJtUct20pqtS89MGxBuL1lkxo_FCTSJQWijv-NIUC-2ehEF48pcHfxx28AskCrxcc2fd5W40UhPxmPXw8STpkepP0rUApxP6QcKgjShSpheFYQ4T0n-j1Yrwpj7nIm-sLqRMrEPBUSN-4qr4MBWI0eFCBFRdr76M6VbwmjyBfMPAsLM-n1vSzV8P2ZhUnJxt6FrLjv3S3eLehwKHkd0NTXXMS--_hI6n1P-x2m1vufTiaQ=w438-h264-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      Yuqoridagi kamchilikni bartaraf etish uchun quyidagi usuldan foydalanamiz. Etibor bering funksiya
+      chaqirilmidi<br><br>
+      <a
+        href="https://lh3.googleusercontent.com/bdyy2wTo8f9gAUprYlJusKYEaImvIlgWwlHSljN0urN92xFvFPKwanidpFJ12fwc1JtdiIzq5uw-RAwPtT252gnKKdH2LyDr4NYOfqvCaT9-pjr0M9Wu9pmkpA8h4m4rH_WzVaqdQp8Uvuz-FiCPmzP9tfNtV29L0gqUyLz_g4IJFKm3BZ-BtZe9W0skHLwqt4uJbZ7QuuhBQGt2tQaNc4Nz55x0KqutHirl_4NqBhQw7xinOV2k2lbbIS1Hf9EWk0SmKRxAB2nzd1U4CG8i2Ubv_zhqo1qy5eZbgjJm0cuzmg189F9R1Uk2_xe-mmE8O7GUe6wqENFuZLEroGDiHzkyE7S0aUIOVVZpa1kWNc2JN1WNPm9B_x5VqGjEy3Kx19H7_WvcKLSeZ3KIEDkGCxWvBfIz5P59euH2yWe535l3oz6BhxjvqQRpuPur0ZWnyD2woERmXrH-ydAPMrCmD4pumEiDxSHT_mbXDCrBGQHGiz4pLCfu0IqysR34WnSoSUWc3-R7OvmgZ2XSziDYktjBslNOF4AjUoXD8kQEx6XuvX5Q9A1IjBC_mccG9uPnbuFuri-y0XygsFxAv2KefcTYG0ZVDqmw17ulPB35MQi3rrvOLlieY_CiWZttLSRsVul78a6214h2nnXcR-b-kIqADdTa_52MrfwbO9E40_YuKyRLKS6GZe5HBXkFpcjt7XhAxVrDyVRyj0bh1zuPrVPCDOiUzRaaku6YMpy0m7oSWUUthPM9C595i7pCFw=w447-h264-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/bdyy2wTo8f9gAUprYlJusKYEaImvIlgWwlHSljN0urN92xFvFPKwanidpFJ12fwc1JtdiIzq5uw-RAwPtT252gnKKdH2LyDr4NYOfqvCaT9-pjr0M9Wu9pmkpA8h4m4rH_WzVaqdQp8Uvuz-FiCPmzP9tfNtV29L0gqUyLz_g4IJFKm3BZ-BtZe9W0skHLwqt4uJbZ7QuuhBQGt2tQaNc4Nz55x0KqutHirl_4NqBhQw7xinOV2k2lbbIS1Hf9EWk0SmKRxAB2nzd1U4CG8i2Ubv_zhqo1qy5eZbgjJm0cuzmg189F9R1Uk2_xe-mmE8O7GUe6wqENFuZLEroGDiHzkyE7S0aUIOVVZpa1kWNc2JN1WNPm9B_x5VqGjEy3Kx19H7_WvcKLSeZ3KIEDkGCxWvBfIz5P59euH2yWe535l3oz6BhxjvqQRpuPur0ZWnyD2woERmXrH-ydAPMrCmD4pumEiDxSHT_mbXDCrBGQHGiz4pLCfu0IqysR34WnSoSUWc3-R7OvmgZ2XSziDYktjBslNOF4AjUoXD8kQEx6XuvX5Q9A1IjBC_mccG9uPnbuFuri-y0XygsFxAv2KefcTYG0ZVDqmw17ulPB35MQi3rrvOLlieY_CiWZttLSRsVul78a6214h2nnXcR-b-kIqADdTa_52MrfwbO9E40_YuKyRLKS6GZe5HBXkFpcjt7XhAxVrDyVRyj0bh1zuPrVPCDOiUzRaaku6YMpy0m7oSWUUthPM9C595i7pCFw=w447-h264-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      10. <b>includes(<i>x</i>)</b> - massivni ichidan <b><i>x</i></b> bo'lsa <b>true</b> qaytaradi <br><br>
+      <a href="../rasm/j2.jpg"><img src="../rasm/j2.jpg" alt="Error"></a>
+
+
+    </div>
+  </div>
+
+  <div>
+    <h3>18-dars. Amaliyot. Uyga vazifa. Function</h3>
+    <p><a href="https://github.com/Nozim99/18-dars.-Amaliyot.-Uyga-vazifa.-Function"><b>Ko'd manbai</b></a></p> <br>
+    <p><a
+        href="https://lh3.googleusercontent.com/kOFPpYmu_30BT2NwWmGRyArvlYmtHYwquBdMx0XI3nPoTMFyq2afo-YNL-MIpU39z4YHx44A-pefzmm_Bt4lpYX17ubck5v7EsbTfDZIosrPJ5Olbv6_iWltvRwHjQ4IalkjcE_kq4-ACuvsyk_Tn2Kjn-C2YKwW0Bclj_WclcqrB64UzvGccHqEKHPoXgSYdS7H_yk6sQ3rTJu0m8mk7BKDnyUHSnI09o5hnjVY4E-c2ngvF6jHJhUGHJLHFnntl7EclLg3DxP3IISytUiBDf3I49MfUndm3oZjQMdDTzwqQVF92mKVUSasWf0wMrQKUQuaGdcuABqhR2OnvT39QrpXY9WdWoXxSSe7ZwLyIqwjMR3g8-vSMLR1Rau0G0z5snB1fd8wAHZRzq9BfTvkf2PQJHq_p8HNvHkU-vp4EFupClysWvr_7jatb2P7CVAQ7LHawu9Bs7gfA_hM2lWj2E-WFFAQe07gtYb9NPXyUg4lMfFspDceZYZ_OWiJVBAq5IEGrywTraFth-gRYfuHZfqWUtR8fE5DzYL5f90cLwJbNiKLMKCRliDDDyNkQ9US1zZWZ_5apG6AsjNhqEmWxDUDNPyIm21GaSoMQJfSI2PJT-OJdIi0j0EHdOYvammtXuEkH54cCi2kS22cYgrRO1v-rDTsbMcZ1nh_ArzS-B106LlUX3xFgnN8dsByR3dl4gDQP8ZJb9BaHzSFps5hL7E_ax0mEy_hbZVoSpHbjzwtrXyP565VWwNx2xaEAw=w1407-h757-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/kOFPpYmu_30BT2NwWmGRyArvlYmtHYwquBdMx0XI3nPoTMFyq2afo-YNL-MIpU39z4YHx44A-pefzmm_Bt4lpYX17ubck5v7EsbTfDZIosrPJ5Olbv6_iWltvRwHjQ4IalkjcE_kq4-ACuvsyk_Tn2Kjn-C2YKwW0Bclj_WclcqrB64UzvGccHqEKHPoXgSYdS7H_yk6sQ3rTJu0m8mk7BKDnyUHSnI09o5hnjVY4E-c2ngvF6jHJhUGHJLHFnntl7EclLg3DxP3IISytUiBDf3I49MfUndm3oZjQMdDTzwqQVF92mKVUSasWf0wMrQKUQuaGdcuABqhR2OnvT39QrpXY9WdWoXxSSe7ZwLyIqwjMR3g8-vSMLR1Rau0G0z5snB1fd8wAHZRzq9BfTvkf2PQJHq_p8HNvHkU-vp4EFupClysWvr_7jatb2P7CVAQ7LHawu9Bs7gfA_hM2lWj2E-WFFAQe07gtYb9NPXyUg4lMfFspDceZYZ_OWiJVBAq5IEGrywTraFth-gRYfuHZfqWUtR8fE5DzYL5f90cLwJbNiKLMKCRliDDDyNkQ9US1zZWZ_5apG6AsjNhqEmWxDUDNPyIm21GaSoMQJfSI2PJT-OJdIi0j0EHdOYvammtXuEkH54cCi2kS22cYgrRO1v-rDTsbMcZ1nh_ArzS-B106LlUX3xFgnN8dsByR3dl4gDQP8ZJb9BaHzSFps5hL7E_ax0mEy_hbZVoSpHbjzwtrXyP565VWwNx2xaEAw=w1407-h757-no?authuser=0"
+          alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>19-dars. callback function | kallbek funksiya</h3>
+    <p>Bir funksiya ishga tushgandan keyin ishga tushadigan funksiyaga aytiladi</p>
+    <p><a
+        href="https://lh3.googleusercontent.com/BEsCmCfqli_WQ3v8qxLK6bWYlVCO5IjKvu1wQxxZ4c7rKhfbXl0CQZi_q7LOSwx3N961PO9HMxANeIk-uyWNZOVZyHyu5NGCcctB-RkxN-pOQqJTWvolNV1-Dlyq9FQ5UXGqCWqaYSgj_T7RnTLNelMRZGjhyZi0hIxDKRlkaXPsJtde-xeszowW_zoOXJcdQjYvOANs-xFHq2gUdXnxWrF-5Ms8mNO6GvbdVTjad3JRIhcDZy08aRlA5YpiUF6f1d_kRBvtczv-hGPgJF2E0wU9LCuy9_lIqzAF2YsDy6T17oeHU9Ez_bZ9o-7AmpkuwTfMen3wR_5FkBZU_LAEH61l8k4DAY_x_K9f2hq_wvKmzvr6z2mRQAt8qn2RvtU5E-eqB5w-_2PM9xVE7O3xTp8MjxuSjeCp9zb6ydRp4YyDH-UiLAnyp2RWqP145bQMFcVYQHUAAB7FAwWPuKa8GRru7Ry2ojJEV2hHPpp42U7Q3iXg9ky6XnhBp6t-h4u9KsLgVmrscsEfHaQYtD7h46J-sLLYSy5mRMkfGd5trP0SoV-_XLP5PS7sImgrdSYT-Oo-gibR22NkEWOeHXkNl5qhapQ2hEdz8AC2zstDVK9yGbxntEXW4ASjGmN0T3bCKdJ-ZwAq5aCYJcvdULDArWajz_PJleAL_TZF_Olr00j8B2Nnqr5Ozc4gVSSgVzK_tYP7leKgt8IUJZeeQmBPOVRYRVIrozmnuoM04VKCflhAMxxX-b9qVvd1MMlaiQ=w640-h327-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/BEsCmCfqli_WQ3v8qxLK6bWYlVCO5IjKvu1wQxxZ4c7rKhfbXl0CQZi_q7LOSwx3N961PO9HMxANeIk-uyWNZOVZyHyu5NGCcctB-RkxN-pOQqJTWvolNV1-Dlyq9FQ5UXGqCWqaYSgj_T7RnTLNelMRZGjhyZi0hIxDKRlkaXPsJtde-xeszowW_zoOXJcdQjYvOANs-xFHq2gUdXnxWrF-5Ms8mNO6GvbdVTjad3JRIhcDZy08aRlA5YpiUF6f1d_kRBvtczv-hGPgJF2E0wU9LCuy9_lIqzAF2YsDy6T17oeHU9Ez_bZ9o-7AmpkuwTfMen3wR_5FkBZU_LAEH61l8k4DAY_x_K9f2hq_wvKmzvr6z2mRQAt8qn2RvtU5E-eqB5w-_2PM9xVE7O3xTp8MjxuSjeCp9zb6ydRp4YyDH-UiLAnyp2RWqP145bQMFcVYQHUAAB7FAwWPuKa8GRru7Ry2ojJEV2hHPpp42U7Q3iXg9ky6XnhBp6t-h4u9KsLgVmrscsEfHaQYtD7h46J-sLLYSy5mRMkfGd5trP0SoV-_XLP5PS7sImgrdSYT-Oo-gibR22NkEWOeHXkNl5qhapQ2hEdz8AC2zstDVK9yGbxntEXW4ASjGmN0T3bCKdJ-ZwAq5aCYJcvdULDArWajz_PJleAL_TZF_Olr00j8B2Nnqr5Ozc4gVSSgVzK_tYP7leKgt8IUJZeeQmBPOVRYRVIrozmnuoM04VKCflhAMxxX-b9qVvd1MMlaiQ=w640-h327-no?authuser=0"
+          alt=""></a></p>
+    <hr><br>
+    <p><a
+        href="https://lh3.googleusercontent.com/qP8gmVc838n_fEBzQ2d3Fv1OAxD-292i_7bD5YlZ2nsz_IHc5LDDYFvDRJxSt7whCSBsBd-LOB4t_ACEcaYiv2yIDbCM33IFXGRiC0i3r6P6eV982lO0IdR1JaVGZ9-4Uo2izpuxN7atljs4H1L7LVYlKnd3u2hPa6R-1iXW8X_hrIbNShleVu22JumGUwx4OzDV0--qPKYmdderNAbTj9h5cweQHD4o6i1MDQqhTnB78qDg4tVH6b75ZyMkcJ8y6vAFsjtDEL4zKkY6dwPoKCGteJe3pL3zkNLiPQYd4ttVjVsF0xsTrAUFJyweZkQeWW32171kNxI19cZuy-Ev3SFIsj5ejQ5Chgvi9YSOTMUqFlu6Qz0XewtzMaTkQ1sM1dvMJYU6Bcg7qwTiaOfSizc2TK8WBt5iQYJKpmhnhsW4tI3DE9ktq_orWIfxlY1SBEeq3s7mjYF4O7nb_rX0zGKRZKwF3ZF15W2mRSbbNe7vjD4i5Qp3ANcCZxkbiAJRKbt3Iz2UNRdkUWDMSTxgSk2eGCzPvI8cT5zJ7z5YiMtSlnPle-SyYjbDugMRquhF9oEB2FfZ0ZHqPvG7Mter_FPkKnHs9yHE19WMcBcUlrTAN0FI_wjZ6j6eSTHI15NTbUxjwO5Io4u3ozyCxMzy5TKSySoXocDZ81XuiiXoD1H3-8A8zhVANekVWlGpdV2DcwOTysMboe-RXt7q46jX6ZU5l2PPLmnETdGYOz2mpZaU1JxCpfagOiqujYFuAg=w352-h431-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/qP8gmVc838n_fEBzQ2d3Fv1OAxD-292i_7bD5YlZ2nsz_IHc5LDDYFvDRJxSt7whCSBsBd-LOB4t_ACEcaYiv2yIDbCM33IFXGRiC0i3r6P6eV982lO0IdR1JaVGZ9-4Uo2izpuxN7atljs4H1L7LVYlKnd3u2hPa6R-1iXW8X_hrIbNShleVu22JumGUwx4OzDV0--qPKYmdderNAbTj9h5cweQHD4o6i1MDQqhTnB78qDg4tVH6b75ZyMkcJ8y6vAFsjtDEL4zKkY6dwPoKCGteJe3pL3zkNLiPQYd4ttVjVsF0xsTrAUFJyweZkQeWW32171kNxI19cZuy-Ev3SFIsj5ejQ5Chgvi9YSOTMUqFlu6Qz0XewtzMaTkQ1sM1dvMJYU6Bcg7qwTiaOfSizc2TK8WBt5iQYJKpmhnhsW4tI3DE9ktq_orWIfxlY1SBEeq3s7mjYF4O7nb_rX0zGKRZKwF3ZF15W2mRSbbNe7vjD4i5Qp3ANcCZxkbiAJRKbt3Iz2UNRdkUWDMSTxgSk2eGCzPvI8cT5zJ7z5YiMtSlnPle-SyYjbDugMRquhF9oEB2FfZ0ZHqPvG7Mter_FPkKnHs9yHE19WMcBcUlrTAN0FI_wjZ6j6eSTHI15NTbUxjwO5Io4u3ozyCxMzy5TKSySoXocDZ81XuiiXoD1H3-8A8zhVANekVWlGpdV2DcwOTysMboe-RXt7q46jX6ZU5l2PPLmnETdGYOz2mpZaU1JxCpfagOiqujYFuAg=w352-h431-no?authuser=0"
+          alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>22-dars. Clonlash , ES6 | Klonlash usullari</h3><br>
+    <p>
+      1. Qo'lbola funksiya orqali obyektni nusxalash. Bu usulni kamchiligi obyektni ichidagi obyektga ishlamidi uning
+      uchun yana qo'shimcha ko'd yozish kerak <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/8mAqDge7k-jx4xRy5lSk7-0u3Ga4oGpM6pe-VbTtsskGArKxvJCVxhrXt3eNpich1Dn1uJk_2wWVx1WRybWf14xWzP0QUCH5pmUaZn2PGhA2RRdldD5mK7Hqn5sL17s5_GGwC2_M9XIv37Hfe0WoDptSQcNp9EjpJdWiZqadYt-QdXHd80s8BNgbt-Z15xls75li4avznMXKzlbDuhsZGQwA-leUu4GmboVcTE5Qd_A3YFj2T5C8ACxM2GTZqSlSV3woLPnzCjO5CUJ7VCaGtjiDsZ98trZQ-hhdQndmqm9wL7r8dNCjA-YQuXiqKiVgHjrNbwcn6MCBGlvZhyZu-XwdQRhS1u3QDPE4I6wnQ7M--xbv5fkJ7g7K2btc8xNFSk2BVZR1ge5puXZMMQ9lILWQ0gikC2WdrJNHAI79YvPTXTDyr_oOsH1wMYxr55aU6vSItFzDUlrbWMTXZavFUw8kG_SdsONOkGEsAWh9y3NRKLHnxNBZX5ZgATW2CeaJVaLRcXkLWBsqLqMLdcnNw-WFwusGfyCXfeLqHJ2Q9XPfdBe5BM0W2C1Fk-uubkFur-ctnQFsJf1ecCttC6e6sj6TKXNxR4O3kegtx-ndAC92g35JniFIPblj0-y90aLfeV8zTo7EyNv6CSigoH2PLvt2vyQT0S1A4Pjl9130yiQ3PHoAMgo5PSo4OD5yQDQ5e3BGq8kpRVD0u6n_Cj8IRYb_uqsXrYEn7IotzrBWldqU_PzA6txbhA41g72Nrw=w457-h545-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/8mAqDge7k-jx4xRy5lSk7-0u3Ga4oGpM6pe-VbTtsskGArKxvJCVxhrXt3eNpich1Dn1uJk_2wWVx1WRybWf14xWzP0QUCH5pmUaZn2PGhA2RRdldD5mK7Hqn5sL17s5_GGwC2_M9XIv37Hfe0WoDptSQcNp9EjpJdWiZqadYt-QdXHd80s8BNgbt-Z15xls75li4avznMXKzlbDuhsZGQwA-leUu4GmboVcTE5Qd_A3YFj2T5C8ACxM2GTZqSlSV3woLPnzCjO5CUJ7VCaGtjiDsZ98trZQ-hhdQndmqm9wL7r8dNCjA-YQuXiqKiVgHjrNbwcn6MCBGlvZhyZu-XwdQRhS1u3QDPE4I6wnQ7M--xbv5fkJ7g7K2btc8xNFSk2BVZR1ge5puXZMMQ9lILWQ0gikC2WdrJNHAI79YvPTXTDyr_oOsH1wMYxr55aU6vSItFzDUlrbWMTXZavFUw8kG_SdsONOkGEsAWh9y3NRKLHnxNBZX5ZgATW2CeaJVaLRcXkLWBsqLqMLdcnNw-WFwusGfyCXfeLqHJ2Q9XPfdBe5BM0W2C1Fk-uubkFur-ctnQFsJf1ecCttC6e6sj6TKXNxR4O3kegtx-ndAC92g35JniFIPblj0-y90aLfeV8zTo7EyNv6CSigoH2PLvt2vyQT0S1A4Pjl9130yiQ3PHoAMgo5PSo4OD5yQDQ5e3BGq8kpRVD0u6n_Cj8IRYb_uqsXrYEn7IotzrBWldqU_PzA6txbhA41g72Nrw=w457-h545-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      2. <b>Object.assign()</b> - Obyektni nusxalaydi. 2 ta argument qabul qiladi va ikalasiga ham obyekt yoziladi ya'ni
+      birinchi obyektga ikkinchisini qo'shadi. 1-usul bilan bir xil ishledi ya'ni obyektni ichidagi obyektni o'zgartirsa
+      nusxa olingan obyektda ham o'zgaradi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/4wIRJ6YPla08iZPuHo7WJtJYYUtLb91dHPKhhY3vzUS_UI30MDekOTIr1WXPdjH47Y5IHr0ktZVHD-pPv_fQLVbe5yZC3_nK8oYGxKCF1HmQRPHJ8Xyd6pMehcq-iIVnWxf7PdmMATWtL-hzF4SmCoItZIjG9raFLyI-1fZZ5CT5ad9qm-4dAp-tToiXZieTqUsSjqv26M3Ui8ZUrINXmKPo0i1jAtd_UoJSID29nP-oMa4q5rEUJd1pGXo4cZmMSd3WQVGXdVzoEX8Ky5L8Xw6QEiFKM-NSUaPZ75bJYL7Hdx2Twe0nAA2DyJbMk2w4vo9THFnrpHhqplTc_6HoEvc-bbwCWEvBZoxfT3rvrptjxUP1zfncQtavj2i1BZdk-drjX76mBj9wNWQlRxx3UlQDQwnRLAGls24WdqmZhGbyDsbp755G_FlXTAqqlno0DMdbQ6R29z7bBOfYKYG3lipfPB0T44-z436jauGq51MH9PTTnwicEnDwrNknjGiFZOOqyAKZdCqHvSs3dzRuJNhzKv2qQJHBSdkZ5P8NLzCdTBgnEhBkHqOSAIL0yuttkAiPBxOWg4EBtTHY9bTAf3WOmv4bHwtci0ohYr4AN8CJGpOOhJ_6OG4wgQ4zYrzmNdQSGflFdEkegITt61japGD2Yd-jt8y1kRSi0G0VZw3RDQYarhjlVagUP6Z_WOV8e0W6TH9BWZ8sc2VGeqhHAOtVtoI3e1B1NC9KY9-8x_iW6PlX4HkcwoG8mJc9JQ=s439-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/4wIRJ6YPla08iZPuHo7WJtJYYUtLb91dHPKhhY3vzUS_UI30MDekOTIr1WXPdjH47Y5IHr0ktZVHD-pPv_fQLVbe5yZC3_nK8oYGxKCF1HmQRPHJ8Xyd6pMehcq-iIVnWxf7PdmMATWtL-hzF4SmCoItZIjG9raFLyI-1fZZ5CT5ad9qm-4dAp-tToiXZieTqUsSjqv26M3Ui8ZUrINXmKPo0i1jAtd_UoJSID29nP-oMa4q5rEUJd1pGXo4cZmMSd3WQVGXdVzoEX8Ky5L8Xw6QEiFKM-NSUaPZ75bJYL7Hdx2Twe0nAA2DyJbMk2w4vo9THFnrpHhqplTc_6HoEvc-bbwCWEvBZoxfT3rvrptjxUP1zfncQtavj2i1BZdk-drjX76mBj9wNWQlRxx3UlQDQwnRLAGls24WdqmZhGbyDsbp755G_FlXTAqqlno0DMdbQ6R29z7bBOfYKYG3lipfPB0T44-z436jauGq51MH9PTTnwicEnDwrNknjGiFZOOqyAKZdCqHvSs3dzRuJNhzKv2qQJHBSdkZ5P8NLzCdTBgnEhBkHqOSAIL0yuttkAiPBxOWg4EBtTHY9bTAf3WOmv4bHwtci0ohYr4AN8CJGpOOhJ_6OG4wgQ4zYrzmNdQSGflFdEkegITt61japGD2Yd-jt8y1kRSi0G0VZw3RDQYarhjlVagUP6Z_WOV8e0W6TH9BWZ8sc2VGeqhHAOtVtoI3e1B1NC9KY9-8x_iW6PlX4HkcwoG8mJc9JQ=s439-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      3. <b>slice()</b> - massivdan nusxa olish usuli <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/O4xCg6A5bmEsA7bxjtWkzUV11WrQ0K_ez9DxbDX6G-M0OVJahH_dJB6KfE7Of3pUY_FRYicTYyZYv9b_Viz3XSPip1GPZvG4XHREoqAVIUxSfgkfAUJ5GK87F8ayFFDYcpgSJNgBLo18so6n94Rh6mt12332Sd0PHR0kcbyByUBjV-YEv8WjlrGNPLFQbKbMcqfHvZFylBGwcjChy2VkP6Bwz7qqojXZNuSE4JkyVtlaBUkPEsnFOEKXiQ0JtPQ7qOsM6mre8Xg33w7JnDlRpnwylKvKJ2Q-t9Fw_91eV-iv2IWcbPKYy3EWyhXXufo0dk526vZIxu4-rLh1NZBa5VZlxmImFVv6wk8S_W5XkonRHdnx9XNhlkLv_NXr7b1M_xc0tsIxgPt9eKWErr5d4NFhtfWleuNy-0Puok-cyXqqUj_u4B6CF3IqJKLg0zy6ayCk-lreegVlFFuLVbcvH65oxrKNcfalEWvf2JiMlfyDjU88Sc7XySO07xQi6Shup_D8K-kTmIjIOLtUCElSx42o543EfF2-4aY0EwDmQzrXeyz4Rl2FsckJri4KuTNRlW1zfvO0otnwVEn2SqXe3bWYhtIPWcgL2HYVfzS-VSw6zuyINZ3p3guuOb_6dvhlhOSl0ApLowhC90lPisnDMtViQynG3Hhyaf5osalxsfQJm1LbFjObLi-plNf8jgNqjNOrXmfRt7Y3khnxBqyqpQj04yIb1DReg07IopcfTTVaLI9bY74Ji9PUW6zlhQ=w450-h309-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/O4xCg6A5bmEsA7bxjtWkzUV11WrQ0K_ez9DxbDX6G-M0OVJahH_dJB6KfE7Of3pUY_FRYicTYyZYv9b_Viz3XSPip1GPZvG4XHREoqAVIUxSfgkfAUJ5GK87F8ayFFDYcpgSJNgBLo18so6n94Rh6mt12332Sd0PHR0kcbyByUBjV-YEv8WjlrGNPLFQbKbMcqfHvZFylBGwcjChy2VkP6Bwz7qqojXZNuSE4JkyVtlaBUkPEsnFOEKXiQ0JtPQ7qOsM6mre8Xg33w7JnDlRpnwylKvKJ2Q-t9Fw_91eV-iv2IWcbPKYy3EWyhXXufo0dk526vZIxu4-rLh1NZBa5VZlxmImFVv6wk8S_W5XkonRHdnx9XNhlkLv_NXr7b1M_xc0tsIxgPt9eKWErr5d4NFhtfWleuNy-0Puok-cyXqqUj_u4B6CF3IqJKLg0zy6ayCk-lreegVlFFuLVbcvH65oxrKNcfalEWvf2JiMlfyDjU88Sc7XySO07xQi6Shup_D8K-kTmIjIOLtUCElSx42o543EfF2-4aY0EwDmQzrXeyz4Rl2FsckJri4KuTNRlW1zfvO0otnwVEn2SqXe3bWYhtIPWcgL2HYVfzS-VSw6zuyINZ3p3guuOb_6dvhlhOSl0ApLowhC90lPisnDMtViQynG3Hhyaf5osalxsfQJm1LbFjObLi-plNf8jgNqjNOrXmfRt7Y3khnxBqyqpQj04yIb1DReg07IopcfTTVaLI9bY74Ji9PUW6zlhQ=w450-h309-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      4. <b>spread operatori</b> - massivdan nusxa olish va massivlarni bir-biriga qo'shishda ishlatilinadi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/iI8G9YYVrQXUI57zzC38_UpeeHz1gePFXho0tcEDbgwpxCyhWSkvP_o1elpxZaT59Lz74TlsMvaaJHtggh5_W4-kVheJxHbpwLdAke8p0spSu7aqk6oj8NuZy5urFlCSbk3T15MYRXldOvBhpV-stt0zcLTcTbtcK7VyIk-ufXllG_CnVFDVmU7fm6ZOeyU6sGgQ2ObnxzzH8S1mHiqx2KDMDqEB8V1iVB09DxlfiX8TFR3e7LPATn6c2wXvkfnl1aKB-KQqIPA4WYhjdRk-FJzSQFjd7SEF2PT7-LlCR4JbjBq6Y9nAAerDKss5oNHEPaItnj_H1oHTsEMvdSg7GnLS_X432Tvcshfc33IwpxHajRv28t7baHG-9j2GnZaq48d-_bRzlCRcwl0pO1A_1pF_vwxNxhFa3N8FANzWvc4z2rCr8uwYxfQ6f5FzECMllCSkxDHlhEcfW3dDH68uS5wqgM5o0mRahM9lBQhUYin2RKM8tK9bQ6SE0v8MW9sPQz5dCOLXLzU85YgEvUNuByIN-AwOFRrERsks24azOSMgC3XjT_UYo2hdIuXvoUz1XPMh6mpZQjs826S-X64jNLPgFbnvJhnUyf379UN7HZ7b52ojsuEzRKOmqDXns4Prh3E7NPynei5Os7_AZ-OYuSPil3fLFn1DaWc0YFRicRf1BIV1pJp-zOuam7Huxa9lTKQ4pMHcOboj-Ts-kWPMoPwi4gc8f26ihQaNKU208QRY0uoEZR3hOTqSCyLKwg=w450-h273-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/iI8G9YYVrQXUI57zzC38_UpeeHz1gePFXho0tcEDbgwpxCyhWSkvP_o1elpxZaT59Lz74TlsMvaaJHtggh5_W4-kVheJxHbpwLdAke8p0spSu7aqk6oj8NuZy5urFlCSbk3T15MYRXldOvBhpV-stt0zcLTcTbtcK7VyIk-ufXllG_CnVFDVmU7fm6ZOeyU6sGgQ2ObnxzzH8S1mHiqx2KDMDqEB8V1iVB09DxlfiX8TFR3e7LPATn6c2wXvkfnl1aKB-KQqIPA4WYhjdRk-FJzSQFjd7SEF2PT7-LlCR4JbjBq6Y9nAAerDKss5oNHEPaItnj_H1oHTsEMvdSg7GnLS_X432Tvcshfc33IwpxHajRv28t7baHG-9j2GnZaq48d-_bRzlCRcwl0pO1A_1pF_vwxNxhFa3N8FANzWvc4z2rCr8uwYxfQ6f5FzECMllCSkxDHlhEcfW3dDH68uS5wqgM5o0mRahM9lBQhUYin2RKM8tK9bQ6SE0v8MW9sPQz5dCOLXLzU85YgEvUNuByIN-AwOFRrERsks24azOSMgC3XjT_UYo2hdIuXvoUz1XPMh6mpZQjs826S-X64jNLPgFbnvJhnUyf379UN7HZ7b52ojsuEzRKOmqDXns4Prh3E7NPynei5Os7_AZ-OYuSPil3fLFn1DaWc0YFRicRf1BIV1pJp-zOuam7Huxa9lTKQ4pMHcOboj-Ts-kWPMoPwi4gc8f26ihQaNKU208QRY0uoEZR3hOTqSCyLKwg=w450-h273-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      <b>spread operatori</b> - obyektdan nusxa oladi. obyekt ichidagi obyektdan nusxa ololmaydi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/hbzbJA4ch67g5-euj7NaUXmnH8gGjoOfS9wtAc_jrot88b6Xc2u5dmDhRh1BSW4qb128m1FVt6hex8-PVn04wRAf7EnjSzlpBxRdEG93ueE44r26QsatKad2jg1T9hr-p4zF8WM8KJC2vNE8UiGqe9gdYp86BzavNLKtVew1VAcwS9SE0dZulozajKFaAPenmXWJA_gZylG6DLtE9jX8t4gvfp_vjOxU4zfsmR3MHyK4Jj_l4M77IVD-VgbiC7cWgLrl2i2XX9hhTvf19rnyxv2b03Jlq-zsGfOLrj9xhuJ9U4zZ0p9CU7rdvPxR168WiooU69Fc_nzn_2KJPtlwK2Obh1swgXGgLz7HueSlFaeXGqi1XMSsP89ePu3H1PMuHn2QUFq11c8b-zu3onWmagmWYcB9aMqrDolSOK5GROaJSoFscqQqtaeURrz6tvh4hOguLBRgbq4Q2MtFzXM3BdgCtSaAu2hb5bnNqTC_wGF2k1rRqUNTSQdLD67gUt61MAZS3fI6M_4L5c3ZoLUDJVseC9q6aHMtBgiE2DvCZJTsJpM70Z2wOWV-TeY5zquCHL4aCigtTX51BTBKC659N10fXVdajyYfE5HrkHlLYsenQdW9D71CooQsc8_rg25J4XFcDxrqojGoIpGxnei-INs-Ps7FWJrPHMR2V4ziu_VK3CbgMZt-2mVakbm3rRoQQf-xA6oh-l5y6AFK9xWHkcgo0FHP2gnwrkfeo0Oh5-0nHMrhFYq324rzIS5gGQ=w452-h471-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/hbzbJA4ch67g5-euj7NaUXmnH8gGjoOfS9wtAc_jrot88b6Xc2u5dmDhRh1BSW4qb128m1FVt6hex8-PVn04wRAf7EnjSzlpBxRdEG93ueE44r26QsatKad2jg1T9hr-p4zF8WM8KJC2vNE8UiGqe9gdYp86BzavNLKtVew1VAcwS9SE0dZulozajKFaAPenmXWJA_gZylG6DLtE9jX8t4gvfp_vjOxU4zfsmR3MHyK4Jj_l4M77IVD-VgbiC7cWgLrl2i2XX9hhTvf19rnyxv2b03Jlq-zsGfOLrj9xhuJ9U4zZ0p9CU7rdvPxR168WiooU69Fc_nzn_2KJPtlwK2Obh1swgXGgLz7HueSlFaeXGqi1XMSsP89ePu3H1PMuHn2QUFq11c8b-zu3onWmagmWYcB9aMqrDolSOK5GROaJSoFscqQqtaeURrz6tvh4hOguLBRgbq4Q2MtFzXM3BdgCtSaAu2hb5bnNqTC_wGF2k1rRqUNTSQdLD67gUt61MAZS3fI6M_4L5c3ZoLUDJVseC9q6aHMtBgiE2DvCZJTsJpM70Z2wOWV-TeY5zquCHL4aCigtTX51BTBKC659N10fXVdajyYfE5HrkHlLYsenQdW9D71CooQsc8_rg25J4XFcDxrqojGoIpGxnei-INs-Ps7FWJrPHMR2V4ziu_VK3CbgMZt-2mVakbm3rRoQQf-xA6oh-l5y6AFK9xWHkcgo0FHP2gnwrkfeo0Oh5-0nHMrhFYq324rzIS5gGQ=w452-h471-no?authuser=0"
+          alt=""></a>
+
+
+    </p>
+  </div>
+
+  <div>
+    <h3>24-dars. OOP asoslari, prototipga yo'naltirilgan meros</h3><br>
+    <p>prototipga bog'lash</p>
+    <p><a
+        href="https://lh3.googleusercontent.com/TFg3_LmX0N9RynVforaPkBFrKvfelzSQotCoySZmSmGXo200tcOmw-WSeoX5nOJCB0vhmuuJVhb8ue_pVWaNcpuABNAcbL6snna6HFC-24PFyZ0vPfN66fB33cJFSNM8mlA_rUZnrQmLW1nctwZK3V7FTMPeZOXTWCcRaBQFEKYl9aYrI34tSmniEn8hhZ6A5kKXdtaB_D21u-MYQyM3JmGdJc2dBAEsqbUTmMxlkruHDbfP6sCIUsrC6mt8-XPUfu6FBb3SuO6mZ0SM04Y5KQQjq7iCu8_tdfe7l0eit3WtEpdtEU6ynjCHapNM5st4gNTcW2xr8Y2JWcYPAXEIEGKGhQD9lUuztEwzbLA4YVAFA1qY1qAZtOE8dCH7aP-j8jniCE4GgO0dV7YO5TxPJfN6Heso8LwMQ7sitMKZXfovEfVrd-PG8yD4ySC2zVga3aKuuBmMidkU1uwjoEscQpQ-B1Yn9FFV_XTDgQpRS7Mw1OzHuuGY4lTnf_PGpBlMlczMun3_xtBgnuQJtsC7XUb3UsOW4uF2Ytf8w5DWCCWk15R98eRn1U0L8vcfoyLvn29mknSpgHpykCc3d-kMY47v0Ngjg0_c_MUA26wwcArGBELUnMEEcw6ZXc2WMcE1xzDJiySTSJaGyAij8MTch3c0wHRhdwzQrD6pfWonh9P7nviGLjOb-z5pxb_ERokQt1y_qQ2oYhGzYh8xYDKrsjtOhSnVXzdKPFYdfQQ6iEJ9YOQWGMh4z0Isig7ahw=w322-h323-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/TFg3_LmX0N9RynVforaPkBFrKvfelzSQotCoySZmSmGXo200tcOmw-WSeoX5nOJCB0vhmuuJVhb8ue_pVWaNcpuABNAcbL6snna6HFC-24PFyZ0vPfN66fB33cJFSNM8mlA_rUZnrQmLW1nctwZK3V7FTMPeZOXTWCcRaBQFEKYl9aYrI34tSmniEn8hhZ6A5kKXdtaB_D21u-MYQyM3JmGdJc2dBAEsqbUTmMxlkruHDbfP6sCIUsrC6mt8-XPUfu6FBb3SuO6mZ0SM04Y5KQQjq7iCu8_tdfe7l0eit3WtEpdtEU6ynjCHapNM5st4gNTcW2xr8Y2JWcYPAXEIEGKGhQD9lUuztEwzbLA4YVAFA1qY1qAZtOE8dCH7aP-j8jniCE4GgO0dV7YO5TxPJfN6Heso8LwMQ7sitMKZXfovEfVrd-PG8yD4ySC2zVga3aKuuBmMidkU1uwjoEscQpQ-B1Yn9FFV_XTDgQpRS7Mw1OzHuuGY4lTnf_PGpBlMlczMun3_xtBgnuQJtsC7XUb3UsOW4uF2Ytf8w5DWCCWk15R98eRn1U0L8vcfoyLvn29mknSpgHpykCc3d-kMY47v0Ngjg0_c_MUA26wwcArGBELUnMEEcw6ZXc2WMcE1xzDJiySTSJaGyAij8MTch3c0wHRhdwzQrD6pfWonh9P7nviGLjOb-z5pxb_ERokQt1y_qQ2oYhGzYh8xYDKrsjtOhSnVXzdKPFYdfQQ6iEJ9YOQWGMh4z0Isig7ahw=w322-h323-no?authuser=0"
+          alt=""></a></p>
+    <hr><br>
+    <p>
+      Ikkinchi yo'li <br>
+      <a
+        href="https://lh3.googleusercontent.com/GzPaZWTDVejzGfXcHASEDbPaZM6HtqpPwl9MLxfu1DoTBtptRRvDxwGoF9cnTMPDqSThVgCucwpqzxV2lrauymqA4FpgbJQPXdb3iv8tvupoDOw1axigymCYM-_tM9KW2m9iph8a9dtsLUdnJAsnZaOQS8C_cEU_xFVZaMDFG7rsQzE3roaDVHR3IzwSkFac68thrDg4Tg2IiD2NyIxdfMLTxC6MTT7EgVUXY6BwRoa_MvzOb2YxncFImnr9CNX57P-M3OIvld0AcVg40t7m2J-Ucx6EdVaJuSUvumxV8RcIicBt5XGW3MExmziXAsmmy-d8tZOF_JBBOW-pGshkoRIcgNglBrdJqghQdtcMhqFeXRwsa-tYq4IT_8MgG-mZi4n1aASVcf_DOenhALUnS4fEFmRRoXKJvi1HByvWQskdm69vjtff_9I8K3fLjnSrOAyUUb3M8ZoO_WGJIlIwA_3UAp5cy-i0EcwTE9Ldlho65PgXFOdVB__GJUBMFZOV4NeypaBku_DanjTn9BtM2wJ64jMSfY_CYRILCGdMNQnNtQn3Fba9krw6OiokzYAgtZtDZFdJoNYOIyJeT1ToczfgPVz-loDPXhC682su_gc6dfO4kVm-UNSKaTnZ0uqRcqKiAARlJcPU2f5mtQvtE5aHLSOdQ8YW0I58CLYxwvnTE7QuTGWJzbHz_qXp0oRgBMp-_oJ5QKnwYQGarNoJg6yqqgtJiNC5G5n_5NFh6GrF3z2rJmPz-L7o-_YCPg=w650-h351-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/GzPaZWTDVejzGfXcHASEDbPaZM6HtqpPwl9MLxfu1DoTBtptRRvDxwGoF9cnTMPDqSThVgCucwpqzxV2lrauymqA4FpgbJQPXdb3iv8tvupoDOw1axigymCYM-_tM9KW2m9iph8a9dtsLUdnJAsnZaOQS8C_cEU_xFVZaMDFG7rsQzE3roaDVHR3IzwSkFac68thrDg4Tg2IiD2NyIxdfMLTxC6MTT7EgVUXY6BwRoa_MvzOb2YxncFImnr9CNX57P-M3OIvld0AcVg40t7m2J-Ucx6EdVaJuSUvumxV8RcIicBt5XGW3MExmziXAsmmy-d8tZOF_JBBOW-pGshkoRIcgNglBrdJqghQdtcMhqFeXRwsa-tYq4IT_8MgG-mZi4n1aASVcf_DOenhALUnS4fEFmRRoXKJvi1HByvWQskdm69vjtff_9I8K3fLjnSrOAyUUb3M8ZoO_WGJIlIwA_3UAp5cy-i0EcwTE9Ldlho65PgXFOdVB__GJUBMFZOV4NeypaBku_DanjTn9BtM2wJ64jMSfY_CYRILCGdMNQnNtQn3Fba9krw6OiokzYAgtZtDZFdJoNYOIyJeT1ToczfgPVz-loDPXhC682su_gc6dfO4kVm-UNSKaTnZ0uqRcqKiAARlJcPU2f5mtQvtE5aHLSOdQ8YW0I58CLYxwvnTE7QuTGWJzbHz_qXp0oRgBMp-_oJ5QKnwYQGarNoJg6yqqgtJiNC5G5n_5NFh6GrF3z2rJmPz-L7o-_YCPg=w650-h351-no?authuser=0"
+          alt=""></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>28-dars. Metod bilan ishlash. DOM</h3><br>
+    <h3>stil (style) berish yo'llari</h3>
+    1. <p>document.querySelector(.box).<b>style</b>.width = '100px' <br>
+      2. <b>cssText</b> - box.style.css.<b>cssText</b> = 'background-color: red; width: 100px; heigh: 100px'; <br><br>
+      3. hearts.forEach((item) => { <br>
+      item.style.backgroundColor = 'gray' <br>
+      });
+
+    </p>
+    <p>
+      1. <b>append()</b> - elementlarining oxiriga joylashtiradi <br>
+      <a
+        href="https://lh3.googleusercontent.com/5J1nhQf6m3hfeFIC8WYm7nktH_Q4WZd7NtFhOvy5msmgqDxMByPne1MG1gBYovzc3DzagwQe4_16oUvAzAuWc57VcAXiuIIGA0qYeTGAGWQnhqvKx1mtCONEiDcpOXcuSlc9xxVX7He5WLDmjeccLNYe_AQ7aXZ8C_gYCVlbmehhrE92kXZsloLbc7B5fSLIDvRnhVh_4WdIBLSzMaiRBGDfEUB0mkgwR7krzKjevHyQe1RIKhR9vdz1xqtdMHeLEoxDuWu8KIBVpdlcNexUlP4io7Sw9CfgZ-mqToWXuoimiNZJHM4_pzZT4JxJ9FxYxOqPSZ0Nx5XiBv1TYuqFKz4aUh1xrgncAWX2kUaeZfpj7tFEenrgLV-YxY8bZVBdTWHj-toLJBGkvo95vieZKC5Me7ziqm6rtmdtDP8r2QH1Q-oZuiGTRJ5eiPJuzkS5cIiZnctivVpP09O8hmfPuCwd1QWWqOhW1S3yJ5RELEYLYEw4NcrDNcul44P-Q9iDKkYBGxORwlEVvRJ2928B5evVnWuEd206U2TWnFVlADmE5dluvvlbTcTHJ4ccZH0HELwHGLkhoOMvbcTSHE-rfLrQnOzZgO3ddKWNaZGdFsJmY0RKuRupjfaLtOfSRxnZqmPEFM-1zq_1xN9vy2Z5KAmAYxPbRiwmB4JhCTEYooV7hekfQ9TrpRgezwTRnP2tFMcESGxnA_j8RZ-kuS3pfCoYtoyYXJIRB4ttKl8gSzZXUKUNGg0vG8I6RFWRjQ=w1377-h518-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/5J1nhQf6m3hfeFIC8WYm7nktH_Q4WZd7NtFhOvy5msmgqDxMByPne1MG1gBYovzc3DzagwQe4_16oUvAzAuWc57VcAXiuIIGA0qYeTGAGWQnhqvKx1mtCONEiDcpOXcuSlc9xxVX7He5WLDmjeccLNYe_AQ7aXZ8C_gYCVlbmehhrE92kXZsloLbc7B5fSLIDvRnhVh_4WdIBLSzMaiRBGDfEUB0mkgwR7krzKjevHyQe1RIKhR9vdz1xqtdMHeLEoxDuWu8KIBVpdlcNexUlP4io7Sw9CfgZ-mqToWXuoimiNZJHM4_pzZT4JxJ9FxYxOqPSZ0Nx5XiBv1TYuqFKz4aUh1xrgncAWX2kUaeZfpj7tFEenrgLV-YxY8bZVBdTWHj-toLJBGkvo95vieZKC5Me7ziqm6rtmdtDP8r2QH1Q-oZuiGTRJ5eiPJuzkS5cIiZnctivVpP09O8hmfPuCwd1QWWqOhW1S3yJ5RELEYLYEw4NcrDNcul44P-Q9iDKkYBGxORwlEVvRJ2928B5evVnWuEd206U2TWnFVlADmE5dluvvlbTcTHJ4ccZH0HELwHGLkhoOMvbcTSHE-rfLrQnOzZgO3ddKWNaZGdFsJmY0RKuRupjfaLtOfSRxnZqmPEFM-1zq_1xN9vy2Z5KAmAYxPbRiwmB4JhCTEYooV7hekfQ9TrpRgezwTRnP2tFMcESGxnA_j8RZ-kuS3pfCoYtoyYXJIRB4ttKl8gSzZXUKUNGg0vG8I6RFWRjQ=w1377-h518-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      2. <b>before</b> - oldin joylashadi <br>
+      <a
+        href="https://lh3.googleusercontent.com/b8uRTp0plUTWX6L7lUjUyKJRcsgyEqhgEBM2EcAQDhpI01XWKGBlX2j5-rJ_R2l7hllgW62oTvUDlBtdDUyeDs1J03ghmZXlc65epPwkAeXrVItRFsyzFlS6QDF2Td7FSjaBHh64xd4MRE7-HLWq0Nwo_ArxM2r5muF00AMQS2ApcLcwBtc3WvIJjGu4JEDk7Jg_z_hIIhMb1o9WVQBzVqYeisxuianDN02Ofr923qw0wLvTLql8e1uAjc_BvUF4L4abyUawiVDcKbkP-LMKPxL_yBYOTZpqqKYhoL4kg8d_2fQtgsRkpH0VyyZR0rWZIPXrJfCMTgJAYCMhMKQ5VbTGvleHCvMdjziScMTwF80Aq8L8KhuRgOnmgHEfRJK_Gl_ALFUB9uRkY3Nhp6ZGSVXa1ZqxW-JJLWfjadZXW0A6fgbFlbjAGoOFlQTgl2OO0X-QQtgcrNG3y0YxeQGXBo4XKy4pDjFZQ_Ox6nTChc8UB4Rq2nUVaI3i7Cl3Yzqn4l56sOPTONlek2TG6GuSB2tcrvz95ON9sksgycZb92c09lQpCI3WrQRRuU20wUOhwZSFX0TljjtqOZOJNBEpkgEPodY9CruJfVt4URlJyhoXAfBY6Wh0H5PCgPB4acM4_YGEEU0wt4cv7-veK3qeerBp6me5RTof_XhPTIrMCxQpndYoARKGUymvVNoQ684UDM7k6tF1_cVxnXGbul2IySMnlbWR71XuXEdWGMwMo9aUlyWQJlbQOwDTK0trnw=w1357-h456-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/b8uRTp0plUTWX6L7lUjUyKJRcsgyEqhgEBM2EcAQDhpI01XWKGBlX2j5-rJ_R2l7hllgW62oTvUDlBtdDUyeDs1J03ghmZXlc65epPwkAeXrVItRFsyzFlS6QDF2Td7FSjaBHh64xd4MRE7-HLWq0Nwo_ArxM2r5muF00AMQS2ApcLcwBtc3WvIJjGu4JEDk7Jg_z_hIIhMb1o9WVQBzVqYeisxuianDN02Ofr923qw0wLvTLql8e1uAjc_BvUF4L4abyUawiVDcKbkP-LMKPxL_yBYOTZpqqKYhoL4kg8d_2fQtgsRkpH0VyyZR0rWZIPXrJfCMTgJAYCMhMKQ5VbTGvleHCvMdjziScMTwF80Aq8L8KhuRgOnmgHEfRJK_Gl_ALFUB9uRkY3Nhp6ZGSVXa1ZqxW-JJLWfjadZXW0A6fgbFlbjAGoOFlQTgl2OO0X-QQtgcrNG3y0YxeQGXBo4XKy4pDjFZQ_Ox6nTChc8UB4Rq2nUVaI3i7Cl3Yzqn4l56sOPTONlek2TG6GuSB2tcrvz95ON9sksgycZb92c09lQpCI3WrQRRuU20wUOhwZSFX0TljjtqOZOJNBEpkgEPodY9CruJfVt4URlJyhoXAfBY6Wh0H5PCgPB4acM4_YGEEU0wt4cv7-veK3qeerBp6me5RTof_XhPTIrMCxQpndYoARKGUymvVNoQ684UDM7k6tF1_cVxnXGbul2IySMnlbWR71XuXEdWGMwMo9aUlyWQJlbQOwDTK0trnw=w1357-h456-no?authuser=0"
+          alt=""></a>
+      <hr><br>
+      3. <b>after</b> - keyin joylashadi <br>
+      <a
+        href="https://lh3.googleusercontent.com/98SpM0zGMz7XNV0yobmvLhdHcV3R0AjLCLplFzMOaCLxnvqH_1qjIVTrEqjQkV2GWuFDRDYjt420Q37Z-2sX5D4oh2lM5IVvb7W3kTAJ-XXcZKnLGTp-r6m6awgw8sRGmxm32hQLuH5EVMtfMi3Gjhkc9NgSWS37AzzAKCY1bY24PjopqeykOH5c0wSQkkhUATDvXZqR-lztUg0950lU-U-w3NzUz46Vq4FrWifReoMPNyfp1QYQXCBAh09wdxyrMiyIhTyy3Np2mbqvoaub4Qn9Ujsc-121jVZW1YAlounUFFwtLa_Zs9C9a2HILodfg3AnOmvdRhajUViXQ1ZWUdBcGdN1slSSv1xQdzJe5t9o4lYTlBXTtuxAQjcur4qiL6veJ8ocXAt24hTNIVhDwtTyDVFyy6EwHJLQaU53e0dW9W7jJ5G0LYUATxEh8REBHFWiD_k0jOVevFm2o_WUxjGiPZYL9w7teqo3ND0ZL-z3Ns7As0EnpVVshZR0-SasW9eHckxYDwMNFAHQMNzRLxHbw9vA1LpHrYT23uXJTLrizOspBnBmvtiHMzkKyvQE-cPN599bremod6BcQ4xn3wctc8mURPinxoeIqC2I9teiD0zw2N7TW2XxxvRvYNGsfvpfGPabEYFMro6TpJF06tE_uM5i5VoIFvUtktYgoS50yklrzDLxdw_Z0E3w5mzsXADJoZaFeLTpHjk_NCd7MWviR5fftvJ7ZUx_zPlp1wjZDQplKu8Wp3SKAL2Tmg=w1333-h518-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/98SpM0zGMz7XNV0yobmvLhdHcV3R0AjLCLplFzMOaCLxnvqH_1qjIVTrEqjQkV2GWuFDRDYjt420Q37Z-2sX5D4oh2lM5IVvb7W3kTAJ-XXcZKnLGTp-r6m6awgw8sRGmxm32hQLuH5EVMtfMi3Gjhkc9NgSWS37AzzAKCY1bY24PjopqeykOH5c0wSQkkhUATDvXZqR-lztUg0950lU-U-w3NzUz46Vq4FrWifReoMPNyfp1QYQXCBAh09wdxyrMiyIhTyy3Np2mbqvoaub4Qn9Ujsc-121jVZW1YAlounUFFwtLa_Zs9C9a2HILodfg3AnOmvdRhajUViXQ1ZWUdBcGdN1slSSv1xQdzJe5t9o4lYTlBXTtuxAQjcur4qiL6veJ8ocXAt24hTNIVhDwtTyDVFyy6EwHJLQaU53e0dW9W7jJ5G0LYUATxEh8REBHFWiD_k0jOVevFm2o_WUxjGiPZYL9w7teqo3ND0ZL-z3Ns7As0EnpVVshZR0-SasW9eHckxYDwMNFAHQMNzRLxHbw9vA1LpHrYT23uXJTLrizOspBnBmvtiHMzkKyvQE-cPN599bremod6BcQ4xn3wctc8mURPinxoeIqC2I9teiD0zw2N7TW2XxxvRvYNGsfvpfGPabEYFMro6TpJF06tE_uM5i5VoIFvUtktYgoS50yklrzDLxdw_Z0E3w5mzsXADJoZaFeLTpHjk_NCd7MWviR5fftvJ7ZUx_zPlp1wjZDQplKu8Wp3SKAL2Tmg=w1333-h518-no?authuser=0"
+          alt=""></a>
+      <hr> <br>
+      4. <b>remove()</b> - circles[1].remove() | O'chiradi <br><br>
+      5. <b>replaceWith</b> - elementni almashtiradi <br>
+      <b>circles[1].replaceWith(myCircle)</b> - <b>circle[1]</b>ni o'chirib o'rniga <b>myCircle</b>ni yozadi <br><br>
+      7. <b>innerHTML</b> - elementga ma'lumot yozadi. HTML tag ham yozsa bo'ladi <br><br>
+      8. <b>textContent</b> - elementga ma'lumot yozadi. HTML tag yozib bo'lmaydi <br><br>
+      9. <b>insertAdjacentHTML</b> - element yaratib joylashtiradi.
+    </p>
+
+
+  </div>
+
+  <div>
+    <h3>29-dars. Amaliyot. DOM elemental bilan</h3>
+    <p><a href="https://github.com/Nozim99/29-dars.-Amaliyot.-DOM-elemental-bilan"><b>KO'D MANBAI</b></a></p><br>
+    <p>element yaratish & joylashtirish & o'chirish</p>
+    <p><a
+        href="https://lh3.googleusercontent.com/yK1dfkpNcIx2QrrlwLKq9mMEuHvS6Vz_tHbphJTTVJdLEQmvLQMA5DTWd-on-OMuwQxb5hy55YTL9zixE40LwOtcm5IqJbt_nw_CP1A7Yw9ApyKodMs6YXDsnrGM-ER_qDA4C98uXyU0pDgQJOnMstg66HCUNFVQHjbMaE7vAgKDJUGMcs1LcAfE41kqJVYGR8fSbWCbyCpbfpYt5BVb_VCAD0SpVj8ApsKagBTsqnJRkGV7t3bA5fKQy6S19En8EepQCm9toRwovT8BhjBoVXmn2dGpMUved4nkcHIoNWOLpkJT80P-u2Vbj7_EEsor3gIv7aXRWa74eGXkp1oOgmzXwFF18UOLmaSpl6WEpKibg37Hw18LKCw7pGqu7u2gULMJtAYiTCyJxk11pAAR3AENvHbFARGqQg5aKxc_OwfDSeVxdVThrFgg8b26Tao9SACKO479Gn2i074ZsnYXCVqQYNhBQ5Hmc0cSbDM16B8KZwPzTvypfiQk1CQ_wUIn48-M-bNg-n_HTi0f1cJITnioWvladU63OulsCBRYj77salm0d4EtqkIfCh5ptImmMNYMhSRuuQSAwdtHsqXOwhrBs1A7i3XJB5wD_U8kG41WjY16N-DBNTVOo0R-l_r-dyBMlLtyCe9SIaqjiN6WI8dhaXk3fwzoj2arZkKMIIlbTlxMnf3NhFpn9mn24ntryDgKkWKEFZHPxYKiym0jDlHjOro59wPHGNshOfnb3TuE3i3dUgCjfxHVUoIKRA=w577-h677-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/yK1dfkpNcIx2QrrlwLKq9mMEuHvS6Vz_tHbphJTTVJdLEQmvLQMA5DTWd-on-OMuwQxb5hy55YTL9zixE40LwOtcm5IqJbt_nw_CP1A7Yw9ApyKodMs6YXDsnrGM-ER_qDA4C98uXyU0pDgQJOnMstg66HCUNFVQHjbMaE7vAgKDJUGMcs1LcAfE41kqJVYGR8fSbWCbyCpbfpYt5BVb_VCAD0SpVj8ApsKagBTsqnJRkGV7t3bA5fKQy6S19En8EepQCm9toRwovT8BhjBoVXmn2dGpMUved4nkcHIoNWOLpkJT80P-u2Vbj7_EEsor3gIv7aXRWa74eGXkp1oOgmzXwFF18UOLmaSpl6WEpKibg37Hw18LKCw7pGqu7u2gULMJtAYiTCyJxk11pAAR3AENvHbFARGqQg5aKxc_OwfDSeVxdVThrFgg8b26Tao9SACKO479Gn2i074ZsnYXCVqQYNhBQ5Hmc0cSbDM16B8KZwPzTvypfiQk1CQ_wUIn48-M-bNg-n_HTi0f1cJITnioWvladU63OulsCBRYj77salm0d4EtqkIfCh5ptImmMNYMhSRuuQSAwdtHsqXOwhrBs1A7i3XJB5wD_U8kG41WjY16N-DBNTVOo0R-l_r-dyBMlLtyCe9SIaqjiN6WI8dhaXk3fwzoj2arZkKMIIlbTlxMnf3NhFpn9mn24ntryDgKkWKEFZHPxYKiym0jDlHjOro59wPHGNshOfnb3TuE3i3dUgCjfxHVUoIKRA=w577-h677-no?authuser=0"
+          alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>30-dars. Hodisalar bilan ishlash</h3>
+    <p><b>addEventlistener</b> - hodisa qo'shadi</p><br>
+    <a
+      href="https://lh3.googleusercontent.com/vZ89nAmlXzXjN06Vt1j1mcgy20LQt0CLf6XO62zeKQXG2SBaC4Xd8GcfMPZCrMLAMQlnGqv1sggaxMIHecDYRfOQW5g4dsdNxggM0xge-2_hPsD0h8UwcX9QpSqKgyAI06uRZO24Wj0wSYgerXd6bNgsO3qZ2KlEaSN-KDkoRxopNhO_M0FdkjYGtGfDHXONg-6LbEMXvL_ROeH2Zqu_MZT5SzBgUeGf00EGFIutJIyWLyLVbPKZLv8joDUrvjYkwI2S508Nnm8Tk-5Rvx8445pi0s2NtL5cBBZID3bYRqdtE9rdoWVcgdB0LZLcFFbjIzrhbbxxKAGLeeOERylAxHrJHf7vejeSZV5ZSw_yDB2WHIAO62tl_SevB7C5uz-p_SbbHNhIuXoHmyINLN859Tzmck5Fmj9ZyQukcAi1W_TcwEXmtA-W6GTWnsBxTSUDW77-uDpfXoR7nlwbctP-eJzin2Ruon-LkkgQtXwm-vZOv_gVTCbQO5vQbXsGwocYyKsgDFrBtcY7WpIiT5n8-ODvdK6AxIJJWyX75aJ5NBKQRnW1aaYkwWJkPF_prabM0MSCigDUzqSla8vvfLS64V7JtylqaMjEjkH9keAcJ2q8xdMiS4WSMTexm50EjIfmKhiyIdyL9eirzId9FK0q5N5plX2W-A-SIFcCTFyIJU9LmnlmCLqeP80rYXNg4WAn6jvuOI6TW7LHNtxmJGGTnftEnpEY3yrNBLOSZqpuPBxIDXnCxEuifEO_eB-78A=w443-h231-no?authuser=0"><img
+        src="https://lh3.googleusercontent.com/vZ89nAmlXzXjN06Vt1j1mcgy20LQt0CLf6XO62zeKQXG2SBaC4Xd8GcfMPZCrMLAMQlnGqv1sggaxMIHecDYRfOQW5g4dsdNxggM0xge-2_hPsD0h8UwcX9QpSqKgyAI06uRZO24Wj0wSYgerXd6bNgsO3qZ2KlEaSN-KDkoRxopNhO_M0FdkjYGtGfDHXONg-6LbEMXvL_ROeH2Zqu_MZT5SzBgUeGf00EGFIutJIyWLyLVbPKZLv8joDUrvjYkwI2S508Nnm8Tk-5Rvx8445pi0s2NtL5cBBZID3bYRqdtE9rdoWVcgdB0LZLcFFbjIzrhbbxxKAGLeeOERylAxHrJHf7vejeSZV5ZSw_yDB2WHIAO62tl_SevB7C5uz-p_SbbHNhIuXoHmyINLN859Tzmck5Fmj9ZyQukcAi1W_TcwEXmtA-W6GTWnsBxTSUDW77-uDpfXoR7nlwbctP-eJzin2Ruon-LkkgQtXwm-vZOv_gVTCbQO5vQbXsGwocYyKsgDFrBtcY7WpIiT5n8-ODvdK6AxIJJWyX75aJ5NBKQRnW1aaYkwWJkPF_prabM0MSCigDUzqSla8vvfLS64V7JtylqaMjEjkH9keAcJ2q8xdMiS4WSMTexm50EjIfmKhiyIdyL9eirzId9FK0q5N5plX2W-A-SIFcCTFyIJU9LmnlmCLqeP80rYXNg4WAn6jvuOI6TW7LHNtxmJGGTnftEnpEY3yrNBLOSZqpuPBxIDXnCxEuifEO_eB-78A=w443-h231-no?authuser=0"
+        alt=""></a>
+    <hr><br>
+    <p><b>removeEventlistener</b> - hodisani o'chiradi <br><br>
+      <a
+        href="https://lh3.googleusercontent.com/X05KtdLQKTEJS9f_reXMxqJqknP98_AnIFH5fw21VVykXnEE24S62bttL4wsQ_bIRkmVBp_Pvjqt66hYW_LEGcf9HmdIJE_JdqP7e1NGpYx7S6rQtchdSHclno-F7pCP4Ky6ButOQQcU6-JHRwJJx-BUjNsHjY3YCiDZHUXthVIqgYg6Ou7xT-dQzU04Mo3xjF1eA6S8Bq5IZ2iRh2XbmdRvP4uLNypIJzRQ0weEzkMHxT1ew4hzcKTSSCEOzvuvnfxEQ1Ak3PLGotZMM-yP7J8pV2oWnrfPOeO2NQfui5iwDKAwdi8Lg0LNWmMejz25RlnSHYbRYz7ZgXwgBp0PDobaEJoF8XyXn83V_Bx757Coty1ZuG6s_QVL_OaBKW4AlxYyZA81fHbZnQxD19ipuMWcqgPB5nnqVkM_BwPF0vo19xW6XzAf7DGfNY7ITCPIk26W8KZIaBXl0_iiM77LAPFGbHWmUZsUH4K2UZzblpWAG6Kw2zl13CVQPFkEY4K5nO2N0vj9OtnevWccWKXm0ynZ64Q_Z0JsxAMbCREFQo2OmZjt7IvfuQKXKQcKUGB2rFs5uYcOtpGxB7PyUPpEG1lrviSXCLGzoB_PvZKp1uORGgdqzYsRc370tCuD05u0f3DlhId07bSFrVI1jlnuBPWDC4zLn3Gh9jeLZGFipsYChQqdG_OoxJjwYFbwtruUdWIJtsmBrcJ7xe0zBaJzVfZhJUrld9D_knleEfDXyFG3NcneomzM8aV8Rm_nSg=w455-h286-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/X05KtdLQKTEJS9f_reXMxqJqknP98_AnIFH5fw21VVykXnEE24S62bttL4wsQ_bIRkmVBp_Pvjqt66hYW_LEGcf9HmdIJE_JdqP7e1NGpYx7S6rQtchdSHclno-F7pCP4Ky6ButOQQcU6-JHRwJJx-BUjNsHjY3YCiDZHUXthVIqgYg6Ou7xT-dQzU04Mo3xjF1eA6S8Bq5IZ2iRh2XbmdRvP4uLNypIJzRQ0weEzkMHxT1ew4hzcKTSSCEOzvuvnfxEQ1Ak3PLGotZMM-yP7J8pV2oWnrfPOeO2NQfui5iwDKAwdi8Lg0LNWmMejz25RlnSHYbRYz7ZgXwgBp0PDobaEJoF8XyXn83V_Bx757Coty1ZuG6s_QVL_OaBKW4AlxYyZA81fHbZnQxD19ipuMWcqgPB5nnqVkM_BwPF0vo19xW6XzAf7DGfNY7ITCPIk26W8KZIaBXl0_iiM77LAPFGbHWmUZsUH4K2UZzblpWAG6Kw2zl13CVQPFkEY4K5nO2N0vj9OtnevWccWKXm0ynZ64Q_Z0JsxAMbCREFQo2OmZjt7IvfuQKXKQcKUGB2rFs5uYcOtpGxB7PyUPpEG1lrviSXCLGzoB_PvZKp1uORGgdqzYsRc370tCuD05u0f3DlhId07bSFrVI1jlnuBPWDC4zLn3Gh9jeLZGFipsYChQqdG_OoxJjwYFbwtruUdWIJtsmBrcJ7xe0zBaJzVfZhJUrld9D_knleEfDXyFG3NcneomzM8aV8Rm_nSg=w455-h286-no?authuser=0"
+          alt=""></a>
+    </p>
+    <hr><br>
+    <p><b>preventDefault()</b> - tagni hodisasini yo'q qiladi</p>
+    <p><a
+        href="https://lh3.googleusercontent.com/1Si3q6_GHA0WOCMG4-Ma5iEEZeP-mBs3UN0xFOOeV9sWqc7jwjBH4Oy80kVsGOhXR4YEonVP_EEKLbTkc0MU-hAMNcpNrOBvpG388CKMF__mgDrvnY_46kD047hXh2xVlvOxcKK8WZvmNWmMTIjlF3Mtee49LU8P6SfDX4ljwgjc2XJGh0vcweuoUchO3knbHOMNQ0kII40fV9Yt7vZ-KhkqFL0IhjyKo2fiYDu0kjPJLGtGw3ZLPDKscfmhYwPflCLoZkd7lYcIUHpEPuOUlmfRW3Q2MAKF9lpO7ftXPmk_xW-0Te6qAirNRRtSFz4gfsUdYGL7eGADNpMctb7JlSwWMBPZDWKn4q2DcV17UHchQgSYXEEhkAKCU09Q_2Lk_8WHwchNhc4vhHERmgz9shvfdXLMiYLUu2Yg87lumcl1geo2n0Osk3HeT4wuppgrMYz_zoxVxRRzfVxSXjweuSqzuFmqUTp1A1L66p_QOmDUFlCE2mZQaaQbpnXz3lxj7kIFy9XuMRjPKp7FEmQ0Y_NV7GCQJCGSCba-XouzbVIKWsrRhd0bnP9atzSwcuh184w8YpUiAVIm33nXfw0dza98C8aMXGGiw-zXPMI5-XH08gqF9WVDh4ecFxY9ebes2QJUNmClFWZw7XpEpIjdl-e2wuUU4l7qw9EsvaK92JJMCx4eLwLQImMIvuQRCxOSBLvb4B5d6K7YraAprBIPRluys_n4uul1Nlg2eH5FY5MgNx9betxhufRjxYgr-g=w331-h104-no?authuser=0"><img
+          src="https://lh3.googleusercontent.com/1Si3q6_GHA0WOCMG4-Ma5iEEZeP-mBs3UN0xFOOeV9sWqc7jwjBH4Oy80kVsGOhXR4YEonVP_EEKLbTkc0MU-hAMNcpNrOBvpG388CKMF__mgDrvnY_46kD047hXh2xVlvOxcKK8WZvmNWmMTIjlF3Mtee49LU8P6SfDX4ljwgjc2XJGh0vcweuoUchO3knbHOMNQ0kII40fV9Yt7vZ-KhkqFL0IhjyKo2fiYDu0kjPJLGtGw3ZLPDKscfmhYwPflCLoZkd7lYcIUHpEPuOUlmfRW3Q2MAKF9lpO7ftXPmk_xW-0Te6qAirNRRtSFz4gfsUdYGL7eGADNpMctb7JlSwWMBPZDWKn4q2DcV17UHchQgSYXEEhkAKCU09Q_2Lk_8WHwchNhc4vhHERmgz9shvfdXLMiYLUu2Yg87lumcl1geo2n0Osk3HeT4wuppgrMYz_zoxVxRRzfVxSXjweuSqzuFmqUTp1A1L66p_QOmDUFlCE2mZQaaQbpnXz3lxj7kIFy9XuMRjPKp7FEmQ0Y_NV7GCQJCGSCba-XouzbVIKWsrRhd0bnP9atzSwcuh184w8YpUiAVIm33nXfw0dza98C8aMXGGiw-zXPMI5-XH08gqF9WVDh4ecFxY9ebes2QJUNmClFWZw7XpEpIjdl-e2wuUU4l7qw9EsvaK92JJMCx4eLwLQImMIvuQRCxOSBLvb4B5d6K7YraAprBIPRluys_n4uul1Nlg2eH5FY5MgNx9betxhufRjxYgr-g=w331-h104-no?authuser=0"
+          alt=""></a></p>
+    <hr><br>
+    <p><b>{ once: true}</b> - <b>addEventlistener</b>ni uchinchi argumenti. Hoidsani faqat bir marta ishlaydigan qiladi
+    </p><br><br>
+    <a
+      href="https://lh3.googleusercontent.com/VRuFKL-etNmi59WBRnkl0NvBgkMXPYMhJ_ixJSjxZXBO4bEJ9ewqW_mDWkQQibg3ldY9xcmyUl-VlbnN1is9s8NfrcIiiKJrGtVwbncUkQ519tacSUs6mqh7LA_LU0K4oerll7Uk94I-OOIplu0u48_qvToR3qku97isgzDVpfBV0AZHpcLXbIAWruOfr0is_cnE42rRfgWKYSuOALuOLjmZZzVzj5YAWjslEwe-6QhjdoTvDB7Vo15YNRFgsza9SvHZ1AESfdZq0gDrjMSANmRUV52HLA-H6wBCPy88s8qtfY1hKpxeQRw2GCSh_WI1hpSrZuV_UUPoqdLBQaez1d2zBVz3IczvLAYY2bXBqNgLmkYWuS0ipsSt5x_Pc5YNQfOxuUvs9GB5rpjPFJy12MPDaV9X5g1f-IUO0AIoFiAnQUfgkU4t0QBI6gP8NKbWjQuKo-wWJ63O1520Jitv-vGtuNzm-aIT3D8u13fnkPsos7MgDtaBPKPsasaYA_gGOde5YNS8ICRmY3LbuQbxFDxWb0MtzIBTPqj7L-qr9iEqPbDiwbpPGCx6dlXiADa8kZavChCs9k2_6Hs2rG8_0mJtCwzJBC0n-2iWxzi4_ksuR2I_nXLfDF1Un2ZgrBJP3vDSly2B0OeoYJVgp69wz6Ia4Ludkbpx6ZzFybytXMPhruqr33EGjlntOk80dsoo1wc-81cpHEGLy7Fp9RkODtcfeAsJSvtxxNfH4xnWcgQngq-z-imkED21aGRMrw=w464-h86-no?authuser=0"><img
+        src="https://lh3.googleusercontent.com/VRuFKL-etNmi59WBRnkl0NvBgkMXPYMhJ_ixJSjxZXBO4bEJ9ewqW_mDWkQQibg3ldY9xcmyUl-VlbnN1is9s8NfrcIiiKJrGtVwbncUkQ519tacSUs6mqh7LA_LU0K4oerll7Uk94I-OOIplu0u48_qvToR3qku97isgzDVpfBV0AZHpcLXbIAWruOfr0is_cnE42rRfgWKYSuOALuOLjmZZzVzj5YAWjslEwe-6QhjdoTvDB7Vo15YNRFgsza9SvHZ1AESfdZq0gDrjMSANmRUV52HLA-H6wBCPy88s8qtfY1hKpxeQRw2GCSh_WI1hpSrZuV_UUPoqdLBQaez1d2zBVz3IczvLAYY2bXBqNgLmkYWuS0ipsSt5x_Pc5YNQfOxuUvs9GB5rpjPFJy12MPDaV9X5g1f-IUO0AIoFiAnQUfgkU4t0QBI6gP8NKbWjQuKo-wWJ63O1520Jitv-vGtuNzm-aIT3D8u13fnkPsos7MgDtaBPKPsasaYA_gGOde5YNS8ICRmY3LbuQbxFDxWb0MtzIBTPqj7L-qr9iEqPbDiwbpPGCx6dlXiADa8kZavChCs9k2_6Hs2rG8_0mJtCwzJBC0n-2iWxzi4_ksuR2I_nXLfDF1Un2ZgrBJP3vDSly2B0OeoYJVgp69wz6Ia4Ludkbpx6ZzFybytXMPhruqr33EGjlntOk80dsoo1wc-81cpHEGLy7Fp9RkODtcfeAsJSvtxxNfH4xnWcgQngq-z-imkED21aGRMrw=w464-h86-no?authuser=0"
+        alt=""></a>
+  </div>
+
+  <div>
+    <h3>Navigatsiya DOM bo'yicha</h3>
+    <b>document.head</b> - HTMLni head qismini ko'rsatadi. <b>console.log(document.head);</b><br><br>
+    <a
+      href="https://lh3.googleusercontent.com/_h9mip2B_cddrXb2miQGNwgoBaaE16Jix-Hn-z7wt3Lmhmr6zABQSKUh7Qvfes4ysUZPwSaho6FXvo75bPrn2ncUcXKKvFYhqleQrVCVEwiLBynMonbUTL_KA9KqG2Io65Tx3PrB2KSxbKmJrey_yYokb10nSj2tidDP7xZjGgcXJSb0-yCVOZeAXjJdhvnV7TAVd_X9uRGqjbCcMQwcebNk8iCmsNcIpvbJczULwen8tR9ExdWvTX4c-C4KCIzBTc9A3kKdUvgQWu6WERpEfsA21NQUw9Dkodo8Gmxt49uNX9Rn_4R3s0MwwNcW1GMI3jrGh7qf5aUS6G0siGNHstBYkM_v9p0fxnz9WnGNQGGaqVOXBAiG84-12UplsnGWVK9OPEhiyTl5Z7aNPctI-6zIzhPJPQZcJkH9uAHWT0yBkJDPEQ5gsyGYRzjJeqIkHdbkwXT7iSMv0xAxHmejhgwwYkjCz8l7n3dLlA5gc1109H4WzYwAXRjryJT6aCK0PHRXNywXJ8Ln2y8Y7BB_aIQNviJyYaejekdX9kSMPsbBl0S7EpTF9ZDFBQnRYrXwpSby_oYSVdADzigj92W3WUbnhl5N463_hv9GBhG5fuDSzVTmsCGjNK9vQDO25QA6UtOnBZQud6iNAhU8Q19S-6EV9DcQm8iZXtl7hIrhxFL5MpHrne556-veThRpRsv1uVGXsvYQjRcF7KYR2iaA0VXpga1V5E2ssdk5G5echdz2ZQEZPy7BKiHZFn-a7A=w907-h166-no?authuser=0"><img
+        src="https://lh3.googleusercontent.com/_h9mip2B_cddrXb2miQGNwgoBaaE16Jix-Hn-z7wt3Lmhmr6zABQSKUh7Qvfes4ysUZPwSaho6FXvo75bPrn2ncUcXKKvFYhqleQrVCVEwiLBynMonbUTL_KA9KqG2Io65Tx3PrB2KSxbKmJrey_yYokb10nSj2tidDP7xZjGgcXJSb0-yCVOZeAXjJdhvnV7TAVd_X9uRGqjbCcMQwcebNk8iCmsNcIpvbJczULwen8tR9ExdWvTX4c-C4KCIzBTc9A3kKdUvgQWu6WERpEfsA21NQUw9Dkodo8Gmxt49uNX9Rn_4R3s0MwwNcW1GMI3jrGh7qf5aUS6G0siGNHstBYkM_v9p0fxnz9WnGNQGGaqVOXBAiG84-12UplsnGWVK9OPEhiyTl5Z7aNPctI-6zIzhPJPQZcJkH9uAHWT0yBkJDPEQ5gsyGYRzjJeqIkHdbkwXT7iSMv0xAxHmejhgwwYkjCz8l7n3dLlA5gc1109H4WzYwAXRjryJT6aCK0PHRXNywXJ8Ln2y8Y7BB_aIQNviJyYaejekdX9kSMPsbBl0S7EpTF9ZDFBQnRYrXwpSby_oYSVdADzigj92W3WUbnhl5N463_hv9GBhG5fuDSzVTmsCGjNK9vQDO25QA6UtOnBZQud6iNAhU8Q19S-6EV9DcQm8iZXtl7hIrhxFL5MpHrne556-veThRpRsv1uVGXsvYQjRcF7KYR2iaA0VXpga1V5E2ssdk5G5echdz2ZQEZPy7BKiHZFn-a7A=w907-h166-no?authuser=0"
+        alt=""></a>
+    <hr><br>
+    <b>document.body</b> - HTMLni body qismini ko'rsatadi. <b>console.log(document.body);</b><br><br>
+    <a
+      href="https://lh3.googleusercontent.com/_9z_nI5mApXNwo0LnD55OSGE0wNxUl9FvlqPr0TNoDylb-dI0MJrLUe_wK6DzSQAmosy_SjPtqGQk7Udd_-joeCHhl27K5aM4x1bQ19AT106oNgvtkRf8naNrQaDEkwU4KHaKF1WSvuX6g_JMjMugDrDHwFWU13MKenTesf-WhXW8bc7xT5oCj4DHSEqDlNMRj86eUlQtKBHndMdEzS1fx1WbskcSOqqGOxeNoMsPFuUa2u8Eb_iJsIVGZ31zhghXr0wl8ooRpiT-4aTssF5RzR9Nh6jdpYTzOZGQNqhx4qQTMR_e5DTAvj6biVwVpUu_lbNYqugnmS8cWwaXrZs5Hr5_A4UrpDEXCDTQrST-90o1sEOQXLI2mclwoGwiEpZmR4XJFQXYCvaR7m85itTPmz5eWzSymmWKHAS2E5OjIFGzLzy2drSIRRJJTFAI8qZIYObJr5YbZKbFsYEZA-7N0gY9aCmeF6kBHdmJRmmdjDblJlReDL1loPZ4rHWxeX0OOjC0dNr5pLES0Hi3Ip9sja0O9GnwfRZ9wbrpvqZT6VGCcjidbDBL2QwptKt-GIIxTPb86tHrJoQgn6ItISO9PGuKRi8lbSrpVXE_YbXUOpl1oMbg28mAIV5gwJwl9WCxkXjZhoto_0G0TyH8gCo5bO28rBAeixEn_jPZ9qh7kDbYB3SyPC10boNBfSgA4J4qb9xL38qkB0K3tBnYf36GLsAGnoJIQW3N5f5mrn1951DscYVzxqQTnZfsT6dBA=w847-h163-no?authuser=0"><img
+        src="https://lh3.googleusercontent.com/_9z_nI5mApXNwo0LnD55OSGE0wNxUl9FvlqPr0TNoDylb-dI0MJrLUe_wK6DzSQAmosy_SjPtqGQk7Udd_-joeCHhl27K5aM4x1bQ19AT106oNgvtkRf8naNrQaDEkwU4KHaKF1WSvuX6g_JMjMugDrDHwFWU13MKenTesf-WhXW8bc7xT5oCj4DHSEqDlNMRj86eUlQtKBHndMdEzS1fx1WbskcSOqqGOxeNoMsPFuUa2u8Eb_iJsIVGZ31zhghXr0wl8ooRpiT-4aTssF5RzR9Nh6jdpYTzOZGQNqhx4qQTMR_e5DTAvj6biVwVpUu_lbNYqugnmS8cWwaXrZs5Hr5_A4UrpDEXCDTQrST-90o1sEOQXLI2mclwoGwiEpZmR4XJFQXYCvaR7m85itTPmz5eWzSymmWKHAS2E5OjIFGzLzy2drSIRRJJTFAI8qZIYObJr5YbZKbFsYEZA-7N0gY9aCmeF6kBHdmJRmmdjDblJlReDL1loPZ4rHWxeX0OOjC0dNr5pLES0Hi3Ip9sja0O9GnwfRZ9wbrpvqZT6VGCcjidbDBL2QwptKt-GIIxTPb86tHrJoQgn6ItISO9PGuKRi8lbSrpVXE_YbXUOpl1oMbg28mAIV5gwJwl9WCxkXjZhoto_0G0TyH8gCo5bO28rBAeixEn_jPZ9qh7kDbYB3SyPC10boNBfSgA4J4qb9xL38qkB0K3tBnYf36GLsAGnoJIQW3N5f5mrn1951DscYVzxqQTnZfsT6dBA=w847-h163-no?authuser=0"
+        alt=""></a>
+    <hr><br>
+    <b>document.body.childNodes</b> - HTML ma'lumotlarini turlarini ko'rsatadi.
+    <b>console.log(document.body.childNodes);</b><br><br>
+    <a
+      href="https://lh3.googleusercontent.com/iDqlj6T2XEKYkwezem6zmSC9SPhQPQc8OV0IjsKx2AzhZWmjw7PMC661CmhIwNv8PmF2TDn1juLFNexIkK0lGDifJ6XWZZCHv0zgGNgiTOG3YtcWPG0VC06eO2_VNsnrRve1xQ6c6DT8MiM6OusDtzzmOt_EtX3t3L3l-Rf2-0NCLLda6PeIrlJyJKB5cZpVDn2-vxkno8eiibxeRg1MtUTvkpCgoF74b8u3XRPSp0pH8tiuqc3yZBlGBQw6GXtfQPdFuBiaHAiGpeXP0gTF5XWtvXBJcEMze3AZBzQznDyLlen4_MjWjS70oJ34eqSwQb94L_ttDN03gEXUCxVwmvalyWoZNRmyhaczgxfLaR3g86VPEqwyUekTxJ3Iu2aGylkQ4d8Cw0vFNu2q2cpVoo7M6d156zWWi_K8cPZWVyqYj6haTFlUYlYCHGHzDU9WzmOZ8ZtAYluqKcNydcZp2srU4lVH-nh79yWdmHTbWxv_gNcK7uOtAka3OHgQ8S5kq-mIzDdnWyvpHPi9LjK7N1tKYkDQFOWCIPYiuvoQ7n8AdPhHNls6CNsGOwHlQUSxWNw9NE7U7NMM-vXiXTWOts2hvi5a-9Dpi7B3lg_ZSckWwYwYFhHuH6w_KzVEwXayf9awDg1eMcf_tmilZ_2YOk0aiAryepNj79KaffRKRxiEsDQLDAUMzRp3xWGMlT9SwbAK6fB8iqoB0kA76uU-GT9hwh5j2uxksenaw9ePb6LKUnOOBHKI-5E-c1t3gw=w1056-h262-no?authuser=0"><img
+        src="https://lh3.googleusercontent.com/iDqlj6T2XEKYkwezem6zmSC9SPhQPQc8OV0IjsKx2AzhZWmjw7PMC661CmhIwNv8PmF2TDn1juLFNexIkK0lGDifJ6XWZZCHv0zgGNgiTOG3YtcWPG0VC06eO2_VNsnrRve1xQ6c6DT8MiM6OusDtzzmOt_EtX3t3L3l-Rf2-0NCLLda6PeIrlJyJKB5cZpVDn2-vxkno8eiibxeRg1MtUTvkpCgoF74b8u3XRPSp0pH8tiuqc3yZBlGBQw6GXtfQPdFuBiaHAiGpeXP0gTF5XWtvXBJcEMze3AZBzQznDyLlen4_MjWjS70oJ34eqSwQb94L_ttDN03gEXUCxVwmvalyWoZNRmyhaczgxfLaR3g86VPEqwyUekTxJ3Iu2aGylkQ4d8Cw0vFNu2q2cpVoo7M6d156zWWi_K8cPZWVyqYj6haTFlUYlYCHGHzDU9WzmOZ8ZtAYluqKcNydcZp2srU4lVH-nh79yWdmHTbWxv_gNcK7uOtAka3OHgQ8S5kq-mIzDdnWyvpHPi9LjK7N1tKYkDQFOWCIPYiuvoQ7n8AdPhHNls6CNsGOwHlQUSxWNw9NE7U7NMM-vXiXTWOts2hvi5a-9Dpi7B3lg_ZSckWwYwYFhHuH6w_KzVEwXayf9awDg1eMcf_tmilZ_2YOk0aiAryepNj79KaffRKRxiEsDQLDAUMzRp3xWGMlT9SwbAK6fB8iqoB0kA76uU-GT9hwh5j2uxksenaw9ePb6LKUnOOBHKI-5E-c1t3gw=w1056-h262-no?authuser=0"
+        alt="rasm"></a>
+    <hr><br>
+    <b>document.body.firstChild</b> - HTML ma'lumotlaridan birinchidagini turini ko'rsatadi <br><br>
+    <a
+      href="https://lh3.googleusercontent.com/LGmZMm4fuW7_bGDX-VkcED1lfTuA6ISDoVF5J6MkdIQcoDisvkZNx9NItC9jhzYLwR7up9-hAbQcFP9AXDHb57-rqdtxJ9REwY9fElYCFxI0k8ry6MD3jUc5wJ-jh1ZC6DgS0nzBaw2IAezrgVewA-2hzBXHNAuUjKDmOkRK8iFdMw9zWuBafKYZEtYmc8humylcsNuEYSud2uUe-IhTWr1oOayj_hQkeVv9e9-x7W5gBampSj61iffik3IFgPw7gSd-tYYnFuLdsYdVOBdgqNQGlj_kEUsXGM-_X-9a_3sMFj_WViFOeHmCSVuKvkV6XibQCuCmJD8dEdunuAIKFI6rwafWbLYDVJ-gUfRezUvDaoDVHOo9KO0P9aXFlnjXPTQcF4N3VtBJpgCf5qfsrpw6Nvi8hBFa55ZUaO_pjtAV0I586Ib4AC274ct0TCRWln5CbteASs5QzGVS27bugbwZd8b0bEqI5ia6mTHWr5zfVRWIuFkRYagt3VVB2MVuABHHEXuPR3psadFHElq7X54XaoEja0M7OOY4SPZe1JQFyxXdOAOb6mzcAoSAv4bWAStDeyihnR4RCmHq4dpt70mX-GEsp6CBGrrIOyiWZKC0fXDqXH9TYzPaoWvZvv6E6UpzxMCLVBIEQFsT8BF8BMmTiEm2ZHhalhxF3UKH1JZO-UJNm8AlKZ1szefwPT15TQ1zrtQKI1QEApp_2k1s4UfTK0UxRTGQOqEUKrB6AbN5LaLBtLXqLgWRljrDoQ=w652-h133-no?authuser=0"><img
+        src="https://lh3.googleusercontent.com/tjkbcF8-62r3gvZObV7td_pJ3qomKpOsOTpuiKrBeMRE7u-bmI6iWjzQQ95qh--8uDslV-AwW5gs8oMJlcL2NncAoGYYM_Kjeo7HQ3uLLmiut3zZopfPwd08PGTW8HLY_08EZu1OSbTlPMHWCaSQWgSj4wtv0DeaBeMygG5vwIV7g6gqE3V9wHFjNNPmX8HO6RjVpzz6KeO3oOii6UXkaRlHgQNoJpckz0ePo9YWXM-8pgbHELxcil51i39jVeM8abVUzfP2XjzJTEUfkYyx-OZC01tdY5hoz9WC1qxoQ4r_QkMrFd6MccP_uL371VG0Zwu1cp0oZkslzSJHiLKdrQhMlj-qP8yIIgFNEghMP3seOPyPqtLBaIFWvs31YjIt-Tty_66Uw_tmAEdxVFwaJC30bPiVQXs7NU3SreTa3IcZV_ABOMgC4mPFsFtsO3cbAA51o3nzdfttHqQJeu9rpq5KBzOi3AgjVX3y0Rn4pBef-OxHoSQ2sX-N7EFzAEjjkdBqpQWlK0dctV6nDUdJN1C0EKWY3q8_O0QcDyjq7N7rdQ-ViZ347xaoKeY9bvRTGFBew-iFjW50lIVZqTRDZaE99VKICFnWb2RJ_4aDiPsu9f3i8bIMtOsnVfWY8Db2DjrtcHdNHoyjR9P3k110pLZT6bRAuJo7LrYcT8RyLRkWN5hSuv4Dbre6yamwps572Bd1z1nBIm8vx7XZfaln4um0ijPpxTAS9y87Xe-qwWiLNPgxvMZuArokGWyE4A=w652-h133-no?authuser=0"
+        alt="?"></a>
+    <hr><br>
+    <b>document.body.lastChild</b> - HTML ma'lumotlaridan oxirgidagini turini ko'rsatadi.
+    <b>console.log(document.body.lastChild);</b> <br><br>
+    <a href="../rasm/1.jpg"><img src="../rasm/1.jpg" alt=""></a>
+    <hr><br>
+    <b>parentNode</b> - Elementni onda divini qabul qiladi.
+    <b>console.log(document.querySelector("#box").parentNode);</b> <br><br>
+    <a href="../rasm/2.jpg"><img src="../rasm/2.jpg" alt=""></a>
+    <hr><br>
+    <b>data-<i>name</i>="value"</b> - faqat bitta elementni olish uchun ishlatilinadi. <b>data</b> doim bir xil bo'ladi
+    boshqalari esa aksi <br><br>
+    <a href="../rasm/3.jpg"><img src="../rasm/3.jpg" alt=""></a>
+    <hr><br>
+    <b>nextSibling</b> - Keyingi elementni ko'rsatadi. keyingisida probel bo'lgani uchun <b>#text</b> ko'rsatadi
+    <br><br>
+    <a href="../rasm/4.jpg"><img src="../rasm/4.jpg" alt=""></a>
+    <hr><br>
+    <b>previousSibling</b> - Oldingi elementni ko'rsatadi. o'zidan oldin probel bo'lgani uchun <b>#text</b> ko'rsatgan
+    <br><br>
+    <a href="../rasm/5.jpg"><img src="../rasm/5.jpg" alt=""></a>
+    <hr><br>
+    <b>nextElementSibling</b> - keyingi elementni ko'rsatadi. <b>#text</b> ni inobatga olmaydi <br><br>
+    <a href="../rasm/6.jpg"><img src="../rasm/6.jpg" alt=""></a>
+    <hr><br>
+    <b>parentElement</b> - ona elementni ko'rsatadi <br><br>
+    <a href="../rasm/7.jpg"><img src="../rasm/7.jpg" alt=""></a>
+    <hr><br>
+    <b>childNodes</b> elementlarini <b>#text</b>larsiz olish <br><br>
+    <a href="../rasm/8.jpg"><img src="../rasm/8.jpg" alt=""></a>
+  </div>
+
+  <div>
+    <p>
+      <b>document.addEventListener('DOMContentLoaded', () => { ... })</b> - sahifa yuklangandan keyin ushbu ko'ddagi
+      <b>skript</b>lar ishga tushadi <br>
+      <b>window.addEventListener('DOMContentLoaded', () => { ... }</b>
+    </p>
+  </div>
+
+  <div>
+    <h3>32-dars. Amaliyot. Uyga vazifa. DOM hodisalar</h3>
+    <p>Kod manbai => <a href="https://github.com/Nozim99/32-dars.-Amaliyot.-Uyga-vazifa.-DOM-xodisalar">LINK</a></p>
+    <br><br>
+    <a href="../rasm/9.jpg"><img src="../rasm/9.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>33-dars. Defer. Async. Dynamic script.</h3><br>
+    <b>defer</b> - DOM elementlar yuklanib bo'lgandan keyin scriptlar ishga tushadi <br><br>
+    <a href="../rasm/10.jpg"><img src="../rasm/10.jpg" alt="Error"></a>
+    <hr><br>
+    <b>async</b> - o'lchami kichik bo'lgan skript birinchi ishlaydi <br><br>
+    <a href="../rasm/11.jpg"><img src="../rasm/11.jpg" alt=""></a>
+    <hr><br>
+    <b>Skriptni dinamik qo'shish</b><br><br>
+    <a href="../rasm/12.jpg"><img src="../rasm/12.jpg" alt=""></a>
+  </div>
+
+  <div>
+    <h3>35-dars. ClassList</h3> <br>
+    <b>classList</b> - item klasslarini qabul qiladi <br><br>
+    <a href="../rasm/13.jpg"><img src="../rasm/13.jpg" alt="Error"></a>
+    <hr><br>
+    <b>classList.length</b> - item klasslarini sonini ko'rsatadi <br><br>
+    <a href="../rasm/14.jpg"><img src="../rasm/14.jpg" alt="Error"></a>
+    <hr><br>
+    <b>classList.item(index)</b> - item klasini indeksi bo'yicha qabul qiladi <br><br>
+    <a href="../rasm/15.jpg"><img src="../rasm/15.jpg" alt="Error"></a>
+    <hr><br>
+    <b>add</b> - klass qo'shadi. Bir nechta klass qo'shsa ham bo'ladi. <b>btns[1].classList.add('blue', 'red')</b>
+    <br><br>
+    <a href="../rasm/16.jpg"><img src="../rasm/16.jpg" alt="Error"></a>
+    <hr><br>
+    <b>remove</b> - klass o'chiradi. Bir nechta klass o'chirsa ham bo'ladi. <b>btns[0].classList.remove('blue',
+      'red')</b><br><br>
+    <a href="../rasm/17.jpg"><img src="../rasm/17.jpg" alt="Error"></a>
+    <hr><br>
+    <b>toggle</b> - klass bor bo'lsa o'chiradi, yo'q bo'lsa qo'shadi. <b>btns[0].classList.toggle('blue')</b> <br> <br>
+    <b>contains</b> - biror element ichidi belgilangan ma'lumot bor yoki yo'qligini aniqlaydi. <b>boolean</b> turdagi
+    ma'lumot qabul qiladi. Massiv ichidan biror ma'lumotni tekshiradi. <b>btns[0].classList.contains('red')</b> -
+    <b>red</b> klasi mavjud bo'lsa <b>true</b>ni qabul qiladi, yo'q bo'lsa <b>false</b>ni qabul qiladi
+  </div>
+
+  <div>
+    <h3>36-dars. Delegatsiya xaqida batafsil</h3><br>
+    <h3>Bola elementiga hodisa qo'shish</h3><br>
+    <p>Bu usulda yangi bola element qo'shilsa unda ham hodisa ishlaydi</p>
+    HTML qismi <br>
+    <a href="../rasm/18.jpg"><img src="../rasm/18.jpg" alt="Error"></a>
+    <hr><br>
+    <b>tagName == 'BUTTON'</b> - doim katta harf bilan yozilishi kerak <br><br>
+    Hodisa bo'ladigan qismiga bosilsa va uning <b>tag</b>i <b>button</b> bo'lsa <b>console</b>ga <b>OK</b> chiqaradi
+    <a href="../rasm/19.jpg"><img src="../rasm/19.jpg" alt="Error"></a>
+    <hr><br>
+    Hodisa berilgan qismiga bosilsa va bosilganni klasida <b>blue</b> bo'lsa konsolga <b>blue</b> chiqadi <br><br>
+    <a href="../rasm/20.jpg"><img src="../rasm/20.jpg" alt="Error"></a>
+    <hr><br>
+    <b>matches</b> - <b>contains</b>ga ancha o'xshash. <b>boolean</b> qiymat qabul qiladi. <b>matches(' <i>tag.class</i>
+      ')</b> <br><br>
+    <a href="../rasm/21.jpg"><img src="../rasm/21.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h1>Funksiyaga default qiymat berish</h1>
+    Argumentga default qiymat tenglashtiriladi <br>
+    <b>function functionName(arg = 0){ ... }</b> - argument berilmasa <b>arg</b>ni <b>0</b> qiymatiga tenglashtiradi.
+  </div>
+
+  <div>
+    <h3>Animatsiya SetTimeout SetInterval</h3>
+    <b>setTimeout(()=>{}, time)</b> - belgilangan vaqtdan keyin ko'dni ishga tushiradi. Bitta o'zgaruvchiga ovolish
+    kerak, keyinchalik ustida boshqa amal bajarganda qulay bo'lishi uchun <br>
+    <a href="../rasm/22.jpg"><img src="../rasm/22.jpg" alt="Error"></a>
+    <hr><br>
+    <b>setInterval</b> - belgilangan vaqt mobaynida ko'dni cheksiz ishga tushiradi <br>
+    <b>clearInterval</b> - <b>setInterval</b>ni to'xtatadi <br><br>
+    <a href="../rasm/23.jpg"><img src="../rasm/23.jpg" alt="Error"></a>
+    <hr><br>
+    Agar funksiya vaqt intervalidan ko'p vaqt oladigan bo'lsa quyidagi ko'ddan foydalaning. Bunda funksiya vaqti
+    interval vaqtidan ko'p vaqt talab qilsa interval vaqti cho'ziladi <br>
+    <a href="../rasm/24.jpg"><img src="../rasm/24.jpg" alt="Error"></a>
+    <hr><br>
+    <h4>Amaliyot</h4>
+    <p>Mashina chapdan o'ngga harakatlanadi</p>
+    <p><a href="../rasm/25.jpg"><img src="../rasm/25.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>40-dars. Date bilan ishlash / Date()</h3><br>
+    <p>Vaqt bilan ishlash uchun ishlatilinadi</p>
+    <p><a href="../rasm/26.jpg"><img src="../rasm/26.jpg" alt="Error"></a></p>
+    <hr><br>
+    <p>argument sifatida vaqt berilsa kamini 0 ga tenglashtiradi. Quyida soatlarini 0 ga tenglashtirgan</p>
+    <p><a href="../rasm/27.jpg"><img src="../rasm/27.jpg" alt="Error"></a></p>
+    <hr><br>
+    <p><a href="../rasm/28.jpg"><img src="../rasm/28.jpg" alt="Error"></a></p><br>
+    <hr>
+    <p><b>
+        getFullYear() | getMonth() | getDay() | getHours() | getSeconds() | getTime()
+      </b><br>
+    <p>Argument berib vaqtni o'zgartirish mumkin | vaqtni o'zgartirish</p><br>
+    <b>getDay()</b> - hafta kuni bo'yicha <br>
+    <b>getTime()</b> - millisekundda chiqaradi
+    </p><br>
+    <p><a href="../rasm/29.jpg"><img src="../rasm/29.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>43-dars. Window, doc bilan ishlash, scroll</h3>
+    <b>document.documentElement.cientWidth</b> - sahifaning enining uzunligi <br>
+    <b>window.getComputedStyle()</b> - <b>js</b>dan stayl bersa bo'ladigan ko'dlar
+    <hr><br>
+    <p><a href="../rasm/30.png"><img src="../rasm/30.png" alt="Error"></a></p>
+    <hr><br>
+    <h3>Scrollni uzunligini animatsiya orqali foizda ko'rsatish</h3>
+    <p>Ko'd manbai: <a target="_blank"
+        href="https://github.com/Nozim99/Scrollni-uzunligini-animatsiya-orqali-o-zgarishi">Link</a></p>
+    <p><a href="../rasm/30.jpg"><img src="../rasm/30.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>Klaviaturadan hodisa qo'shish</h3>
+    <b><a target="_blank"
+        href="https://www.google.com/search?q=keycode&oq=keycode&aqs=chrome..69i57j0i512l9.3113j0j4&sourceid=chrome&ie=UTF-8">keycode</a></b><br><br>
+    <p>
+      Klaviatura tugmalarni ko'dlarini olish: <a target="_blank"
+        href="https://www.toptal.com/developers/keycode">Link</a>
+    </p><br>
+    <p>
+      <b>keydown</b>, <b>Escape</b>
+    </p>
+    <p><a href="../rasm/31.jpg"><img src="../rasm/31.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>Scrollga hodisa qo'shish</h3>
+    <p>shahifani oxiriga borganda modal oynasi chiqadi <br>
+      <b>window.pageYOffset</b> scroll bo'lganda o'lchami scrol uzunligiga qarab beriladi, boshida 0 ga teng bo'ladi
+      shuning uchun <b>document.documentElement.clientHeight</b> qo'shiladi
+    </p>
+    <p><a href="../rasm/32.jpg"><img src="../rasm/32.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>46-dars. Funksiya konstruktor</h3>
+    <p><b>prototype</b> qo'shish</p>
+    <p><a href="../rasm/33.jpg"><img src="../rasm/33.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>47-dars. Context this & closure</h3>
+    <p>
+      funksiyaga yozilga this <b>'use strict'</b> bo'lmasa <b>window</b> <b>global</b>ga teng bo'ladi <br>
+      <a href="../rasm/35.jpg"><img src="../rasm/35.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>
+      Obyektni ichidagi <b>this</b> obyektni o'ziga teng bo'ladi
+      <a href="../rasm/36.jpg"><img src="../rasm/36.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>
+      3 - Context this funksiya konstruktorda yangi obyektni ekzempyariga teng <br>
+      <a href="../rasm/37.jpg"><img src="../rasm/37.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>48-dars. Call, Apply & Bind</h3>
+    <p>
+      call - funksiya konteksini car obyektiga ulab qo'yadi | <b>this</b>ni ulash | <b>this</b>ni obyektga ulash<br>
+      <a href="../rasm/38.jpg"><img src="../rasm/38.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>
+      <b>apply</b> <b>call</b> bilan deyarli bil xil. Farqi funksiyani argumentini chaqirishda. <br>
+      <b>functin logger(speed) {}</b> <br>
+      <b>logger.call(car, 200);</b><br>
+      <b>logger.apply(car, [300]);</b> - argument massivga yoziladi
+    </p>
+    <hr><br>
+    <p>
+      <b>bind</b>
+      <a href="../rasm/39.jpg"><img src="../rasm/39.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>Quyidagida this konteksi btn elementiga teng bo'ladi va this orqali stayl bersa bo'ladi <br>
+      <b>
+        const btn = document.querySelector('button'); <br>
+        btn.addEventListener('click', function(){ <br>
+        console.log(this); <br>
+        });
+      </b>
+    </p>
+    <hr><br>
+    <p>
+      Ko'rsatkichli funksiya (strelkali funksiya) konteksi <b>this</b> o'zidan oldingiga ulanadi <br>
+      Quyida o'zidan yuqoridagi funksiyaga tenglashadi, u funksiya konteks this obyektga teng bo'ladi <br>
+      Strelkali funksiya xech qanday contexga ega emas, u xar doim o'zini tepasidagi contextga qaram bo'ladi <br>
+      <a href="../rasm/40.jpg"><img src="../rasm/40.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>49-dars. Class</h3>
+    <p>
+      <a href="../rasm/41.jpg"><img src="../rasm/41.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>
+      <b>extends</b><br>
+      <b>super</b> - eski klasdan nusxalaydigan argumentlar <br>
+      eski klasdan nusxa olib yangi klas yaratish, yangi klass yaratish, yangi class yaratish, new class
+      <a href="../rasm/42.jpg"><img src="../rasm/42.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>50-dars. Loyiha. Class</h3>
+    <p><a href="../rasm/43.jpg"><img src="../rasm/43.jpg" alt="Error"></a></p>
+  </div>
+
+  <div>
+    <h3>51-dars. Loyiha. Rest operator</h3>
+    <p>rest operatori argumentlarni bitta massivda qabul qiladi</p>
+    <p><a href="../rasm/44.jpg"><img src="../rasm/44.jpg" alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>54-dars. JSON. Chuqur clonlash</h3>
+    <p><b>JSON.stringify()</b> - objectdan JSON formatiga o'tkazadi <br>
+      <b>JSON.parse()</b> - JSON formatidan obyectga o'tkazadi
+      <a href="../rasm/45.jpg"><img src="../rasm/45.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <b>Chuqur klonlash, obyektni klonlash, obyektdan nusxa olish, obyektni chuqur klonlash</b> <br>
+    json formatiga keyin obyektga o'tkaziladi <br>
+    <a href="../rasm/46.jpg"><img src="../rasm/46.jpg" alt=""></a>
+  </div>
+
+  <div>
+    <h3>55-dars. AJAX</h3>
+    <p>serverdan ma'lumot olish</p>
+    <p>Ko'd manbai: <a href="https://github.com/Nozim99/js-55-AJAX" target="_blank">Link</a></p>
+    <p><a href="../rasm/47.jpg"><img src="../rasm/47.jpg" alt=""></a></p>
+  </div>
+
+  <div>
+    <h3>57-dars. Dynamic styling</h3>
+    <p><b>getAttribute</b> - atributni tenglashtiradi<br>
+      <a href="../rasm/48.jpg"><img src="../rasm/48.jpg" alt="Error"></a>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>58-dars. Promise</h3>
+    <b>Promise</b>da serverdan ma'lumot kelgandan keyin ishga tushadi <br>
+
+    <h4>then(), catch(), finally()</h4>
+    <p><b>then</b> - shart bajarilganda ishga tushadi</p>
+    <p><b>catch</b> - shart bajarilmasa ishga tushadi</p>
+    <p><b>finally</b> - shartga qaramasdan ishga tushadi</p>
+    <p>
+      <a href="../rasm/49.jpg"><img src="../rasm/49.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>
+      <b>promise</b> ichiga yana <b>promise</b> yozsa bo'ladi <br><br>
+      <a href="../rasm/50.jpg"><img src="../rasm/50.jpg" alt="Error"></a>
+    </p>
+  </div>
+  <div>
+    <h3>59-dars. Promise method</h3>
+    <p>
+      <b>Promise.all([])</b> - <b>promise</b>lar massivga yoziladi va hamma <b>promis</b>lar ishga tushgandan keyin
+      ishga tushadi <br><br>
+      <a href="../rasm/51.jpg"><img src="../rasm/51.jpg" alt="Error"></a>
+    </p>
+    <hr><br>
+    <p>
+      <b>Promise.race([])</b> - <b>promise</b>lar massivga yoziladi va birinchi ishlagan <b>promise</b>dan keyin ishga
+      tushadi <br><br>
+      <a href="../rasm/52.jpg"><img src="../rasm/52.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>60-dars. Loyiha. Fetch API</h3>
+    <b>Fetch API</b> - Boshqa tashqi <b>API</b>larga so'rov yuboradi <br><br>
+    Test uchun fake <b>API</b>: <a target="_blank" href="https://jsonplaceholder.typicode.com/">Link</a>
+    <hr><br>
+    <p>
+      <b>fetch</b> orqali <b>API</b>dan ma'lumot olishga misol <br>
+      <a href="../rasm/53.jpg"><img src="../rasm/53.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h1>61-dars. Map, filter, reduce</h1>
+    <p>
+      <a href="../rasm/54.jpg"><img src="../rasm/54.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    <b>MAP</b> - yangi massiv qaytaradi eski massivni o'zgartirib<br><br>
+    <a href="../rasm/55.jpg"><img src="../rasm/55.jpg" alt="Error"></a>
+    <hr><br><br>
+    <b>FILTER</b> - filter qilib yangi massiv qaytaradi <br><br>
+    <a href="../rasm/56.jpg"><img src="../rasm/56.jpg" alt="Error"></a>
+    <hr><br><br>
+    <b>SOME</b> - berilgan shart kamida bir marta bajarilsa true ga teng bo'ladi <br>
+    <a href="../rasm/57.jpg"><img src="../rasm/57.jpg" alt="Error"></a>
+    <hr><br><br>
+    <b>EVERY</b> - barcha massiv elementi shartni bajarsa true bo'ladi <br><br>
+    <a href="../rasm/58.jpg"><img src="../rasm/58.jpg" alt="Error"></a>
+    <hr><br><br>
+    <h4>REDUCE</h4><br>
+    <p>
+      massiv elementlarini ustida amal bajarish uchun ishlatilinadi<br><br>
+    </p>
+    <a href="../rasm/59.jpg"><img src="../rasm/59.jpg" alt="Error"></a>
+    <hr><br><br>
+    Funksiyadan keyin berilgan qiymat boshlang'ich qiymat hisoblanadi <br><br>
+    <a href="../rasm/60.jpg"><img src="../rasm/60.jpg" alt="Error"></a>
+    <hr><br><br>
+    Massiv elementlarini bir qatorga yozish <br><br>
+    <a href="../rasm/61.jpg"><img src="../rasm/61.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>64-dars. Loyiha. Async/Await</h3>
+    <p>Ko'd manbai: <a
+        href="https://drive.google.com/drive/folders/1E33fhSzGAMNL8fI4asqNkeRPFWNOO_Co?usp=sharing">Link</a></p>
+    <p>
+      <b>keys</b> - objectni massivga o'takzadi, obyektni massivga o'tkazadi <br><br>
+      <a href="../rasm/j1.jpg"><img src="../rasm/j1.jpg" alt="Error"></a>
+      <hr><br><br>
+      <b>entries</b> - objectni massivga o'takzadi, obyektni massivga o'tkazadi <br><br>
+      <a href="../rasm/62.jpg"><img src="../rasm/62.jpg" alt="Error"></a>
+      <hr><br><br>
+      <b>fromEntries</b> - massivdan obyektga o'kazadi, massivdan objectga o'tkazadi <br><br>
+      <a href="../rasm/63.jpg"><img src="../rasm/63.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>66-dars. Loyiha. AXIOS</h3>
+    <p>
+      Serverdan ma'lumot olish <br>
+      <a href="../rasm/64.jpg"><img src="../rasm/64.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    <p>
+      <b>axios</b> yordamida serverdan ma'lumot olinib quyidagi 3 ta bo'lim yaratildi
+      <a href="../rasm/65.jpg"><img src="../rasm/65.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>70-dars. Localstorage</h3>
+    <p>Brauzerni ma'lumotlar bazasidan foydalanish</p>
+    <a href="../rasm/66.jpg"><img src="../rasm/66.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>71-dars. Oddiy iboralar</h3>
+    <p><b>
+        new RegExp, pattern, flag, regular expression, regularexpression
+      </b></p><br>
+    <p>
+      Quyidagi ko'dda birinchi topgan <b>o</b> harfini indeksini chiqaradi. Katta va kichik harflar teng emas <br>
+      <b>i</b> - <b>const regex = /a/i</b> - katta va kichik harflarni birday hisoblaydigan qiladi. <br>
+      <b>search()</b> - ma'lumotni indeksini qabul qiladi
+      <br><br>
+      <a href="../rasm/67.jpg"><img src="../rasm/67.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    <p>
+      <b>g</b> - hamma ma'lumotni hisobga oladi. <br>
+      <b>match()</b> - ikkita ma'lumotni bir biri bilan solishtiradi. <br><br>
+      <a href="../rasm/68.jpg"><img src="../rasm/68.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    <p>
+      <b>replace()</b> - kerakli belgilarni o'zgartiradi <br><br>
+      <a href="../rasm/69.jpg"><img src="../rasm/69.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    <p>
+      <b>test()</b> - berilgan belgini ma'lumotni ichidan qidiradi. <b>boolean</b> qiymat qabul qiladi <br><br>
+      <a href="../rasm/70.jpg"><img src="../rasm/70.jpg" alt="Error"></a>
+    </p>
+    <hr><br><br>
+    <p>
+      <b>\d</b> - faqat sonlarni qidiradi <br>
+      <b>\w</b> - so'zlarni qidiradi <br>
+      <b>\s</b> - space larni qidiradi <br><br>
+      katta harfda yozilgani esa aksini bildiradi <br><br>
+      <b>\D</b> - not a number, D = !d <br>
+      <b>\W</b> - not a word , W = !w <br>
+      <b>\S</b> - not a space, S = !s <br><br>
+      <a href="../rasm/71.jpg"><img src="../rasm/71.jpg" alt="Error"></a>
+    </p>
+  </div>
+
+  <div>
+    <h3>73-dars. Getters / Setters</h3>
+    <b>getters, get</b> - ma'lumot oladi <br>
+    <b>setters, set</b> - ma'lumot qo'shadi <br><br>
+    <p>Quyidagi ko'dda nomi <b>bmw</b>dan <b>merc</b>ga o'zgargan</p>
+    <a href="../rasm/72.jpg"><img src="../rasm/72.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>76-dars. Webpack</h3>
+    <p><b>
+        module.exports
+      </b></p>
+    <p>Modullarga bo'lish, export va import qilish</p><br><br>
+    <a href="../rasm/73.jpg"><img src="../rasm/73.jpg" alt="Error"></a>
+    <hr><br><br>
+    <a href="../rasm/75.jpg"><img src="../rasm/75.jpg" alt="Error"></a>
+  </div>
+
+  <div>
+    <h3>79-dars. Try Catch</h3>
+    <p>
+      Hatolarni ushlashda foydalaniladi <br><br>
+      <a href="../rasm/74.jpg"><img src="../rasm/74.jpg" alt=""></a>
+    </p>
+  </div>
+
+  <div>
+    <h2>CSS ma'lumotlar bilan ishlash</h2>
+    <p>window.getComputedStyle().getProperyValue()</p><br>
+    <a href="../images/javascript/1.jpg"><img src="../images/javascript/1.jpg" alt="js1"></a>
+  </div>
+</body>
+
+</html>

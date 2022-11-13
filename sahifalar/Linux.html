@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/cssHtml.css">
+    <title>Linux</title>
+</head>
+
+<body>
+    <div>
+        <h1>Terminal bilan ishlash</h1>
+        <p>
+            <b>pwd</b> - turgan joyimiz ko'rsatadi <br>
+            <b>ls</b> - turgan joyimizni ichidagi narsalarni ko'rsatadi. <b>ls -l</b> - ketma ketlikda ma'lumotlar bilan
+            ko'rsatadi <br>
+            <b>cd</b> - papkani o'zgartirish uchun. Yani boshqa faylga kirish yoki chiqish uchun <br>
+            <b>mkdir</b> - papka (folder) yaratish uchun <br>
+            <b>touch</b> - yangi fayl yaratish uchun. Masalan script.js, index.html va hkz <br>
+            <b>cat</b> - faylni ichidagini o'qish uchun. M.: cat index.html <br>
+            <b>cp</b> - fayldan nusxa oladi. cp <i>fayl nomi</i> <i>manzil</i> . M.: cp doc.txt
+            /home/nozimbek/testLinuxTerminal/newFile <br>
+            <b>mv</b> - fayllarni qirqib oladi. mv <i>fayl nomi</i> <i>manzil</i> . M.: mv index.html
+            /home/nozimbek/testLinuxTerminal/newFile <br>
+            <b>less</b> - ma'lumotni o'qishimiz uchun tepaga va pastga yurishimizga kerak bo'ladi. M.: less index.html.
+            <a href="https://linuxize.com/post/less-command-in-linux/">Qo'shimcha ma'lumot uchun</a> <br>
+            <b>more</b> - pastga qanchadir qismini tushiradi ya'ni <b>%</b>da. M.: more index.html <br>
+            <b>head</b> - boshidagi 10 qatorni ko'rsatib beradi. M.: head index.html <br>
+            <b>tail</b> - ohiridan 10 qatorni ko'rsatadi. M.: tail index.html <br>
+            <b>nano</b> - fayl ma'lumotlarini o'zgartirish ya'ni <i>update</i> <br>
+            <b>sudo -s</b> - <i>root</i> maqomini olish. Ya'ni keyinchalik biror amal bajarilganda parol so'ramidi <br>
+            <b>cat /etc/passwd</b> - ro'yhatdan o'tgan userlar ro'yhatini ko'rsatadi <br>
+            <b>cat /etc/shadow</b> - ro'yhatdan o'tgan userlar parolini ko'rsatadi. Parolni shifrlarngan holatda
+            ko'rsatadi havfsizlik uchun <br>
+            <b>useradd</b> - <i>user</i> qo'shadi. useradd <i>username</i>. M.: useradd user1 <br>
+            <b>useradd -m <i>username</i></b> - fayllar ustida ishlay oladigan <i>user</i> yaratish. M.: useradd -m
+            yangiFoydalanuvchi <br>
+            <b>passwd</b> - passwd <i>username</i>. userga parol qo'yadi. M.: passwd user1 <br>
+            <b>userdel</b> - userdel <i>username</i>. userni o'chiradi. M.: userdel user1 <br>
+            <b>cd /etc/skel</b> - bu yerga qo'shilgan narsalar yangi yaratilgan <i>user</i>larda ham paydo bo'ladi
+        </p>
+        <div>
+            <h4>usermod</h4>
+            <p>usermod -aG sudo <i>username</i>. Foydalanuvchiga sudo huquqi berish. sudo - hammanarsadan foydalanaoladi
+                <br>
+                usermod -G <i>groupname</i> <i>username</i> - sudo huquqini olib qo'yish. M.: usermod -G user1 user1.
+                Odatda o'zini nomidagi guruhda bo'ladi
+            </p>
+        </div>
+        <p>
+            <b>id <i>username</i></b> - <i>username</i>haqida ma'lumot beradi qanday huquqlari borligi haqida <br>
+        </p>
+        <div>
+            <h3>userlar huquqlari</h3>
+            <div>
+                <h4>belgilar</h4>
+                <p>
+                    <b>r</b> - read. <b>2^2 = 4</b> <br>
+                    <b>w</b> - write. <b>2^1 = 2</b> <br>
+                    <b>x</b> - exist (mavjud bo'lmoq). <b>2^0 = 1</b> <br>
+                    <b>-</b> - mavjud emas. <b>-</b> = 0 <br><br>
+                    <p>Birinchi uchtalik <b>user</b> uchun <br>
+                    Ikkinchi uchtail <b>group</b> uchun <br>
+                    Uchinchi uchtalik boshqalar uchun <br>
+                    M.: -rw-r--r--
+                    </p>
+                </p>
+            </div>
+            <p>
+                <b>drwxr-xr-x</b> (rwx = 4+2+1 = 7, r-x = 4+0+1 = 5, r-x = 4+0+1 = 5) <b>= 755</b><br>                
+            </p>
+            <p>
+                <b>chmod</b> - foydalanuvchilar va fayllarga huquq beradi. M.: chmod 756 fayl.txt. 756 = rwxr-xrw-
+            </p>
+        </div>
+        <div>
+            <h4>echo</h4>
+            <p>
+                <b>echo</b> - o'zidan keyingi ma'lumotni qaytaradi. M.: echo "Hello World" (Terminalda <i>Hello World</i> ni qaytaradi) <br>
+                <b>echo 'file1 file2 file3' | xargs mkdir</b> - file1, file2 va file3 <i>folder</i>larini yaratib beradi <br>
+                <b>echo 'file1 file2 file3' | xargs -t mkdir</b> - file1, file2 va file3 <i>folder</i>larini yaratib beradi va qanday <i>folder</i>lar yaratilgan bo'lsa shularni ko'rsatadi <br>
+                <b>echo 'file1 file2 file3' | xargs rmdir</b> - file1, file2 va file3 <i>folder</i>larini o'chiradi <br>
+                <b>echo 'file1 file2 file3' | xargs -t rmdir</b> - file1, file2 va file3 <i>folder</i>larini o'chiradi va qanday <i>folder</i>lar o'chirilgan bo'lsa shularni ko'rsatadi <br>
+            </p>
+        </div>
+        <div>
+            <h4>awk</h4>
+            <p>                
+                <b>awk</b> - faylni ichidan kerakli ma'lumotlarni filtr qilib kerakli ma'lumotlarni qaytaradi. M.: awk '{print $2}' doc.txt ($ - ustunni bildiradi ya'ni 2 ustundagi ma'lumotlarni qaytaradi) <br>
+                <b>print</b> - ko'rsatishni bildiradi <br><br>
+                <b>awk '/Nozimbek/ {print}' doc.txt</b> - <i>Nozimbek</i> degan ma'lumoti bor qatorni ko'rsatadi <br>
+                <b>awk 'END {print NR} doc.txt</b> ma'lumotlar necha qatorligini qaytaradi <br>
+
+            </p>
+        </div>
+        <p>
+            <b>rmdir</b> - <i>folder</i>ni o'chiradi <br>
+            <b>grep</b> - kerakli ma'lumotni o'zini qatoridagi boshqa ma'lumotlar bilan qaytaradi agar bo'lsa. M.: cat doc.txt | grep Nozimbek (<i>Nozimbek</i> degan ma'lumoti bor qatorni bildiradi va qidirilgan ma'lumotni qizil rangda ko'rsatadi)<br>
+        </p>
+    </div>
+</body>
+
+</html>
