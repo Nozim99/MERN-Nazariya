@@ -367,6 +367,224 @@ module.exports = (req, res) => {
             </textarea>
         </div>
     </div>
+    <div>
+        <h2>MODULE 5. Loyiha. express, nodejs & mongodb</h2>
+        <div>
+            <h4>process.env.PORT</h4>
+            <p>Kompyuterda saqlangan portda ishlatadi. Serverda ishlaganda (Heroku, AWS) u yerda sizga bo'sh PORTni
+                beradi. Agar faqat bitta PORT belgilasangiz va u port band bo'lsa <i>script</i>lar ishga tushmaydi</p>
+            <br><br>
+            <a href="../images/node/51.jpg"><img src="../images/node/51.jpg" alt="node51"></a>
+        </div>
+        <div>
+            <h3>hbs dvijok</h3>
+            <p>
+                <b>npm i express-handlebars</b><br><br>
+                Foydalanish
+            </p><br><br>
+            <a href="../images/node/52.jpg"><img src="../images/node/52.jpg" alt="node52"></a>
+        </div>
+        <div>
+            <h3>local malumotlar bazasi yaratish</h3>
+            <p>
+                mongoDBsiz yaratilgan sodda fullstack website <br><br>
+                Github link: <a
+                    href="https://github.com/Nozim99/local-malumotlar-bazasi-yaratish">https://github.com/Nozim99/local-malumotlar-bazasi-yaratish</a>
+            </p>
+
+        </div>
+        <div>
+            <h3>MongoDBdan Ma'lumotni o'chirish</h3>
+            <p>
+                <b>deleteOne</b> <br><br>
+                quyida id orqali ma'lumotni o'chirish ko'rsatilgan
+            </p>
+            <a href="../images/node/53.jpg"><img src="../images/node/53.jpg" alt="node53"></a>
+        </div>
+        <div>
+            <h3>Foydalanuvchi qo'shish</h3>
+            <b>ref</b><br><br>
+            <p>
+                Bir moduldan boshqa moduldagi ma'lumotlardan foydalanish uchun <b>ref</b>dan foydalaniladi
+            </p><br>
+            <a href="../images/node/54.jpg"><img src="../images/node/54.jpg" alt="node54"></a>
+            <hr><br><br>
+            <b>populate</b><br><br>
+            <p>
+                Boshqa modullardan ma'lumot olishda ishlatilinadi <br>
+                <b>ref</b> orqali ulangan ma'lumotlar bilan ishlaydi
+            </p><br><br>
+            <a href="../images/node/55.jpg"><img src="../images/node/55.jpg" alt="node55"></a>
+            <hr><br><br>
+            <p>
+                <b>populate</b> orqali faqat kerakli ma'lumotlarni olish <br><br>
+                Quyida faqat <i>email</i> va <i>name</i> ma'lumotlarini qaytaradi
+            </p><br>
+            <a href="../images/node/56.jpg"><img src="../images/node/56.jpg" alt="node56"></a>
+            <hr><br><br>
+            <b>select()</b><br><br>
+            <p>Faqat belgilangan ma'lumotlarni yuboradi <br>
+                Bir nechta ma'lumotlarni belgilash: select("price title img descr") - Bunda berilgan 4 ta ma'lumotni
+                yuboradi <br>
+                Quyida faqat rasmni yuboradi
+            </p><br><br>
+            <a href="../images/node/57.jpg"><img src="../images/node/57.jpg" alt="node57"></a>
+        </div>
+        <div>
+            <h3>Session</h3>
+            <p>
+                <i>localStorage</i>ga o'xshagan lekin undan qulay <br><br>
+                <b><i>npm i express-session</i></b>
+
+            </p>
+        </div>
+
+    </div>
+
+    <div>
+        <h3>Ma'lumotni shifrlash</h3>
+        <p>
+            <b>bcrypt</b> - ma'lumotni shifrlashda ishlatiladi <br><br>
+            <b><i>npm i bcrypt</i></b>
+        </p><br><br>
+        <a href="../images/node/58.jpg"><img src="../images/node/58.jpg" alt="node 58"></a>
+    </div>
+
+    <div>
+        <h3>JWT - JSON Web Tokens</h3>
+        <p>
+            <b>npm i jsonwebtoken</b><br><br>
+            <i>User</i>larni himoya qilish uchun kerak. Yuqori darajadagi himoyalash uchun ishlatilinadi
+        </p><br><br>
+        <a href="../images/node/59.jpg"><img src="../images/node/59.jpg" alt="node 59"></a>
+    </div>
+    <div>
+        <h3>populate</h3>
+        <p>belgilangan ma'lumotlarni qaytaradi</p><br><br>
+        <a href="../images/node/60.jpg"><img src="../images/node/60.jpg" alt="node 60"></a>
+    </div>
+    <div>
+        <h3>Hujjatlarni o'qishda filtrlardan foydalanish</h3>
+        <p>
+            .or() - yoki. bir nechta shartdan bittasi bajarilsa elementni qaytaradi <br>
+            .and() - va. barcha shartlar bajarilishi kerak<br>
+            .limit() - belgilangan qiymatda ma'lumotni qaytaradi<br>
+            .sort() - belgilangan xossa bo'yicha ma'lumotlarni tartiblaydi<br>
+            .select() - belgilangan ma'lumotlarni qaytarish. qiymat 1 bo'lsa yuboriladigan xossa, 0 bo'lsa
+            yuborilmaydigan xossa<br>
+            .count() & .countDocument() - ma'lumotlar sonini qaytaradi<br>
+        </p><br><br>
+        <a href="../images/node/61.jpg"><img src="../images/node/61.jpg" alt="node 61"></a>
+    </div>
+    <div>
+        <h3>Hujjatlarni izlashda RegEx'dan foydalanish</h3>
+        <p>
+            <b>i</b> - RegEx'da katta va kichik harflar teng emas. Buni oldini olish <b>i</b>'dan foydalaniladi <br><br>
+            /^F/ - F harfi bilan boshlangan hujjatlarni qaytaradi <br>
+            /od$/i - od bilan tugagan hujjatlarni qaytaradi <br>
+            /.*ham.*/i - ham so'zi uchragan hujjatlarni qaytaradi
+        </p><br><br>
+        <a href="../images/node/62.jpg"><img src="../images/node/62.jpg" alt="node 62"></a>
+    </div>
+    <div>
+        <h3>enum</h3>
+        <p>berilgan qiymatlarga teng bo'lmasa hatolik qaytaradi va ma'lumotlar bazasiga ma'lumot qo'shmaydi</p><br><br>
+        <a href="../images/node/63.jpg"><img src="../images/node/63.jpg" alt="node 63"></a>
+        <hr>
+    </div>
+    <div>
+        <h3>custom validator</h3>
+        <p><b>massivdagi elementlar soni bo'yicha validatsiya</b></p><br>
+        <a href="../images/node/64.jpg"><img src="../images/node/64.jpg" alt="node 64"></a>
+        <hr><br><br>
+        <h3>mongoose schema ustida amal</h3>
+        <p>
+            <b>trim: true</b> - probelni yo'q qiladi. " classic " = "classic" <br>
+            <b>lowercase: true</b> - kichik harfga o'tkazib serverga saqlaydi
+        </p><br>
+        <h3>sonni butun qismini olish</h3>
+        <p>
+            <b>
+                get: val => Math.round(val), <br>
+                set: val => Math.round(val)
+            </b>
+        </p><br>
+        <a href="../images/node/65.jpg"><img src="../images/node/65.jpg" alt="node 65"></a>
+    </div>
+    <div>
+        <h3>JSON Web Tokens - JWT</h3><br>
+        <p>Quyidagi <i>frontetnd</i>dan keladigan <i>token</i>ni tekshiruvchi <b>middleware</b>funksiyasi</p><br>
+        <a href="../images/node/66.jpg"><img src="../images/node/66.jpg" alt="node 66"></a>
+        <hr><br><br>
+        <p>Quyidagida <i>token</i>yaratiladi</p><br>
+        <a href="../images/node/67.jpg"><img src="../images/node/67.jpg" alt="node 67"></a>
+    </div>
+    <div>
+        <h3>jest testlash</h3>
+        <p><b><i>npm i jest -D</i></b></p><br>
+        <p>
+            bitta fayldagi testni bajarish <br>
+            <b><i>npm test name.test.js</i></b> - <b>.test.js</b> ni yozmasdan <b>name</b> ni o'zini yozsa ham bo'ladi
+        </p><br>
+        <p><b>jest method'lari <a target="_blank" href="https://jestjs.io/docs/expect"><i>Link</i></a></b></p><br>
+        <p>
+            test formati <i>name.test.js</i> ko'rinishida bo'ladi <br>
+            testlar uchun alohida fayl ochish va nomi test bo'lishi tavsiya qilinadi <br>
+            test funksiyasini birinchi argumenti nomi ikkinchisiga funksiya yoziladi <br><br>
+        </p>
+        <a href="../images/node/68.jpg"><img src="../images/node/68.jpg" alt="node 68"></a>
+        <hr><br><br>
+        <p>
+            <b>jest --watchAll</b> - bu yordamida ko'dga o'zgartirish kiritilsa test ishga tushadi. <i>Live Server</i>ga
+            o'xshash
+        </p><br><br>
+        <a href="../images/node/73.jpg"><img src="../images/node/73.jpg" alt="node 73"></a>
+    </div>
+    <div>
+        <h3>Funktsiyani unit testlar bilan qoplaymiz (93) & it</h3>
+        <p>testlarni guruhlash</p><br>
+        <a href="../images/node/69.jpg"><img src="../images/node/69.jpg" alt="node 69"></a>
+    </div>
+    <div>
+        <h3>Matnlarni to'g'ri test qilish (94)</h3>
+        <p><b>
+                toContain, RegEx //
+            </b></p><br>
+        <a href="../images/node/70.jpg"><img src="../images/node/70.jpg" alt="node 70"></a>
+    </div>
+    <div>
+        <h3>Qatorlarni testlash (95) | massivni testlash | array test</h3>
+        <p>
+            <b>toBe</b> - berilgan qiymat mosligini aniqlaydi <br>
+            <b>toContain</b> - berilgan elementni massiv ichida bor yoki yoq'ligini aniqlaydi <br>
+            <b>arrayContaining</b> - berilgan massivdagi elementlarni joylashuvidan qat'iy nazar mavjudligini
+            tekshiradi. Kutilayotgan massivda ortiqcha element bo'lsa ham true qaytaradi <br>
+            <b>toEqual</b> - massiv bilan ishlashda ishlatilinadi <br>
+        </p><br><br>
+        <a href="../images/node/71.jpg"><img src="../images/node/71.jpg" alt="node 71"></a>
+    </div>
+    <div>
+        <h3>Obyektlarni testlash (96)</h3>
+        <p>
+            1. <b>toEqual</b> - ma'lumot manzilini ham solishtiradi. Quyidagida ma'lumot bir xil bo'lsa ham false
+            qaytaradi. toEqual - ma'lumot manzilini solishtirmaydi, toBe bilan farqi shu. Tekshiriladigan obyektni xossa
+            ko'p yoki kam bo'lsa ham false qaytaradi <br>
+            <i>toEqual</i>dan foydalanmaslik tavsiya qilinadi <br>
+            2. <b>toMatchObject</b> - berilgan xossa va qiymatlarni borini solishtiradi. Tekshiradigan obyektdan xossasi
+            kam bo'lsa ham lekn ma'lumotlar mos kelsa true qaytaradi <br>
+            3. <b>toHaveProperty</b> - obyektni bitta xossasini tekshiradi. Birinchi xossasi ikkinchi valu'si yoziladi
+        </p><br><br>
+        <a href="../images/node/72.jpg"><img src="../images/node/72.jpg" alt="node 72"></a>
+    </div>
+    <div>
+        <h3>Xatolarga test yozamiz (97)</h3>
+        <p>
+            1. <b>toThrow</b> - hato qaytarilishini bildiradi aks holda false qaytaradi <br>
+            2. <b>toBeGreaterThan</b> - dan katta <br><br>
+            Xatoni test qilish uchun <i>expect</i>ga funksiya yoziladi
+        </p><br><br>
+        <a href="../images/node/74.jpg"><img src="../images/node/74.jpg" alt="node 74"></a>
+    </div>
 </body>
 
 </html>
